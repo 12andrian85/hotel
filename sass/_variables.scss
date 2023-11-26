@@ -1,0 +1,37 @@
+// scss-docs-start gray-color-variables
+$gray-100: #f8f9fa;
+$gray-600: #6c757d;
+$gray-900: #212529;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$c-primary:    #ad5521;
+$c-secondary:  #1085f2;
+$red:     #cc0a1e;
+$yellow:  #e6ff07;
+$green:   #5fc01e;
+$cyan:    #3bdeff;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $c-primary;
+$secondary:     $c-secondary;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+// scss-docs-end theme-color-variables
+
+// Square radius
+$border-radius:               0;
+
+// Create your own map
+$custom-colors: (
+  "custom-color": rgb(203, 17, 209)
+);
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: 'Edu SA Beginner', cursive, serif;
