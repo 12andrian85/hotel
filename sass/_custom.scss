@@ -1,11 +1,29 @@
-// @import "./variables";
+@import "./variables";
 @import "./mixins";
 
+    // global
 @import "./global/scaffolding";
 @import "./global/forms";
 @import "./global/typography";
 @import "./global/buttons";
 
+    // blocks
 @import "./blocks/header";
-@import "./blocks/main-nav";
+@import "./blocks/banner";
+@import "./blocks/bayview";
+@import "./blocks/best-rooms";
+@import "./blocks/location";
+@import "./blocks/spa";
+@import "./blocks/relaxation";
+@import "./blocks/blog";
 @import "./blocks/footer";
+
+
+
+@import "./blocks/modal";
+
+
+// components
+@import "./components/c-title-center.scss";
+@import "./components/c-title-left.scss";
+

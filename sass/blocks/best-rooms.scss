@@ -1,0 +1,13 @@
+.best-rooms{
+    &__card{
+        overflow: hidden;
+        margin: 10px 0;
+    }
+}
+@media (min-width: $width-tablet) {
+    .best-rooms{
+        &__card{
+                margin: 0;
+        }
+    }
+}

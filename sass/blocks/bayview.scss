@@ -1,0 +1,53 @@
+.bayview {
+
+    &__block {
+        height: 360px;
+    }
+
+    &__card--first {
+        height: 270px;
+        width: 240px;
+        top: 0;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    &__card--two {
+        height: 190px;
+        width: 280px;
+        bottom: 0;
+        transform: translateX(-50%);
+        left: 50%;
+        z-index: 1;
+    }
+
+}
+
+@media (min-width: $width-tablet) {
+    .bayview {
+
+        &__block {
+            height: 360px;
+
+        }
+        &__card--first {
+            transform: translateX(0);
+            left: 40px;
+        }
+        &__card--two{
+            transform: translateX(0);
+            left: 0;
+        }
+        &__card--last{
+            display: block;
+            height: 280px;
+            width: 200px;
+            transform: translateY(-50%);
+            top: 50%;
+            right: 0;    
+        }
+
+    }
+}
+
+// @media (min-width: $width-desktop) {}

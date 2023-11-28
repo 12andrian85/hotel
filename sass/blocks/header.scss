@@ -1,0 +1,17 @@
+.header{
+    .nav-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-top{
+        .top-item{
+            display: flex;
+            align-items: center;
+        }
+        .top-link{
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+    }
+}

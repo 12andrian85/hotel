@@ -1,0 +1,12 @@
+.modal {
+    .modal-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            color: $gray-600;
+
+        }
+    }
+}

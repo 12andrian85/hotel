@@ -1,0 +1,17 @@
+ul,
+li,
+div,
+span,
+article,
+section,
+nav,
+form {
+    @include outline;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    object-position: bottom;
+}
