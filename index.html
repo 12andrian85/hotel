@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <!-- logo-mobile -->
         <div class="header-logo text-uppercase py-3 d-lg-none">
@@ -52,7 +53,7 @@
                 </ul>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg py-0">
             <div class="container">
                 <div class="d-flex justify-content-between w-100 d-lg-none">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -80,10 +81,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="theme-kit.html">theme-kit</a>
+                            <a class="nav-link" href="search.html">Search</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Single Room</a>
+                            <a class="nav-link" href="components.html">Single Room</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Booking</a>
@@ -101,22 +102,28 @@
     </header>
     <main>
         <!-- banner -->
-        <div class="banner pt-5">
+        <div class="banner py-lg-5">
             <div class="container text-center">
                 <div>
-                    <div class="py-2">sub-title</div>
+                    <div class="pb-2 mt-5">sub-title</div>
                     <h1 class="mt-3 mb-4 display-4">title <br> title</h1>
                     <a href="#" class="btn btn-outline-primary mb-5">rooms e suites</a>
                 </div>
-                <div class="d-flex flex-column align-items-center pt-5">
-                    <label for="start">Start date:</label>
+                <div class="banner-block d-flex flex-column align-items-center mx-auto mt-5">
+                    <ul class="block-list d-flex">
+                        <li class="block-items"></li>
+                        <li class="block-items"></li>
+                        <li class="block-items"></li>
+                        <li class="block-items bg-dark"></li>
+                    </ul>
+                    <!-- <label for="start">Start date:</label>
                     <input type="date" id="start" name="trip-start" value="2023-07-22" min="2022-01-01"
-                        max="2025-12-31" />
+                        max="2025-12-31" /> -->
                 </div>
             </div>
         </div>
         <!-- bayview -->
-        <section class="bayview py-4">
+        <section class="bayview  py-md-5">
             <div class="container">
                 <div class="container text-center">
                     <div class="row">
@@ -172,15 +179,15 @@
         </section>
         <!-- best-rooms -->
         <section class="best-rooms text-center py-5">
-            <div class="c-title-center text-center py-2">
+            <div class="c-title--center text-center py-2">
                 <h6 class="position-relative text-dark">subtitle-center</h6>
             </div>
             <h2 class="my-4">Best-Rooms</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col col-12 col-md-6 py-3">
+                    <div class="col col-12 col-md-6">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="..." class="card-img-top" alt="..." style="height: 170px;">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
@@ -326,7 +333,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="container p-5 order-3">
+                    <div class="container my-2 p-5 order-3">
                         <p class="text-center mx-5">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veniam ratione
                             accusantium quasi doloribus hic officiis, quisquam ipsum incidunt aliquid quos esse
@@ -344,7 +351,7 @@
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide text-center p-5">
-                                        <div class="c-title-center text-center py-2 mb-4">
+                                        <div class="c-title--center text-center py-2 mb-4">
                                             <h6 class="position-relative text-dark">title-center</h6>
                                         </div>
                                         <h3 class="mb-4">Spa and Beauty</h3>
@@ -393,7 +400,7 @@
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide text-center p-5">
-                                        <div class="c-title-center text-center py-2 mb-4">
+                                        <div class="c-title--center text-center py-2 mb-4">
                                             <h6 class="position-relative text-dark">title-center</h6>
                                         </div>
                                         <h3 class="mb-4">Luxury Location</h3>
@@ -487,6 +494,7 @@
         </div>
         </div>
     </main>
+    <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="row p-4">

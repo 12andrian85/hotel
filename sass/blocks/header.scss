@@ -1,4 +1,7 @@
 .header{
+    .navbar{
+        height: 50px;
+    }
     .nav-item{
         display: flex;
         justify-content: center;
@@ -11,7 +14,7 @@
         }
         .top-link{
             text-decoration: none;
-            padding: 10px 15px;
+            padding: 5px 15px;
         }
     }
 }

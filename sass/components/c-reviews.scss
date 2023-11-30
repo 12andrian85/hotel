@@ -1,0 +1,12 @@
+.c-reviews{
+    .btn{
+        padding: 0;
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+        border: none;
+    }
+    .btn:hover{
+        background-color: $primary;
+    }
+}

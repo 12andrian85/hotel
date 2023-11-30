@@ -24,6 +24,18 @@
 
 
 // components
-@import "./components/c-title-center.scss";
 @import "./components/c-title-left.scss";
+@import "./components/c-card-rooms.scss";
+@import "./components/c-card-family-rooms.scss";
+@import "./components/c-little-card.scss";
+@import "./components/c-card-search.scss";
+@import "./components/c-reviews.scss";
+@import "./components/c-stars.scss";
+@import "./components/c-pagination.scss";
+
+// search
+@import "./search/banner-search.scss";
+@import "./search/reserve.scss";
+@import "./search/services.scss";
+@import "./search/additional.scss";
 

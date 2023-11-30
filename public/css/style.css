@@ -10209,15 +10209,16 @@ article,
 section,
 nav,
 form {
-  outline-style: solid;
   outline-color: tomato;
   outline-width: 1px;
+  list-style: none;
 }
 
 img {
   display: block;
   object-fit: cover;
   width: 100%;
+  height: 100%;
   object-position: bottom;
 }
 
@@ -10238,6 +10239,13 @@ input:focus-visible {
   color: #fff;
 }
 
+.btn-outline-primary:hover {
+  color: #fff;
+}
+
+.header .navbar {
+  height: 50px;
+}
 .header .nav-item {
   display: flex;
   justify-content: center;
@@ -10249,13 +10257,36 @@ input:focus-visible {
 }
 .header .header-top .top-link {
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 5px 15px;
 }
 
-.banner {
-  padding: 30px 0;
+.banner .banner-block {
+  height: 95px;
+  width: 280px;
+}
+.banner .block-list {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.banner .block-items {
+  height: 100%;
+  width: 100%;
 }
 
+@media (min-width: 768px) {
+  .banner .banner-block {
+    height: 85px;
+    width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .banner .banner-block {
+    height: 95px;
+    width: 500px;
+  }
+}
 .bayview__block {
   height: 360px;
 }
@@ -10339,7 +10370,16 @@ input:focus-visible {
   color: #6c757d;
 }
 
-.c-title-center h6::before, .c-title-center .h6::before {
+.c-title h6::before, .c-title .h6::before {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  width: 20px;
+  height: 1px;
+  bottom: -10px;
+}
+
+.c-title--center h6::after, .c-title--center .h6::after {
   position: absolute;
   content: "";
   height: 1px;
@@ -10350,11 +10390,223 @@ input:focus-visible {
   left: 50%;
 }
 
-.c-title-left h6::before, .c-title-left .h6::before {
-  position: absolute;
-  content: "";
+.c-card-rooms {
+  height: 170px;
+  width: 190px;
+}
+.c-card-rooms .card {
+  height: 100%;
+}
+.c-card-rooms .card .card-img-overlay {
+  display: flex;
+  align-items: flex-end;
+}
+.c-card-rooms .card .card-svg {
+  font-size: 7px;
+}
+
+.c-card-family-rooms .card {
   background-color: #000;
+  border: none;
+}
+.c-card-family-rooms .card .card-img-top {
+  height: 170px;
+  opacity: 0.8;
+}
+.c-card-family-rooms .card .card-inner {
+  bottom: 25px;
+  font-size: 9px;
+  color: #fff;
+}
+.c-card-family-rooms .card p {
+  color: #6c757d;
+}
+
+.c-little-card .card .img-fluid {
+  height: 70px;
+  width: 70px;
+}
+.c-little-card .card .card-name {
+  color: #6c757d;
+}
+
+.c-card-search .card {
+  background-color: #000;
+  border: none;
+}
+.c-card-search .card .card-img-top {
+  height: 170px;
+  opacity: 0.8;
+}
+.c-card-search .card .card-svg {
+  font-size: 8px;
+}
+.c-card-search .card .card-inner {
+  bottom: 25px;
+  font-size: 9px;
+  color: #fff;
+}
+.c-card-search .card .card-body {
+  padding-bottom: 0;
+}
+.c-card-search .card p {
+  color: #6c757d;
+}
+.c-card-search .card .card-review--rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
   width: 20px;
-  height: 1px;
-  bottom: -10px;
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-50%);
+  top: 50%;
+  left: -25;
+}
+.c-card-search .card .card-icon {
+  height: 20px;
+  width: 20px;
+}
+.c-card-search .card .card-review {
+  color: #6c757d;
+}
+.c-card-search .card .card-footer {
+  color: #6c757d;
+  background-color: transparent;
+}
+.c-card-search .card .footer-link {
+  color: #6c757d;
+}
+.c-card-search .card .footer-icon {
+  font-size: 13px;
+}
+
+.c-reviews .btn {
+  padding: 0;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  border: none;
+}
+.c-reviews .btn:hover {
+  background-color: #be9a78;
+}
+
+.c-stars {
+  display: flex;
+  align-items: center;
+}
+.c-stars input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  margin-top: 5px;
+  font: inherit;
+  color: currentColor;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 0.1em solid #6c757d;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+.c-stars input[type=checkbox]::before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  background-image: url("/public/img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 12px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  display: grid;
+  place-content: center;
+}
+.c-stars input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+.c-stars .card-svg {
+  font-size: 9px;
+  color: #6c757d;
+}
+
+.c-pagination {
+  display: flex;
+}
+.c-pagination .pagination-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  width: 25px;
+  padding: 0;
+  border: none;
+  margin: 0 8px;
+}
+.c-pagination .pagination-btn:focus {
+  background-color: #be9a78;
+}
+
+.banner-search {
+  position: relative;
+  height: 270px;
+  background-image: url("/public/img/david-emrich-odII8BzuWU8-unsplash.jpg");
+  background-position: center;
+}
+.banner-search .banner-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+}
+.banner-search .dropdown-toggle {
+  color: #6c757d;
+}
+.banner-search .dropdown-menu {
+  background-color: #000;
+}
+.banner-search .dropdown-item {
+  color: #6c757d;
+}
+
+@media (min-width: 768px) {
+  .banner-search .banner-nav {
+    height: 55px;
+  }
+}
+.reserve {
+  height: 290px;
+  padding: 20px;
+  margin: auto;
+}
+.reserve__branches {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.services .c-stars .stars-label {
+  color: #6c757d;
+}
+
+.additional .dropdown-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.additional .dropdown-toggle:focus {
+  border: none;
+}
+.additional .dropdown-toggle::after {
+  height: 20px;
+  width: 20px;
+  background-image: url(/public/img/angle-down-solid.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+  border: 0;
 }

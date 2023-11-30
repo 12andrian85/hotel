@@ -1,3 +1,39 @@
-.banner{
-    padding: 30px 0;
+.banner {
+    // padding: 30px 0;
+
+    .banner-block {
+        height: 95px;
+        width: 280px;
+    }
+
+    .block-list {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .block-items {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .banner {
+
+        .banner-block {
+            height: 85px;
+            width: 400px;
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .banner {
+        .banner-block {
+            height: 95px;
+            width: 500px;
+        }
+    }
 }

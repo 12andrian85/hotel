@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel</title>
+    <meta name="description" content="About website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- logo-mobile -->
+        <div class="header-logo text-uppercase py-3 d-lg-none">
+            <a class="d-flex flex-column align-items-center text-decoration-none" href="components.html">
+                <span class="">logo hotel</span>
+                <span class="fs-sm">luxury hotel</span>
+            </a>
+        </div>
+        <div class="container d-none d-lg-flex justify-content-center">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <ul class="header-top list-unstyled d-flex m-0">
+                    <li class="top-item fs-sm">
+                        <a href="#" class="top-link">US</a>
+                        <a href="#" class="top-link">IT</a>
+                        <a href="#" class="top-link">PS</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="top-link">payment</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="top-link">terms Conditions</a>
+                    </li>
+
+                </ul>
+                <ul class="header-top list-unstyled d-flex m-0">
+                    <li class="top-item">
+                        <a href="#" class="top-link">Add review</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="top-link">sms</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="top-link">Bookings</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="btn btn-primary">My Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg py-0">
+            <div class="container">
+                <div class="d-flex justify-content-between w-100 d-lg-none">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        My account
+                    </button>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-center  justify-content-lg-between"
+                    id="navbarTogglerDemo01">
+                    <!-- <a class="navbar-brand" href="index.html"> -->
+                    <!-- logo -->
+                    <div class="header-logo text-uppercase d-none d-lg-flex">
+                        <a class="d-flex flex-column align-items-center text-decoration-none" href="#">
+                            <span class="">logo hotel</span>
+                            <span class="fs-sm">luxury hotel</span>
+                        </a>
+                    </div>
+                    </a>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="theme-kit.html">theme-kit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="components.html">Single Room</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- banner -->
+        <div class="banner-search mb-5">
+            <!-- banner-nav -->
+            <div class="banner-nav d-flex align-items-center">
+                <div class="container  d-md-flex justify-content-center position-relative">
+                    <div class=" dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            GUEST REVIEWS
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class=" dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            STAY PRICE
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class=" dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ROOM SIZE
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="position-absolute d-none d-md-block end-0">
+                        <button>5</button>
+                        <button>5</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col col-12 col-md-4">
+                    <!-- branche -->
+                    <div class="row row-cols-2 g-3 reserve mb-4" style="background-color: rgb(185, 183, 183);">
+                     <div class="col mt-0">
+                     </div>
+                     <div class="col mt-0">
+                     </div>
+                     <div class="col">
+                     </div>
+                     <div class="col">
+                     </div>
+                     
+                        <!-- <div class="col-12 reserve__branches">
+                            All branche
+                        </div>
+                        <div class="p-0 d-flex flex-wrap">
+                            <div class="col col-6" style="height: 80px; width: 100px;"></div>
+                            <div class="col col-6 ms-auto mb-3" style="height: 80px; width: 100px;"></div>
+                            <div class="col col-6" style="height: 80px; width: 100px;"></div>
+                            <div class="col col-6 ms-auto" style="height: 80px; width: 100px;"></div>
+                        </div> -->
+                    </div>
+                    <!-- services -->
+                    <div class="services border-top pt-2 pb-3">
+                        <h5 class="">Services</h5>
+                        <div class="row">
+                            <div class="col col-6">
+                                <div class="c-stars py-1">
+                                    <input type="checkbox" class="me-1">
+                                    <span class="stars-label fs-sm">Animal Allowed</span>
+                                </div>
+                                <div class="c-stars py-1">
+                                    <input type="checkbox" class="me-1">
+                                    <span class="stars-label fs-sm">Animal Allowed</span>
+                                </div>
+                                <div class="c-stars py-1">
+                                    <input type="checkbox" class="me-1">
+                                    <span class="stars-label fs-sm">Animal Allowed</span>
+                                </div>
+                            </div>
+                            <div class="col col-6">
+                                <div class="c-stars py-1">
+                                    <input type="checkbox" class="me-1">
+                                    <span class="stars-label fs-sm">Animal Allowed</span>
+                                </div>
+                                <div class="c-stars py-1">
+                                    <input type="checkbox" class="me-1">
+                                    <span class="stars-label fs-sm">Animal Allowed</span>
+                                </div>
+                                <div class="c-stars py-1">
+                                    <input type="checkbox" class="me-1">
+                                    <span class="stars-label fs-sm">Animal Allowed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- additional -->
+                    <div class="additional">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle ps-0 py-3 border-top" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <h6 class="fw-semibold">Room Size</h6>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle ps-0 py-3 border-top" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <h6 class="fw-semibold">Extra Service</h6>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Reviews -->
+                    <div class="reviews py-3 border-top">
+                        <h6 class="fw-semibold">Reviews</h6>
+                        <div class="c-reviews">
+                            <button class="btn btn-dark">0.0</button>
+                            <button class="btn btn-dark">2.0</button>
+                            <button class="btn btn-dark">4.0</button>
+                            <button class="btn btn-dark">6.0</button>
+                            <button class="btn btn-dark">8.0</button>
+                            <button class="btn btn-dark">10</button>
+                        </div>
+                    </div>
+                    <!-- branch stars -->
+                    <div class="branch-stars py-3 border-top">
+                        <div class="c-stars">
+                            <input type="checkbox" id="five" class="me-1">
+                            <label for="five" class="ms-1">
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                            </label>
+                        </div>
+                        <div class="c-stars">
+                            <input type="checkbox" id="four" class="me-1">
+                            <label for="four" class="ms-1">
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                            </label>
+                        </div>
+                        <div class="c-stars">
+                            <input type="checkbox" id="three" class="me-1">
+                            <label for="three" class="ms-1">
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                            </label>
+                        </div>
+                        <div class="c-stars">
+                            <input type="checkbox" id="two" class="me-1">
+                            <label for="two" class="ms-1">
+                                <i class="card-svg fa-solid fa-star"></i>
+                                <i class="card-svg fa-solid fa-star"></i>
+                            </label>
+                        </div>
+                        <div class="c-stars">
+                            <input type="checkbox" id="one" class="me-1">
+                            <label for="one" class="ms-1">
+                                <i class="card-svg fa-solid fa-star"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- cards -->
+                </div>
+                <div class="col col-12 col-md-8 px-0-">
+                    <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <!-- item -->
+                        <div class="col ">
+                            <div class="c-card-search">
+                                <div class="card">
+                                    <img src="/public/img/spacejoy-umAXneH4GhA-unsplash.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body bg-white border pt-0">
+                                        <div class="card-inner position-relative d-flex justify-content-between">
+                                            <di class="d-flex align-items-center">
+                                                <span class="card-text fs-sm m-0">HOTEL LONDON</span>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                            </di>
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-regular fa-file-video me-2"></i>
+                                                <i class="fa-solid fa-file-image"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title">Family Room</h4>
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <div>
+                                                <span class="card-review position-relative fs-sm text-uppercase ms-4">
+                                                    5 reviews
+                                                    <span class="card-review--rate position-absolute fs-sm">7.5</span>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="card-review fs-sm text-uppercase">
+                                                    <i class="fa-regular fa-circle-user me-1"></i>
+                                                    3 guests
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="card-review fs-sm text-uppercase d-flex align-items-center">
+                                                    <svg class="icon card-icon me-1">
+                                                        <use xlink:href="#home-plan"></use>
+                                                    </svg>
+                                                    25 M <sup><small>2</small></sup>
+                                                </span>
+                                            </div>
+                
+                                        </div>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make
+                                        </p>
+                                        <a href="#" class="btn btn-outline-primary fs-sm">BOOK NOW for 222 $
+                                            <i class="fa-solid fa-circle-info ms-2"></i>
+                                        </a>
+                                        <div class="card-footer d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <div>
+                                                <i class="footer-icon fa-solid me-1 fa-umbrella-beach"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-blender-phone"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-martini-glass-citrus"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-utensils"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-person-walking-luggage"></i>
+                                            </div>
+                                            <a href="#" class="footer-link text-decoration-none fs-sm">
+                                                FULL INFO
+                                                <i class="ms-1 fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col ">
+                            <div class="c-card-search">
+                                <div class="card">
+                                    <img src="/public/img/spacejoy-umAXneH4GhA-unsplash.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body bg-white border pt-0">
+                                        <div class="card-inner position-relative d-flex justify-content-between">
+                                            <di class="d-flex align-items-center">
+                                                <span class="card-text fs-sm m-0">HOTEL LONDON</span>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                            </di>
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-regular fa-file-video me-2"></i>
+                                                <i class="fa-solid fa-file-image"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title">Family Room</h4>
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <div>
+                                                <span class="card-review position-relative fs-sm text-uppercase ms-4">
+                                                    5 reviews
+                                                    <span class="card-review--rate position-absolute fs-sm">7.5</span>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="card-review fs-sm text-uppercase">
+                                                    <i class="fa-regular fa-circle-user me-1"></i>
+                                                    3 guests
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="card-review fs-sm text-uppercase d-flex align-items-center">
+                                                    <svg class="icon card-icon me-1">
+                                                        <use xlink:href="#home-plan"></use>
+                                                    </svg>
+                                                    25 M <sup><small>2</small></sup>
+                                                </span>
+                                            </div>
+                
+                                        </div>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make
+                                        </p>
+                                        <a href="#" class="btn btn-outline-primary fs-sm">BOOK NOW for 222 $
+                                            <i class="fa-solid fa-circle-info ms-2"></i>
+                                        </a>
+                                        <div class="card-footer d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <div>
+                                                <i class="footer-icon fa-solid me-1 fa-umbrella-beach"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-blender-phone"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-martini-glass-citrus"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-utensils"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-person-walking-luggage"></i>
+                                            </div>
+                                            <a href="#" class="footer-link text-decoration-none fs-sm">
+                                                FULL INFO
+                                                <i class="ms-1 fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col ">
+                            <div class="c-card-search">
+                                <div class="card">
+                                    <img src="/public/img/spacejoy-umAXneH4GhA-unsplash.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body bg-white border pt-0">
+                                        <div class="card-inner position-relative d-flex justify-content-between">
+                                            <di class="d-flex align-items-center">
+                                                <span class="card-text fs-sm m-0">HOTEL LONDON</span>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                            </di>
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-regular fa-file-video me-2"></i>
+                                                <i class="fa-solid fa-file-image"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title">Family Room</h4>
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <div>
+                                                <span class="card-review position-relative fs-sm text-uppercase ms-4">
+                                                    5 reviews
+                                                    <span class="card-review--rate position-absolute fs-sm">7.5</span>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="card-review fs-sm text-uppercase">
+                                                    <i class="fa-regular fa-circle-user me-1"></i>
+                                                    3 guests
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="card-review fs-sm text-uppercase d-flex align-items-center">
+                                                    <svg class="icon card-icon me-1">
+                                                        <use xlink:href="#home-plan"></use>
+                                                    </svg>
+                                                    25 M <sup><small>2</small></sup>
+                                                </span>
+                                            </div>
+                
+                                        </div>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make
+                                        </p>
+                                        <a href="#" class="btn btn-outline-primary fs-sm">BOOK NOW for 222 $
+                                            <i class="fa-solid fa-circle-info ms-2"></i>
+                                        </a>
+                                        <div class="card-footer d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <div>
+                                                <i class="footer-icon fa-solid me-1 fa-umbrella-beach"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-blender-phone"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-martini-glass-citrus"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-utensils"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-person-walking-luggage"></i>
+                                            </div>
+                                            <a href="#" class="footer-link text-decoration-none fs-sm">
+                                                FULL INFO
+                                                <i class="ms-1 fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col ">
+                            <div class="c-card-search">
+                                <div class="card">
+                                    <img src="/public/img/spacejoy-umAXneH4GhA-unsplash.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body bg-white border pt-0">
+                                        <div class="card-inner position-relative d-flex justify-content-between">
+                                            <di class="d-flex align-items-center">
+                                                <span class="card-text fs-sm m-0">HOTEL LONDON</span>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                                <i class="card-svg fa-solid fa-star ms-1"></i>
+                                            </di>
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-regular fa-file-video me-2"></i>
+                                                <i class="fa-solid fa-file-image"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title">Family Room</h4>
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <div>
+                                                <span class="card-review position-relative fs-sm text-uppercase ms-4">
+                                                    5 reviews
+                                                    <span class="card-review--rate position-absolute fs-sm">7.5</span>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="card-review fs-sm text-uppercase">
+                                                    <i class="fa-regular fa-circle-user me-1"></i>
+                                                    3 guests
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="card-review fs-sm text-uppercase d-flex align-items-center">
+                                                    <svg class="icon card-icon me-1">
+                                                        <use xlink:href="#home-plan"></use>
+                                                    </svg>
+                                                    25 M <sup><small>2</small></sup>
+                                                </span>
+                                            </div>
+                
+                                        </div>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card title and make
+                                        </p>
+                                        <a href="#" class="btn btn-outline-primary fs-sm">BOOK NOW for 222 $
+                                            <i class="fa-solid fa-circle-info ms-2"></i>
+                                        </a>
+                                        <div class="card-footer d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                                            <div>
+                                                <i class="footer-icon fa-solid me-1 fa-umbrella-beach"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-blender-phone"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-martini-glass-citrus"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-utensils"></i>
+                                                <i class="footer-icon fa-solid me-1 fa-person-walking-luggage"></i>
+                                            </div>
+                                            <a href="#" class="footer-link text-decoration-none fs-sm">
+                                                FULL INFO
+                                                <i class="ms-1 fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="c-pagination mt-4 w-100 justify-content-center">
+                            <a href="#" class="pagination-btn btn btn-dark">1</a>
+                            <a href="#" class="pagination-btn btn btn-dark">2</a>
+                            <a href="#" class="pagination-btn btn btn-dark">3</a>
+                            <a href="#" class="pagination-btn btn btn-dark">4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col col-12 col-md-4 mb-3">
+                    <h6>Current Weather</h6>
+                    <span class="mb-2">new york...</span>
+                    <div class="mt-2">svg +16</div>
+                </div>
+                <div class="col col-12 col-md-4 mb-3">
+                    <h6>Connect With Us</h6>
+                    <span class="mb-2">social media...</span>
+                    <div class="mt-2">socials</div>
+                </div>
+                <div class="col col-12 col-md-4 mb-3">
+                    <h6>Newlisttener</h6>
+                    <span class="mb-2">sign up special...</span>
+                    <div class="mt-2">
+                        <div class="input-group field mb-3">
+                            <input type="text" class="form-control p-0" placeholder=""
+                                aria-label="Example text with two button addons">
+                            <button class="btn btn-primary py-0 px-4" type="search">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-navigation d-md-flex justify-content-between fs-sm py-3">
+                <ul class="navbar-nav d-flex flex-md-row">
+                    <li class="nav-item px-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Booking</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center align-items-center ">
+                    <span class="px-3">sponsors</span>
+                    <span class="px-3">sponsors</span>
+                    <span class="px-3">sponsors</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div style="height: 200px;">
+
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h1 class="modal-title fs-5  text-primary" id="exampleModalLabel">My Account
+                    </h1>
+                </div>
+                <div class="modal-body">
+                    <ul class="d-flex flex-column list-unstyled text-center">
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">My Account</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">add review</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">message</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">Bookings</a>
+                        </li>
+                    </ul>
+
+                    <ul class="d-flex flex-column list-unstyled text-center">
+                        <li class="modal-item">
+                            <span class="modal-item">
+                                <a href="#" class="text-decoration-none">us</a>
+                            </span>
+                            <span class="modal-item">
+                                <a href="#" class="text-decoration-none">it</a>
+                            </span>
+                            <span class="modal-item">
+                                <a href="#" class="text-decoration-none">md</a>
+                            </span>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">payment</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">terms conditions</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

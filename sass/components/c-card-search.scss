@@ -1,0 +1,62 @@
+.c-card-search {
+    .card {
+        background-color: $black;
+        border: none;
+
+        .card-img-top {
+            height: 170px;
+            opacity: 0.8;
+        }
+
+        .card-svg {
+            font-size: 8px;
+        }
+
+        .card-inner {
+            bottom: 25px;
+            font-size: 9px;
+            color: $white
+        }
+        .card-body{
+            padding-bottom: 0;
+        }
+
+        p {
+            color: $gray-600;
+        }
+
+        .card-review--rate {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+            width: 20px;
+            background-color: $black;
+            color: $white;
+            transform: translateY(-50%);
+            top: 50%;
+            left: -25;
+        }
+
+        .card-icon {
+            height: 20px;
+            width: 20px;
+        }
+
+        .card-review {
+            color: $gray-600;
+        }
+
+        .card-footer {
+            color: $gray-600;
+            background-color: transparent;
+            
+        }
+        .footer-link{
+            color: $gray-600;
+        }
+        .footer-icon{
+            font-size: 13px;
+        }
+    }
+}

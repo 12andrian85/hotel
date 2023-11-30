@@ -1,0 +1,20 @@
+.additional {
+    .dropdown-toggle {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dropdown-toggle:focus{
+        border: none;
+    }
+    .dropdown-toggle::after{
+        height: 20px;
+        width: 20px;
+        background-image:url(/public/img/angle-down-solid.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 12px;
+        border: 0;
+    }
+}

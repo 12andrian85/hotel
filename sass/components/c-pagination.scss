@@ -1,0 +1,18 @@
+.c-pagination {
+    display: flex;
+
+    .pagination-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 22px;
+        width: 25px;
+        padding: 0;
+        border: none;
+        margin: 0 8px;
+    }
+
+    .pagination-btn:focus {
+        background-color: $primary;
+    }
+}
