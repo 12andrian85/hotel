@@ -1,0 +1,17 @@
+.c-characteristics{
+    color: $gray-600 ;
+    .characteristics-wrapper{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .characteristics-icon{
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    .characteristics-text{
+        font-size: 12px;
+    }
+    
+   
+}

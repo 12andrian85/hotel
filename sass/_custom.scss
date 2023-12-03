@@ -32,6 +32,12 @@
 @import "./components/c-reviews.scss";
 @import "./components/c-stars.scss";
 @import "./components/c-pagination.scss";
+@import "./components/c-characteristics.scss";
+@import "./components/c-facilities.scss";
+@import "./components/c-progress-but.scss";
+@import "./components/c-person.scss";
+@import "./components/c-categories.scss";
+
 
 // search
 @import "./search/banner-search.scss";
@@ -39,3 +45,12 @@
 @import "./search/services.scss";
 @import "./search/additional.scss";
 
+// beautiful-view
+
+@import "./beautiful-view/beautiful-banner.scss";
+@import "./beautiful-view/description.scss";
+@import "./beautiful-view/reservation.scss";
+@import "./beautiful-view/search.scss";
+@import "./beautiful-view/categories.scss";
+@import "./beautiful-view/our-branches.scss";
+@import "./beautiful-view/reviews.scss";

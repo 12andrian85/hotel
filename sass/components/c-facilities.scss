@@ -1,0 +1,13 @@
+.c-facilities {
+    display: flex;
+    align-items: center;
+    color: $gray-600;
+
+    .facilities-icon {
+        font-size: 15px;
+    }
+
+    .facilities-text {
+        font-size: 12px;
+    }
+}

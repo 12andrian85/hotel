@@ -1,0 +1,17 @@
+.reservation{
+    height: 260px;
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+
+    &__guest{
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    &__checkin{
+        height: 110px;
+        margin-bottom: 15px;
+    }
+    &__btn{
+        height: 30px;
+    }
+}

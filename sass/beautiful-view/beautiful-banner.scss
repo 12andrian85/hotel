@@ -1,0 +1,19 @@
+.beautiful-banner {
+    margin-bottom: 40px;
+    .container {
+        height: 230px;
+        display: flex;
+        align-items: end;
+    }
+    .banner-wrapper {
+        height: 45px;
+        background-color: aquamarine;
+        width: 100%;
+    }
+
+    .banner-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+    }
+}

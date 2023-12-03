@@ -10209,6 +10209,7 @@ article,
 section,
 nav,
 form {
+  outline-style: solid;
   outline-color: tomato;
   outline-width: 1px;
   list-style: none;
@@ -10250,6 +10251,9 @@ input:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.header .navbar-nav {
+  background-color: #fff;
 }
 .header .header-top .top-item {
   display: flex;
@@ -10550,6 +10554,88 @@ input:focus-visible {
   background-color: #be9a78;
 }
 
+.c-characteristics {
+  color: #6c757d;
+}
+.c-characteristics .characteristics-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-characteristics .characteristics-icon {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+.c-characteristics .characteristics-text {
+  font-size: 12px;
+}
+
+.c-facilities {
+  display: flex;
+  align-items: center;
+  color: #6c757d;
+}
+.c-facilities .facilities-icon {
+  font-size: 15px;
+}
+.c-facilities .facilities-text {
+  font-size: 12px;
+}
+
+.c-progress-but .progress {
+  display: flex;
+  align-items: center;
+}
+.c-progress-but .progress-text {
+  bottom: 12px;
+  color: #6c757d;
+  font-size: 10px;
+}
+.c-progress-but .progress-label {
+  font-size: 14px;
+}
+.c-progress-but .progress-bg {
+  background-color: #ced4da;
+  width: 135px;
+  margin: 12px;
+}
+.c-progress-but .progress-bar {
+  height: 8px;
+}
+
+.c-person {
+  display: flex;
+  align-items: center;
+}
+.c-person .person-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.c-person span {
+  color: #6c757d;
+}
+.c-person .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  width: 25px;
+  padding: 0;
+  border: none;
+  margin: 0 8px;
+}
+
+.c-categories {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+.c-categories .categories-icon {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
 .banner-search {
   position: relative;
   height: 270px;
@@ -10609,4 +10695,118 @@ input:focus-visible {
   background-position: center;
   background-size: 12px;
   border: 0;
+}
+
+.beautiful-banner {
+  margin-bottom: 40px;
+}
+.beautiful-banner .container {
+  height: 230px;
+  display: flex;
+  align-items: end;
+}
+.beautiful-banner .banner-wrapper {
+  height: 45px;
+  background-color: aquamarine;
+  width: 100%;
+}
+.beautiful-banner .banner-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.description {
+  margin-bottom: 60px;
+}
+.description .description-img {
+  height: 260px;
+  margin-bottom: 30px;
+}
+.description .description-element {
+  margin-bottom: 30px;
+}
+.description .description-item {
+  height: 30px;
+}
+.description .description-text {
+  height: 155px;
+  padding: 30px 0;
+}
+.description .description-service {
+  padding: 30px 0;
+}
+
+.reservation {
+  margin-bottom: 30px;
+  height: 260px;
+  background-color: rgb(32, 32, 32);
+  padding: 20px;
+}
+.reservation__guest {
+  height: 50px;
+  margin-bottom: 15px;
+}
+.reservation__checkin {
+  height: 110px;
+  margin-bottom: 15px;
+}
+.reservation__btn {
+  height: 30px;
+}
+
+.search {
+  margin-bottom: 35px;
+}
+
+.categories {
+  margin-bottom: 40px;
+}
+.categories .categories-title {
+  margin-bottom: 20px;
+}
+
+.our-branches {
+  margin-bottom: 40px;
+}
+.our-branches .our-branches-title {
+  margin-bottom: 25px;
+}
+.our-branches .c-little-card {
+  margin-bottom: 12px;
+}
+.our-branches .card .img-fluid {
+  height: 100%;
+}
+.our-branches .card .card-svg {
+  color: #ced4da;
+}
+
+.reviews {
+  padding: 42px 0;
+}
+.reviews .c-title {
+  margin-bottom: 40px;
+}
+.reviews .c-person {
+  margin-bottom: 20px;
+}
+.reviews__wrapper {
+  margin-bottom: 25px;
+}
+.reviews__text {
+  color: #6c757d;
+  font-size: 12px;
+}
+.reviews__btn {
+  color: #6c757d;
+  border: none;
+  border-left: 0;
+}
+.reviews .reviews-ratings {
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

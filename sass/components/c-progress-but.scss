@@ -1,0 +1,29 @@
+.c-progress-but {
+    .progress{
+        display: flex;
+        align-items: center;
+    }
+
+    .progress-text {
+        bottom: 12px;
+        color: $gray-600;
+        font-size: 10px;
+    }
+    .progress-label {
+        font-size: 14px;
+    }
+
+    .progress-bar {
+        // border-top-right-radius: 20px;
+    }
+    
+    .progress-bg {
+        background-color: $gray-400;
+        width: 135px;
+        margin: 12px;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+}

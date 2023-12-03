@@ -1,18 +1,25 @@
-.header{
-    .navbar{
+.header {
+    .navbar {
         height: 50px;
     }
-    .nav-item{
+
+    .nav-item {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .header-top{
-        .top-item{
+
+    .navbar-nav {
+        background-color: $white;
+    }
+
+    .header-top {
+        .top-item {
             display: flex;
             align-items: center;
         }
-        .top-link{
+
+        .top-link {
             text-decoration: none;
             padding: 5px 15px;
         }

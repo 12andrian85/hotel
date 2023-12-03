@@ -1,0 +1,18 @@
+.our-branches {
+    margin-bottom: 40px;
+
+    .our-branches-title {
+        margin-bottom: 25px;
+    }
+    .c-little-card{
+        margin-bottom: 12px;
+    }
+    .card{
+        .img-fluid{
+            height: 100%;
+        }
+        .card-svg{
+            color: $gray-400;
+        }
+    }
+}
