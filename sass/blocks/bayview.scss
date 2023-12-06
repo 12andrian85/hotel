@@ -1,4 +1,8 @@
 .bayview {
+    &__title {
+        margin-bottom: 35px;
+    }
+
 
     &__block {
         height: 360px;
@@ -25,29 +29,65 @@
 
 @media (min-width: $width-tablet) {
     .bayview {
-
-        &__block {
-            height: 360px;
-
+        &__title {
+            margin-bottom: 55px;
         }
+
         &__card--first {
             transform: translateX(0);
             left: 40px;
         }
-        &__card--two{
+
+        &__card--two {
             transform: translateX(0);
             left: 0;
         }
-        &__card--last{
+
+        &__card--last {
             display: block;
             height: 280px;
             width: 200px;
             transform: translateY(-50%);
             top: 50%;
-            right: 0;    
+            right: 0;
+        }
+
+        &__wrapper {
+            margin-top: 0;
         }
 
     }
 }
 
-// @media (min-width: $width-desktop) {}
+@media (min-width: $width-desktop) {
+    .bayview {
+        height: 540px;
+
+        &__block {
+            height: 540px;
+        }
+
+        &__card--first {
+            height: 540px;
+            width: 350px;
+            transform: translateX(0);
+            left: 50px;
+        }
+
+
+        &__card--two {
+            height: 270px;
+            width: 410px;
+        }
+
+        &__card--last {
+            height: 405px;
+            width: 315px;
+
+        }
+
+        &__wrapper {
+            margin-top: 60px;
+        }
+    }
+}

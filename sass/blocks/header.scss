@@ -1,6 +1,6 @@
 .header {
     .navbar {
-        height: 50px;
+        height: 70px;
     }
 
     .nav-item {
@@ -19,9 +19,15 @@
             align-items: center;
         }
 
+        .header-logotype {
+            word-spacing: 12px;
+
+        }
+
+
         .top-link {
             text-decoration: none;
-            padding: 5px 15px;
+            padding: 15px 15px;
         }
     }
 }

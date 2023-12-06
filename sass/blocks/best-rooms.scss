@@ -1,13 +1,34 @@
-.best-rooms{
-    &__card{
+.best-rooms {
+    .card-item {
         overflow: hidden;
         margin: 10px 0;
+        height: 150px;
+
+        .card-img-top {
+            height: 150px;
+
+        }
+    }
+    .c-card-search {
+        margin-bottom: 30px;
     }
 }
+
 @media (min-width: $width-tablet) {
-    .best-rooms{
-        &__card{
-                margin: 0;
+    .best-rooms {
+        .card-item {
+            margin: 0;
+            height: 250px;
+        }
+
+        .c-card-search {
+            margin-bottom: 0;
+            .card {
+                .card-img-top {
+                    height: 250px;
+
+                }
+            }
         }
     }
 }

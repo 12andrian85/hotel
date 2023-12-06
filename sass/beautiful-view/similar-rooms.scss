@@ -1,0 +1,22 @@
+.similar-rooms{
+    .c-title{
+        margin-bottom: 50px;
+    }
+    .c-title::after{
+        bottom: 20px;
+    }
+    .c-card-search{
+        .card-img-top{
+            height: 245px;
+        }
+        .card-body{
+            padding: 40px 35px 35px 35px;
+        }
+        .card-title{
+            margin-bottom: 20px;
+        }
+        .card-text{
+            margin-bottom: 25px;
+        }
+    }
+}

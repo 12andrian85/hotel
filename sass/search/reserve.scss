@@ -1,9 +1,18 @@
 .reserve {
-    // width: 255px;/
-    height: 290px;
+    // height: 415px;
     padding: 20px;
     margin: auto;
-
+    
+    &__inner{
+        height: 415px;
+    margin: auto;
+    }
+    &__element{
+        height: 115px;
+    }
+    &__long{
+        height: 75px;
+    }
     &__branches {
         height: 50px;
         margin-bottom: 15px;

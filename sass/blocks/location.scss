@@ -1,14 +1,38 @@
 .location{
-    &__card{
+
+
+    .card-location{
         padding: 0;
-        min-height: 235px;
+        min-height: 330px;
         margin: 0 10px;
+    }
+    .location-title{
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+   
+    .location-paragraph{
+        margin-bottom: 45px;
+    }
+    .location-btn{
+        width: max-content;
+        padding: 10px 30px;
+        margin: 0 auto;
     }
 }
 @media (min-width: $width-tablet) {
     .location{
-        &__card{
+        .card-location{
             margin: 0px;
+        }
+        .location-wrapper{
+            padding: 0 80px;
+        }
+        .location-footer{
+            padding: 0 170px;
+        }    
+        .location-btn{
+            margin-left: 0;
         }
     }
 }

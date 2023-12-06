@@ -58,8 +58,8 @@ $container-max-widths: (
   sm:  540px,
   md:  720px,
   lg:  860px,
-  xl:  900px,
-  xxl: 1170px
+  xl:  1170px,
+  xxl: 1370px
 );
 
 // Spacing
@@ -72,9 +72,10 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   // Add two classes: spacing and spacing-lg for defining some custom spacing
+  spacing-sm: 30px,
   spacing: 50px,
   spacing-lg: 75px,
 );
 
-// $vertical-spacing-sm: 55px;
-// $vertical-spacing-lg: 75px;
+// spacing: 55px;
+// spacing-lg: 75px;

@@ -1,0 +1,45 @@
+.gallery {
+    .card {
+        .card-img-top {
+            height: 245px;
+        }
+
+        .card-body {
+            padding: 15px;
+
+            .footer-icon {
+                font-size: 18px;
+            }
+        }
+
+        .card-text {
+            margin-bottom: 25px;
+        }
+
+        .card-footer {
+            border: none;
+        }
+
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .gallery {
+        .card {
+
+            .card-body {
+                padding: 20px;
+            }
+        }
+    }
+}
+@media (min-width: $width-desktop) {
+    .gallery {
+        .card {
+
+            .card-body {
+              padding: 30px;
+            }
+        }
+    }
+}

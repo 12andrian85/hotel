@@ -5,14 +5,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 22px;
-        width: 25px;
+        height: 35px;
+        width: 40px;
+        margin-right: 20px;
         padding: 0;
         border: none;
-        margin: 0 8px;
+        
     }
 
-    .pagination-btn:focus {
+    .pagination-btn:hover {
         background-color: $primary;
     }
 }

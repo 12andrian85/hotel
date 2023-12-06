@@ -1,6 +1,6 @@
 .banner-search {
     position: relative;
-    height: 270px;
+    height: 380px;
     background-image: url("/public/img/david-emrich-odII8BzuWU8-unsplash.jpg");
     background-position: center;
 
@@ -8,12 +8,13 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 100px;
+        height: 140px;
         background-color: $black;
     }
 
     .dropdown-toggle {
         color: $gray-600;
+        font-size: 12px;
     }
 
     .dropdown-menu {
@@ -24,11 +25,12 @@
         color: $gray-600;
     }
 }
+
 @media (min-width: $width-tablet) {
-    .banner-search{
-        
-    .banner-nav {
-        height: 55px;
-    }
+    .banner-search {
+
+        .banner-nav {
+            height: 80px;
+        }
     }
 }

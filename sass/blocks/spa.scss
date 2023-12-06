@@ -1,3 +1,49 @@
-.spa{
-    
+.spa {
+    .splide {
+        &__track {
+            padding: 40px 0;
+        }
+
+        &__slide {
+            padding: 0 40px;
+        }
+
+        &__pagination {
+            bottom: 10px;
+
+        }
+
+        &__pagination__page {
+            border-radius: 0;
+        }
+    }
+
 }
+
+@media (min-width: $width-tablet) {
+    .spa {
+    .splide {
+        &__track {
+            padding: 60px 0;
+        }
+        &__pagination {
+            bottom: 30px;
+
+        }
+
+     
+    }
+}}
+
+@media (min-width: $width-desktop) {
+    .spa {
+    .splide {
+        &__track {
+            padding: 100px 0;
+        }
+
+        &__slide {
+            padding: 0 110px;
+        }
+    }
+}}

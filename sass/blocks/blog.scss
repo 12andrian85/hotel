@@ -1,15 +1,34 @@
 .blog{
     .card-dinner{
-        height: 400px;
+        .card-img-top{
+            height: 280px;
+        }
+        .card-body{
+            padding: 30px;
+        }
+        .card-title{
+            margin-bottom: 24px;
+        }
+        .img-around{
+            height: 230px;
+        }
+    }
+    &__events{
+        height: 135px;
+    }
+    &__follow{
+        height: 235px;
+        padding: 55px 90px;
     }
     .card-around{
         height: 360px;
     }
     .card-relax{
-        height: 290px;
+        height: 420px;
+        margin-bottom: 30px;
     }
     .card-zone{
-        height: 190px;
+        height: 290px;
     }
 }
 @media (min-width: $width-tablet) {

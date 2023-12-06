@@ -1,8 +1,8 @@
 .our-branches {
     margin-bottom: 40px;
 
-    .our-branches-title {
-        margin-bottom: 25px;
+    &__title {
+        margin-bottom: 30px;
     }
     .c-little-card{
         margin-bottom: 12px;
@@ -10,9 +10,13 @@
     .card{
         .img-fluid{
             height: 100%;
+            border: none;
         }
         .card-svg{
             color: $gray-400;
+            height: 20px;
+            width: 20px;    
         }
+
     }
 }

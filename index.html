@@ -10,21 +10,32 @@
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
 </head>
+<!-- home-plane -->
+<svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="home-plan">
+        <rect x="0.5" y="0.5" width="19" height="19" stroke="#6C757D"></rect>
+        <line y1="9.5" x2="6" y2="9.5" stroke="#6C757D"></line>
+        <line x1="5.5" y1="7" x2="5.5" y2="12" stroke="#6C757D"></line>
+        <line x1="12.5" x2="12.5" y2="7" stroke="#6C757D"></line>
+        <line x1="12" y1="6.5" x2="16" y2="6.5" stroke="#6C757D"></line>
+        <line x1="20" y1="13.5" x2="12" y2="13.5" stroke="#6C757D"></line>
+    </symbol>
+</svg>
 
 <body>
     <!-- header -->
     <header class="header">
         <!-- logo-mobile -->
         <div class="header-logo text-uppercase py-3 d-lg-none">
-            <a class="d-flex flex-column align-items-center text-decoration-none" href="components.html">
-                <span class="">logo hotel</span>
-                <span class="fs-sm">luxury hotel</span>
+            <a class="d-flex flex-column align-items-center text-decoration-none" href="index.html">
+                <span class="header-logotype">logo hotel</span>
+                <span class="">luxury hotel</span>
             </a>
         </div>
         <div class="container d-none d-lg-flex justify-content-center">
             <div class="d-flex align-items-center justify-content-between w-100">
                 <ul class="header-top list-unstyled d-flex m-0">
-                    <li class="top-item fs-sm">
+                    <li class="top-item">
                         <a href="#" class="top-link">US</a>
                         <a href="#" class="top-link">IT</a>
                         <a href="#" class="top-link">PS</a>
@@ -65,12 +76,12 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div class="collapse navbar-collapse justify-content-center  justify-content-lg-between"
+                <div class="collapse navbar-collapse justify-content-center z-1 justify-content-lg-between"
                     id="navbarTogglerDemo01">
                     <!-- <a class="navbar-brand" href="index.html"> -->
                     <!-- logo -->
                     <div class="header-logo text-uppercase d-none d-lg-flex">
-                        <a class="d-flex flex-column align-items-center text-decoration-none" href="#">
+                        <a class="d-flex flex-column align-items-center text-decoration-none" href="index.html">
                             <span class="">logo hotel</span>
                             <span class="fs-sm">luxury hotel</span>
                         </a>
@@ -81,10 +92,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="search.html">Search</a>
+                            <a class="nav-link" href="https://s3.envato.com/files/237383996/hotel-psd-previews/02-home.jpg">template</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="components.html">components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">Search</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="beautiful-view.html">Sea view</a>
@@ -102,12 +116,14 @@
     </header>
     <main>
         <!-- banner -->
-        <div class="banner py-lg-5">
+        <div class="banner py-spacing-lg">
             <div class="container text-center">
                 <div>
-                    <div class="pb-2 mt-5">sub-title</div>
-                    <h1 class="mt-3 mb-4 display-4">title <br> title</h1>
-                    <a href="#" class="btn btn-outline-primary mb-5">rooms e suites</a>
+                    <div class="c-title--center text-center">
+                        <h6 class="position-relative text-dark">title-center</h6>
+                    </div>
+                    <h1 class="mb-3 mb-5 display-2">title <br> title</h1>
+                    <a href="#" class="btn banner-btn btn-outline-primary mx-auto">rooms e suites</a>
                 </div>
                 <div class="banner-block d-flex flex-column align-items-center mx-auto mt-5">
                     <ul class="block-list d-flex">
@@ -123,59 +139,58 @@
             </div>
         </div>
         <!-- bayview -->
-        <section class="bayview  py-md-5">
-            <div class="container">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col col-12 col-md-6 mb-4">
-                            <div class="">
-                                <span>subtitle</span>
-                                <h2 class="my-3">title</h2>
-                                <p class="my-3">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, explicabo accusamus.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, explicabo accusamus.
-                                </p>
-                                <a href="#" class="btn btn-primary">ABOUT US</a>
-                            </div>
+        <section class="bayview  my-spacing my-spacing-lg">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col col-12 col-md-6 mb-4">
+                        <div class="bayview__wrapper">
+                            <span>subtitle</span>
+                            <h2 class="bayview__title mt-3 display-2">title <br> title</h2>
+                            <p class="mt-3 mb-4 mb-lg-5 px-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, explicabo accusamus.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, explicabo accusamus.
+                            </p>
+                            <a href="#" class="mx-auto btn btn-primary">ABOUT US</a>
                         </div>
-                        <div class="col col-12 col-md-6">
-                            <div class="bayview__block position-relative">
-                                <div class="card bayview__card bayview__card--first position-absolute bg-primary">
-                                    <img src="..." class="card-img" alt="...">
-                                    <div class="card-img-overlay">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                    </div>
+                    </div>
+                    <div class="col col-12 col-md-6 px-0">
+                        <div class="bayview__block position-relative">
+                            <div class="card bayview__card bayview__card--first position-absolute bg-primary">
+                                <img src="..." class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a
+                                        natural lead-in to additional content. This content is a little bit longer.
+                                    </p>
+                                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
                                 </div>
-                                <div class="card bayview__card bayview__card--two position-absolute bg-secondary">
-                                    <img src="..." class="card-img" alt="...">
-                                    <div class="card-img-overlay">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                    </div>
-                                </div>
-                                <div
-                                    class="card bayview__card bayview__card--last position-absolute d-none d-md-block bg-yellow">
-                                    <img src="..." class="card-img" alt="...">
-                                    <div class="card-img-overlay">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                    </div>
-                                </div>
-
                             </div>
+                            <div class="card bayview__card bayview__card--two position-absolute bg-secondary">
+                                <img src="..." class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a
+                                        natural lead-in to additional content. This content is a little bit longer.
+                                    </p>
+                                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div
+                                class="card bayview__card bayview__card--last position-absolute d-none d-md-block bg-yellow">
+                                <img src="..." class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a
+                                        natural lead-in to additional content. This content is a little bit longer.
+                                    </p>
+                                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- best-rooms -->
         <section class="best-rooms text-center py-5">
@@ -186,20 +201,61 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-12 col-md-6">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="..." style="height: 170px;">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="c-card-search">
+                            <div class="card text-start">
+                                <img src="/pubslic/img/spacejoy-umAXneH4GhA-unsplash.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body bg-white border pt-0">
+                                    <div class="card-inner position-relative d-flex justify-content-between">
+                                        <di class="d-flex align-items-center">
+                                            <span class="card-text  m-0">HOTEL LONDON</span>
+                                            <i class="card-svg fa-solid fa-star ms-1"></i>
+                                            <i class="card-svg fa-solid fa-star ms-1"></i>
+                                            <i class="card-svg fa-solid fa-star ms-1"></i>
+                                        </di>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-regular fa-file-video me-2"></i>
+                                            <i class="fa-solid fa-file-image"></i>
+                                        </div>
+                                    </div>
+                                    <h3 class="card-title">Family Room</h3>
+                                    <div class="card-items d-flex align-items-center justify-content-start">
+                                        <div class=" me-3">
+                                            <span class="card-review position-relative  text-uppercase ms-5">
+                                                5 reviews
+                                                <span class="card-review--rate position-absolute ">7.5</span>
+                                            </span>
+                                        </div>
+                                        <div class=" me-3">
+                                            <span class="card-review  text-uppercase">
+                                                <i class="fa-regular fa-circle-user me-1"></i>
+                                                3 guests
+                                            </span>
+                                        </div>
+                                        <div class=" ">
+                                            <span class="card-review  text-uppercase d-flex align-items-center">
+                                                <svg class="icon card-icon me-1">
+                                                    <use xlink:href="#home-plan"></use>
+                                                </svg>
+                                                25 M <sup><small>2</small></sup>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make
+                                        Some quick example text to build on the card title and make
+                                    </p>
+                                    <a href="#" class="btn btn-dark">BOOK NOW FROM 30$
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6">
-                        <div class="row g-md-2">
+                        <div class="row g-spacing-sm">
                             <div class="col col-12 col-md-6">
-                                <div class="card best-rooms__card text-bg-dark py-3" style="height: 170px;">
+                                <div class="card card-item text-bg-dark py-3">
                                     <img src="..." class="card-img" alt="...">
                                     <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
@@ -211,7 +267,7 @@
                                 </div>
                             </div>
                             <div class="col col-12 col-md-6">
-                                <div class="card best-rooms__card text-bg-dark py-3" style="height: 170px;">
+                                <div class="card card-item text-bg-dark py-3">
                                     <img src="..." class="card-img" alt="...">
                                     <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
@@ -223,7 +279,7 @@
                                 </div>
                             </div>
                             <div class="col col-12 col-md-6">
-                                <div class="card best-rooms__card text-bg-dark py-3" style="height: 170px;">
+                                <div class="card card-item text-bg-dark py-3">
                                     <img src="..." class="card-img" alt="...">
                                     <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
@@ -235,7 +291,7 @@
                                 </div>
                             </div>
                             <div class="col col-12 col-md-6">
-                                <div class="card best-rooms__card text-bg-dark py-3" style="height: 170px;">
+                                <div class="card card-item text-bg-dark py-3">
                                     <img src="..." class="card-img" alt="...">
                                     <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
@@ -253,13 +309,13 @@
 
         </section>
         <!-- location -->
-        <div class="location mb-5">
+        <div class="location">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col col-12 col-lg-6 order-2">
                         <div class="row">
                             <div class="col col-12 col-md-6 my-3 m-md-0 p-0">
-                                <div class="card  location__card text-bg-dark py-3">
+                                <div class="card card-location text-bg-dark py-3">
                                     <img src="..." class="card-img" alt="...">
                                     <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
@@ -271,7 +327,7 @@
                                 </div>
                             </div>
                             <div class="col col-12 col-md-6 my-3 m-md-0 p-0">
-                                <div class="card  location__card text-bg-dark py-3">
+                                <div class="card card-location text-bg-dark py-3">
                                     <img src="..." class="card-img" alt="...">
                                     <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
@@ -283,7 +339,7 @@
                                 </div>
                             </div>
                             <div class="col col-12 col-md-6 my-3 m-md-0 p-0">
-                                <div class="card  location__card text-bg-dark py-3">
+                                <div class="card card-location text-bg-dark py-3">
                                     <img src="..." class="card-img" alt="...">
                                     <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
@@ -295,7 +351,7 @@
                                 </div>
                             </div>
                             <div class="col col-12 col-md-6 my-3 m-md-0 p-0">
-                                <div class="card  location__card text-bg-dark py-3">
+                                <div class="card card-location text-bg-dark py-3">
                                     <img src="..." class="card-img" alt="...">
                                     <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
@@ -309,36 +365,37 @@
                         </div>
                     </div>
                     <div class="col col-12 col-lg-6 order-md-2">
-                        <div class="container text-start p-5">
-                            <span class="mt-2">subtitle</span>
-                            <h2 class="mt-3">Location</h2>
-                            <div class="row">
-                                <div class="col col-12 col-md-6 text-start">
-                                    <p class="pe-2">
+                        <div class="container location-wrapper text-start py-md-spacing py-lg-spacing-lg">
+                            <span class="location-subtitle">subtitle</span>
+                            <h2 class="location-title display-2">Discover our <span>Location</span></h2>
+                            <div class="row location-paragraph ">
+                                <div class="col col-12 col-md-6 text-center text-md-start m-0">
+                                    <p class="pe-2 m-0">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         At inventore deleniti amet incidunt! Molestiae numquam dignissimos
                                         tenetur cum officia deleniti, maxime quia.
                                     </p>
                                 </div>
-                                <div class="col col-12 col-md-6 text-start">
-                                    <p class="pe-2">
+                                <div class="col col-12 col-md-6 text-center text-md-start m-0">
+                                    <p class="pe-2 m-0">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         At inventore deleniti amet incidunt! Molestiae numquam dignissimos
                                         tenetur cum officia deleniti, maxime quia.
                                     </p>
                                 </div>
                             </div>
-                            <button class="btn btn-dark my-4">
-                                button
+                            <button class="btn btn-dark location-btn">
+                                CHECK ALL PACKAGES
                             </button>
                         </div>
                     </div>
-                    <div class="container my-2 p-5 order-3">
-                        <p class="text-center mx-5">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veniam ratione
-                            accusantium quasi doloribus hic officiis, quisquam ipsum incidunt aliquid quos esse
-                        </p>
-                    </div>
+                </div>
+                <div class="container py-spacing-sm py-md-spacing  py-lg-spacing-lg order-3 ">
+                    <p class="text-center location-footer fs-4  m-0">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veniam ratione
+                        accusantium quasi doloribus hic officiis, quisquam ipsum incidunt aliquid quos esse
+
+                    </p>
                 </div>
             </div>
         </div>
@@ -350,39 +407,40 @@
                         <section class="splide" id="wellness" aria-label="Basic Structure Example">
                             <div class="splide__track">
                                 <ul class="splide__list">
-                                    <li class="splide__slide text-center p-5">
+                                    <li class="splide__slide text-center">
                                         <div class="c-title--center text-center py-2 mb-4">
                                             <h6 class="position-relative text-dark">title-center</h6>
                                         </div>
-                                        <h3 class="mb-4">Spa and Beauty</h3>
-                                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        <h2 class="mb-5 display-6 ">Spa and Beauty</h2>
+                                        <p class="lh-2 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                             Neque blanditiis tenetur dolorum accusamus eius pariatur,
-                                            distinctio et ipsam voluptatibus deserunt sunt porro eos
+                                            distinctio et ipsam voluptatibus deserunt
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                                        <a href="#" class="btn btn-outline-primary mx-auto">Read More</a>
                                     </li>
-                                    <li class="splide__slide text-center p-5">
-                                        <div class="c-title-center text-center py-2 mb-4">
+                                    <li class="splide__slide text-center">
+                                        <div class="c-title--center text-center py-2 mb-4">
                                             <h6 class="position-relative text-dark">title-center</h6>
                                         </div>
-                                        <h3 class="mb-4">Spa and Beauty</h3>
-                                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        <h2 class="mb-5 display-6 ">Spa and Beauty</h2>
+                                        <p class="lh-2 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                             Neque blanditiis tenetur dolorum accusamus eius pariatur,
-                                            distinctio et ipsam voluptatibus deserunt sunt porro eos
+                                            distinctio et ipsam voluptatibus deserunt
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                                        <a href="#" class="btn btn-outline-primary mx-auto">Read More</a>
                                     </li>
-                                    <li class="splide__slide text-center p-5">
-                                        <div class="c-title-center text-center py-2 mb-4">
+                                    <li class="splide__slide text-center">
+                                        <div class="c-title--center text-center py-2 mb-4">
                                             <h6 class="position-relative text-dark">title-center</h6>
                                         </div>
-                                        <h3 class="mb-4">Spa and Beauty</h3>
-                                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        <h2 class="mb-5 display-6 ">Spa and Beauty</h2>
+                                        <p class="lh-2 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                             Neque blanditiis tenetur dolorum accusamus eius pariatur,
-                                            distinctio et ipsam voluptatibus deserunt sunt porro eos
+                                            distinctio et ipsam voluptatibus deserunt
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                                        <a href="#" class="btn btn-outline-primary mx-auto">Read More</a>
                                     </li>
+
                                 </ul>
                             </div>
                         </section>
@@ -399,17 +457,40 @@
                         <section class="splide" id="wedding" aria-label="Basic Structure Example">
                             <div class="splide__track">
                                 <ul class="splide__list">
-                                    <li class="splide__slide text-center p-5">
+                                    <li class="splide__slide text-center">
                                         <div class="c-title--center text-center py-2 mb-4">
                                             <h6 class="position-relative text-dark">title-center</h6>
                                         </div>
-                                        <h3 class="mb-4">Luxury Location</h3>
-                                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        <h2 class="mb-5 display-6 ">Spa and Beauty</h2>
+                                        <p class="lh-2 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                             Neque blanditiis tenetur dolorum accusamus eius pariatur,
-                                            distinctio et ipsam voluptatibus deserunt sunt porro eos
+                                            distinctio et ipsam voluptatibus deserunt
                                         </p>
-                                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                                        <a href="#" class="btn btn-outline-primary mx-auto">Read More</a>
                                     </li>
+                                    <li class="splide__slide text-center">
+                                        <div class="c-title--center text-center py-2 mb-4">
+                                            <h6 class="position-relative text-dark">title-center</h6>
+                                        </div>
+                                        <h2 class="mb-5 display-6 ">Spa and Beauty</h2>
+                                        <p class="lh-2 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Neque blanditiis tenetur dolorum accusamus eius pariatur,
+                                            distinctio et ipsam voluptatibus deserunt
+                                        </p>
+                                        <a href="#" class="btn btn-outline-primary mx-auto">Read More</a>
+                                    </li>
+                                    <li class="splide__slide text-center">
+                                        <div class="c-title--center text-center py-2 mb-4">
+                                            <h6 class="position-relative text-dark">title-center</h6>
+                                        </div>
+                                        <h2 class="mb-5 display-6 ">Spa and Beauty</h2>
+                                        <p class="lh-2 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Neque blanditiis tenetur dolorum accusamus eius pariatur,
+                                            distinctio et ipsam voluptatibus deserunt
+                                        </p>
+                                        <a href="#" class="btn btn-outline-primary mx-auto">Read More</a>
+                                    </li>
+
                                 </ul>
                             </div>
                         </section>
@@ -419,49 +500,65 @@
             </div>
         </section>
         <!-- relaxation -->
-        <div class="relaxation d-flex justify-content-center p-md-5" style="background-color: rgb(216, 250, 253);">
-            <div class="container text-center d-flex flex-column align-items-center m-md-5">
-                <h2 class="mb-3">Relax and Enjoy the Wellness</h2>
-                <span class="text-uppercase fs-sm mb-4">
+        <div class="relaxation  d-flex justify-content-center p-md-5">
+            <div
+                class="relaxation__block container text-center d-flex flex-column justify-content-center align-items-center">
+                <h2 class="display-4 mb-3">Relax and Enjoy the Wellness</h2>
+                <span class="relaxation__subtitle text-uppercase mb-5">
                     luxury hotel & best resort
                 </span>
-                <button class="btn btn-outline-dark rounded-circle">play</button>
+                <button class="relaxation__btn btn btn-outline-dark rounded-circle">
+                    <i class="fa-solid fa-play"></i>
+                </button>
             </div>
         </div>
         <!-- blog -->
-        <div class="blog py-5 p-md-5">
+        <div class="blog py-spacing py-md-spacing-lg">
             <div class="container text-center">
-                <div class="c-title-center text-center py-2 mb-1">
-                    <h6 class="position-relative text-dark mb-4">title-center</h6>
+                <div class="c-title--center text-center py-2 text-uppercase mb-3">
+                    <h6 class="position-relative text-dark">title-center</h6>
                 </div>
-                <h2 class="mb-3">Our Blog</h2>
+                <h2 class="mb-5 display-4">Our Blog</h2>
+
                 <div class="row gy-3">
                     <div class="col col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
                         <div class="card card-dinner  mb-3">
                             <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                            <div class="card-body text-start">
+                                <div class="c-title text-start py-2 mb-2">
+                                    <h6 class="position-relative text-dark">title-left</h6>
+                                </div>
+                                <h3 class="card-title">Fish Dinner</h3>
+                                <p class="card-text lh-2">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk of the card's content.
                                     bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-outline-primary">Go somewhere</a>
                             </div>
                         </div>
-                        <div class="blog__events bg-dark text-white p-4">
-                            <span class="py-1">Ceck New Events</span>
+                        <div
+                            class="blog__events d-flex align-items-center justify-content-center bg-dark text-white p-4">
+                            <i class="fa-solid fa-link"></i>
+                            <span class="py-1 ms-3 fs-3">Ceck New Events</span>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
-                        <div class="blog__follow p-5 mb-3">
-                            <h5 class="mb-4">Folow Adriatic....</h5>
-                            <span class="fs-sm">John Doe</span>
+                        <div class="blog__follow mb-3">
+                            <h3 class="mb-4">Follow Adriatic Luxury Hotels</h3>
+                            <span class="text-uppercase">John Doe</span>
                         </div>
-                        <div class="card card-around mb-3">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                        <div class="card card-dinner  mb-3">
+                            <img src="..." class="card-img-top img-around" alt="...">
+                            <div class="card-body text-start">
+                                <div class="c-title text-start py-2 mb-2">
+                                    <h6 class="position-relative text-dark">title-left</h6>
+                                </div>
+                                <h3 class="card-title">Fish Dinner</h3>
+                                <p class="card-text lh-2">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk of the card's content.
                                     bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-outline-primary">Go somewhere</a>
                             </div>
                         </div>
 
@@ -470,7 +567,7 @@
                         <div class="card card-relax text-bg-dark w-100 mb-3">
                             <img src="..." class="card-img" alt="...">
                             <div class="card-img-overlay">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Card relax</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small>Last updated 3 mins ago</small></p>
@@ -480,7 +577,7 @@
                         <div class="card card-zone text-bg-dark mb-3">
                             <img src="..." class="card-img" alt="...">
                             <div class="card-img-overlay">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-zone">Card title</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
                                     lead-in to
                                     additional content. This content is a little bit longer.</p>
@@ -490,27 +587,25 @@
                     </div>
                 </div>
             </div>
-
-        </div>
         </div>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer pt-spacing">
         <div class="container">
-            <div class="row p-4">
+            <div class="row mb-spacing">
                 <div class="col col-12 col-md-4 mb-3">
-                    <h6>Current Weather</h6>
-                    <span class="mb-2">new york...</span>
+                    <h4>Current Weather</h4>
+                    <span class="text-uppercase mb-3">new york...</span>
                     <div class="mt-2">svg +16</div>
                 </div>
                 <div class="col col-12 col-md-4 mb-3">
-                    <h6>Connect With Us</h6>
-                    <span class="mb-2">social media...</span>
+                    <h4>Connect With Us</h4>
+                    <span class="text-uppercase mb-3">social media...</span>
                     <div class="mt-2">socials</div>
                 </div>
-                <div class="col col-12 col-md-4 mb-3">
-                    <h6>Newlisttener</h6>
-                    <span class="mb-2">sign up special...</span>
+                <div class="col col-12 col-md-4 mb-3 ">
+                    <h4>Newlisttener</h4>
+                    <span class="text-uppercase mb-3">sign up special...</span>
                     <div class="mt-2">
                         <div class="input-group field mb-3">
                             <input type="text" class="form-control p-0" placeholder=""
@@ -520,8 +615,11 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-navigation d-md-flex justify-content-between fs-sm py-3">
-                <ul class="navbar-nav d-flex flex-md-row">
+        </div>
+        <div class="container">
+
+            <div class="footer-navigation d-md-flex justify-content-between px-0 py-3">
+                <ul class="navbar-nav d-flex align-items-center flex-md-row">
                     <li class="nav-item px-3">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -538,7 +636,7 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <div class="d-flex justify-content-center align-items-center ">
+                <div class="d-flex justify-content-center align-items-center">
                     <span class="px-3">sponsors</span>
                     <span class="px-3">sponsors</span>
                     <span class="px-3">sponsors</span>
@@ -546,10 +644,6 @@
             </div>
         </div>
     </footer>
-
-    <div style="height: 200px;">
-
-    </div>
 
     <!-- modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

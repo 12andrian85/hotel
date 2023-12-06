@@ -1,22 +1,71 @@
-.description{
-    margin-bottom: 60px;
-    .description-img{
-        height: 260px;
-        margin-bottom: 30px;
+.description {
+
+    .card {
+        .card-img-top {
+            height: 370px;
+        }
+
+        .card-inner {
+            font-size: 12px;
+            bottom: 60px;
+        }
     }
-    
-    .description-element{
+
+    .description-elements {
         margin-bottom: 30px;
     }
 
-    .description-item{
-        height: 30px;
+    .description-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $gray-600;
+
+        .description-svg {
+            color: $gray-600;
+            height: 40px;
+            width: 40px;
+            margin-bottom: 15px;
+        }
     }
-    .description-text{
-        height: 155px;
-        padding: 30px 0;
+
+    .description-list {
+        padding: 0 0 40px 0;
     }
-    .description-service{
+
+    .description-text {
+        height: 300px;
+        padding: 45px 0;
+    }
+
+    // service
+    .description-service {
         padding: 30px 0;
+
+        h3 {
+            margin-bottom: 40px;
+        }
+
+        .description-inner {
+            color: $gray-600;
+            margin-bottom: 20px;
+        }
+    }
+
+    // around
+    .description-around {
+        margin-top: 45px;
+        padding-bottom: 60px;
+
+        .description-title {
+            margin-bottom: 35px;
+        }
+
+        .card {
+            .card-img {
+                height: 330px;
+            }
+        }
     }
 }

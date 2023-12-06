@@ -1,20 +1,20 @@
 .reservation {
-    margin-bottom: 30px;
-    height: 260px;
-    background-color: rgb(32, 32, 32);
+    margin-bottom: 40px;
+    height: 370px;
+    background-color:  rgb(185, 183, 183);
     padding: 20px;
 
-    &__guest {
-        height: 50px;
-        margin-bottom: 15px;
+    &__long{
+        height: 70px;
     }
-
-    &__checkin {
-        height: 110px;
-        margin-bottom: 15px;
+    &__inner{
+        height: 160px;
     }
-
-    &__btn {
-        height: 30px;
+   
+    &__btn a{
+        width: auto;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
     }
 }

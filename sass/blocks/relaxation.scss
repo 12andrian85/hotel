@@ -1,3 +1,43 @@
-.relaxation{
-    
+.relaxation {
+    background-color: rgb(216, 250, 253);
+    height: 330px;
+
+    &__block {}
+
+    &__btn {
+        padding: 30px;
+        width: 70px;
+
+        i {
+            font-size: 45px;
+            margin-left: 8px;
+        }
+
+    }
+
+}
+
+@media (min-width: $width-tablet) {
+    .relaxation {
+        height: 500px;
+
+        &__block {
+            padding: 0 180px;
+        }
+
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .relaxation {
+
+
+        &__block {
+            padding: 0 350px;
+        }
+    }
 }

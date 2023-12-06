@@ -44,13 +44,19 @@
 @import "./search/reserve.scss";
 @import "./search/services.scss";
 @import "./search/additional.scss";
+@import "./search/reviews.scss";
+@import "./search/branch-star.scss";
+@import "./search/gallery.scss";
 
 // beautiful-view
 
 @import "./beautiful-view/beautiful-banner.scss";
+@import "./beautiful-view/title.scss";
 @import "./beautiful-view/description.scss";
 @import "./beautiful-view/reservation.scss";
+@import "./beautiful-view/best-rooms.scss";
 @import "./beautiful-view/search.scss";
 @import "./beautiful-view/categories.scss";
 @import "./beautiful-view/our-branches.scss";
 @import "./beautiful-view/reviews.scss";
+@import "./beautiful-view/similar-rooms.scss";

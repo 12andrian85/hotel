@@ -21,26 +21,36 @@
         <line x1="20" y1="13.5" x2="12" y2="13.5" stroke="#6C757D"></line>
     </symbol>
 </svg>
+<!-- star -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12" id="Star 1">
+        <path
+            d="M7 0L8.5716 4.49139H13.6574L9.5429 7.26722L11.1145 11.7586L7 8.98278L2.8855 11.7586L4.4571 7.26722L0.342604 4.49139H5.4284L7 0Z"
+            fill="#A4A4A4"></path>
+    </symbol>
+</svg>
 
 <body>
     <div class="container">
         <header>
             <h1 class="text-center display-3">components</h1>
+            <div class="d-flex">
+                <a href="/index.html" class="btn btn-primary sticky-top">home</a>
+                <a href="/search.html" class="btn btn-primary sticky-top">search</a>
+                <a href="/beautiful-view.html" class="btn btn-primary sticky-top">sea view</a>
+            </div>
 
-            <a href="/index.html" class="btn btn-primary sticky-top">home</a>
-            <a href="/search.html" class="btn btn-primary sticky-top">search</a>
-            <a href="/beautiful-view.html" class="btn btn-primary sticky-top">sea view</a>
         </header>
         <main class="main my-5">
             <!-- title-left -->
             <h3>Title-left</h3>
             <div class="c-title text-center py-2">
-                <h6 class="position-relative text-dark">title-left</h6>
+                <h6 class="title position-relative text-dark">title-left</h6>
             </div>
             <!-- title-center -->
             <h3>Title-center</h3>
             <div class="c-title--center text-center py-2">
-                <h6 class="position-relative text-dark">title-center</h6>
+                <h6 class="title position-relative text-dark">title-center</h6>
             </div>
             <h3>card-rooms</h3>
             <!-- card-rooms -->
@@ -95,10 +105,10 @@
                                 alt="...">
                         </div>
                         <div class="col-8">
-                            <div class="card-body ps-3 p-1 fs-sm">
-                                <h6 class="card-title">Family Room</h6>
-                                <span class="card-name">by John Doe 21/12/2016</span><br>
-                                <span class="badge bg-dark mt-2">BOOK NOW</span>
+                            <div class="card-body h-100 ps-3 p-1 d-flex flex-column justify-content-between">
+                                <h5 class="card-title m-0">Family Room</h5>
+                                <span class="card-name">by John Doe 21/12/2016</span>
+                                <a href="#" class="badge bg-dark ">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -112,7 +122,7 @@
                     <div class="card-body bg-white border pt-0">
                         <div class="card-inner position-relative d-flex justify-content-between">
                             <di class="d-flex align-items-center">
-                                <span class="card-text fs-sm m-0">HOTEL LONDON</span>
+                                <span class="card-text m-0">HOTEL LONDON</span>
                                 <i class="card-svg fa-solid fa-star ms-1"></i>
                                 <i class="card-svg fa-solid fa-star ms-1"></i>
                                 <i class="card-svg fa-solid fa-star ms-1"></i>
@@ -123,7 +133,7 @@
                             </div>
                         </div>
                         <h4 class="card-title">Family Room</h4>
-                        <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="card-items d-flex align-items-center justify-content-between mb-2">
                             <div>
                                 <span class="card-review position-relative fs-sm text-uppercase ms-4">
                                     5 reviews
@@ -152,7 +162,7 @@
                         <a href="#" class="btn btn-outline-primary fs-sm">BOOK NOW for 222 $
                             <i class="fa-solid fa-circle-info ms-2"></i>
                         </a>
-                        <div class="card-footer d-flex align-items-center justify-content-between mt-2 pt-2 border-top">
+                        <div class="card-footer d-flex align-items-center justify-content-between mt-2 pt-2 border-top-">
                             <div>
                                 <i class="footer-icon fa-solid me-1 fa-umbrella-beach"></i>
                                 <i class="footer-icon fa-solid me-1 fa-blender-phone"></i>
@@ -183,11 +193,21 @@
             <div class="c-stars">
                 <input type="checkbox" id="five" class="me-1">
                 <label for="five" class="ms-1">
-                    <i class="card-svg fa-solid fa-star"></i>
-                    <i class="card-svg fa-solid fa-star"></i>
-                    <i class="card-svg fa-solid fa-star"></i>
-                    <i class="card-svg fa-solid fa-star"></i>
-                    <i class="card-svg fa-solid fa-star"></i>
+                    <svg class="card-svg icon">
+                        <use xlink:href="#Star 1"></use>
+                    </svg>
+                    <svg class="card-svg icon">
+                        <use xlink:href="#Star 1"></use>
+                    </svg>
+                    <svg class="card-svg icon">
+                        <use xlink:href="#Star 1"></use>
+                    </svg>
+                    <svg class="card-svg icon">
+                        <use xlink:href="#Star 1"></use>
+                    </svg>
+                    <svg class="card-svg icon">
+                        <use xlink:href="#Star 1"></use>
+                    </svg>
                 </label>
             </div>
             <!-- c-pagination -->
@@ -227,8 +247,8 @@
             <!-- c-person -->
             <div class="c-person">
                 <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
-                <span class="fs-sm mx-2">Jess Doe</span>
-                <h6 class="fw-bold mb-0 mx-2 ">Awesome Hotel</h6>
+                <span class="mx-2">Jess Doe</span>
+                <h5 class="fw-bold mb-0 mx-2 ">Awesome Hotel</h5>
                 <button class="btn btn-dark">7.5</button>
             </div>
             <!-- c-categories -->
