@@ -1,0 +1,54 @@
+.contact {
+    &__banner {
+        height: 305px;
+        background-image: url("/public/img/cory-bjork-D1yT791Nf9A-unsplash.jpg");
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    &__tilte {
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        height: 120px;
+        margin-bottom: 45px;
+    }
+
+    &__map {
+        height: 250px;
+        display: inline-block;
+        margin-bottom: 60px;
+
+    }
+
+    &__address {
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+    }
+
+    &__info {
+        color: $gray-600;
+    }
+
+    &__tel {
+        .c-title {
+            color: $gray-600;
+        }
+        .c-title::before{
+            bottom: -20px;
+        }
+
+        .title {
+            color: $gray-600;
+        }
+    }
+
+}

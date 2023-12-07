@@ -1,0 +1,142 @@
+.post {
+    &__text {
+        height: 175px;
+    }
+
+    .paragraph {
+        &__title {
+            margin-bottom: 35px;
+        }
+
+        &__text {
+            height: 175px;
+            margin-bottom: 30px;
+        }
+
+        &__img {
+            height: 250px;
+        }
+    }
+
+    .guests {
+        padding-bottom: 65px;
+
+        &__title {
+            margin-bottom: 35px;
+        }
+
+        &__text {
+            height: 175px;
+        }
+    }
+
+    .tags {
+        padding-bottom: 60px;
+        margin-bottom: 50px;
+
+        &__title {
+            margin-right: 30px;
+        }
+
+        &__item {
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+    }
+
+    .comments {
+        margin-bottom: 65px;
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        .c-person {
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            margin-bottom: 30px;
+        }
+
+        &__btn {
+            height: max-content;
+            width: max-content;
+            font-size: 12px;
+            padding: 4px 7px;
+            margin-bottom: 35px;
+        }
+    }
+
+    .form {
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+
+    .calendar {
+        height: 295px;
+        margin-bottom: 40px;
+
+    }
+
+    .tags-cloud {
+        margin-bottom: 35px;
+
+        &__title {
+            margin-bottom: 35px;
+        }
+
+        &__item {
+            padding: 10px 30px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .best-room {
+        margin-bottom: 40px;
+
+        &__title {
+            margin-bottom: 35px;
+        }
+    }
+
+    .search {
+        margin-bottom: 50px;
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__input {}
+
+    }
+
+    .categories {
+        margin-bottom: 60px;
+
+        &__title {
+            margin-bottom: 35px;
+        }
+    }
+
+    .our-branches {
+        margin-bottom: 40px;
+
+        &__title {
+            margin-bottom: 35px;
+        }
+    }
+
+    .our-offices {
+        &__title {
+            margin-bottom: 35px;
+        }
+        &__wrapper{
+            margin-bottom: 30px;
+        }
+
+    }
+}

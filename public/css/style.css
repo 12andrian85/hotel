@@ -11404,6 +11404,7 @@ form {
   outline-color: tomato;
   outline-width: 1px;
   list-style: none;
+  padding: 0;
 }
 
 img {
@@ -11722,6 +11723,46 @@ input:focus-visible {
 }
 .blog .card-zone {
   height: 290px;
+}
+
+.contact__banner {
+  height: 305px;
+  background-image: url("/public/img/cory-bjork-D1yT791Nf9A-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.contact__tilte {
+  margin-bottom: 35px;
+}
+.contact__text {
+  height: 120px;
+  margin-bottom: 45px;
+}
+.contact__map {
+  height: 250px;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.contact__address {
+  margin-bottom: 30px;
+}
+.contact__wrapper {
+  margin-bottom: 30px;
+}
+.contact__subtitle {
+  font-weight: 600;
+}
+.contact__info {
+  color: #6c757d;
+}
+.contact__tel .c-title {
+  color: #6c757d;
+}
+.contact__tel .c-title::before {
+  bottom: -20px;
+}
+.contact__tel .title {
+  color: #6c757d;
 }
 
 .footer {
@@ -12349,4 +12390,182 @@ input:focus-visible {
 }
 .similar-rooms .c-card-search .card-text {
   margin-bottom: 25px;
+}
+
+.banner-booking {
+  position: relative;
+  height: 340px;
+  background-image: url("/public/img/aaron-burden-cEukkv42O40-unsplash.jpg");
+  background-position: center;
+}
+.banner-booking .banner-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.banner-booking .banner-wrapper {
+  margin: 0 6px 0 6px;
+}
+.banner-booking .banner-btn {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 9px;
+  margin-right: 12px;
+}
+.banner-booking .banner-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.banner-booking .btn-text {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .banner-booking .banner-wrapper {
+    margin: 0 22px 0 22px;
+  }
+}
+.reservation {
+  height: max-content;
+}
+.reservation__img {
+  height: 250px;
+}
+
+.extra-services__title {
+  margin-bottom: 45px;
+}
+.extra-services .c-stars {
+  margin-bottom: 20px;
+}
+
+.information__title {
+  margin-bottom: 40px;
+}
+.information .field .form-label {
+  color: #6c757d;
+}
+.information .field .form-control {
+  border-color: #ced4da;
+  background-color: #e9ecef;
+}
+
+.banner-post {
+  background-image: url("/public/img/inigo-de-la-maza-HAgSdpcIeXg-unsplash.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+.banner-post .container {
+  height: 335px;
+}
+.banner-post__list {
+  position: absolute;
+  bottom: 40px;
+}
+.banner-post__item {
+  padding: 0 20px;
+}
+
+.post__text {
+  height: 175px;
+}
+.post .paragraph__title {
+  margin-bottom: 35px;
+}
+.post .paragraph__text {
+  height: 175px;
+  margin-bottom: 30px;
+}
+.post .paragraph__img {
+  height: 250px;
+}
+.post .guests {
+  padding-bottom: 65px;
+}
+.post .guests__title {
+  margin-bottom: 35px;
+}
+.post .guests__text {
+  height: 175px;
+}
+.post .tags {
+  padding-bottom: 60px;
+  margin-bottom: 50px;
+}
+.post .tags__title {
+  margin-right: 30px;
+}
+.post .tags__item {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+.post .comments {
+  margin-bottom: 65px;
+}
+.post .comments__title {
+  margin-bottom: 40px;
+}
+.post .comments .c-person {
+  margin-bottom: 30px;
+}
+.post .comments__text {
+  margin-bottom: 30px;
+}
+.post .comments__btn {
+  height: max-content;
+  width: max-content;
+  font-size: 12px;
+  padding: 4px 7px;
+  margin-bottom: 35px;
+}
+.post .form__title {
+  margin-bottom: 40px;
+}
+.post .calendar {
+  height: 295px;
+  margin-bottom: 40px;
+}
+.post .tags-cloud {
+  margin-bottom: 35px;
+}
+.post .tags-cloud__title {
+  margin-bottom: 35px;
+}
+.post .tags-cloud__item {
+  padding: 10px 30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.post .best-room {
+  margin-bottom: 40px;
+}
+.post .best-room__title {
+  margin-bottom: 35px;
+}
+.post .search {
+  margin-bottom: 50px;
+}
+.post .search__title {
+  margin-bottom: 30px;
+}
+.post .categories {
+  margin-bottom: 60px;
+}
+.post .categories__title {
+  margin-bottom: 35px;
+}
+.post .our-branches {
+  margin-bottom: 40px;
+}
+.post .our-branches__title {
+  margin-bottom: 35px;
+}
+.post .our-offices__title {
+  margin-bottom: 35px;
+}
+.post .our-offices__wrapper {
+  margin-bottom: 30px;
 }

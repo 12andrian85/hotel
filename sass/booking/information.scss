@@ -1,0 +1,14 @@
+.information{
+    &__title{
+        margin-bottom: 40px;
+    }
+    .field{
+        .form-label{
+            color: $gray-600;
+        }
+        .form-control{
+            border-color: $gray-400;
+            background-color: $gray-200;
+        }
+    }
+}

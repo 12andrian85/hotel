@@ -1,0 +1,20 @@
+.banner-post {
+    background-image: url("/public/img/inigo-de-la-maza-HAgSdpcIeXg-unsplash.jpg");
+    background-position: bottom;
+    background-size: cover;
+
+    .container {
+        height: 335px;
+    }
+
+    &__list {
+        position: absolute;
+        bottom: 40px;
+    }
+
+    &__item {
+        padding: 0 20px;
+    }
+
+
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel</title>
+    <meta name="description" content="About website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</head>
+<!-- star -->
+<svg width="0" height="0" class="d-none">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12" id="Star 1">
+        <path
+            d="M7 0L8.5716 4.49139H13.6574L9.5429 7.26722L11.1145 11.7586L7 8.98278L2.8855 11.7586L4.4571 7.26722L0.342604 4.49139H5.4284L7 0Z"
+            fill="#A4A4A4"></path>
+    </symbol>
+</svg>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- logo-mobile -->
+        <div class="header-logo text-uppercase py-3 d-lg-none">
+            <a class="d-flex flex-column align-items-center text-decoration-none" href="index.html">
+                <span class="header-logotype">logo hotel</span>
+                <span class="">luxury hotel</span>
+            </a>
+        </div>
+        <div class="container d-none d-lg-flex justify-content-center">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <ul class="header-top list-unstyled d-flex m-0">
+                    <li class="top-item">
+                        <a href="#" class="top-link">US</a>
+                        <a href="#" class="top-link">IT</a>
+                        <a href="#" class="top-link">PS</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="top-link">payment</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="top-link">terms Conditions</a>
+                    </li>
+
+                </ul>
+                <ul class="header-top list-unstyled d-flex m-0">
+                    <li class="top-item">
+                        <a href="#" class="top-link">Add review</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="top-link">sms</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="top-link">my Bookings</a>
+                    </li>
+                    <li class="top-item">
+                        <a href="#" class="btn btn-primary">My Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg py-0">
+            <div class="container">
+                <div class="d-flex justify-content-between w-100 d-lg-none">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        My account
+                    </button>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-center z-1 justify-content-lg-between"
+                    id="navbarTogglerDemo01">
+                    <!-- <a class="navbar-brand" href="index.html"> -->
+                    <!-- logo -->
+                    <div class="header-logo text-uppercase d-none d-lg-flex">
+                        <a class="d-flex flex-column align-items-center text-decoration-none" href="index.html">
+                            <span class="">logo hotel</span>
+                            <span class="fs-sm">luxury hotel</span>
+                        </a>
+                    </div>
+                    </a>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://s3.envato.com/files/237383996/hotel-psd-previews/05-booking.jpg">tempate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="components.html">components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="beautiful-view.html">Sea view</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="single-post.html">Single Post</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- banner -->
+        <div class="banner-booking mb-5 d-flex justify-content-center align-items-center">
+            <h1 class="text-white">BOOKING</h1>
+            <!-- banner-nav -->
+            <div class="banner-nav d-flex align-items-center ">
+                <div class="container  d-flex justify-content-center align-items-center position-relative">
+                    <div class="banner-wrapper d-flex align-items-center">
+                        <a href="#" class="btn banner-btn btn-outline-light">1</a>
+                        <span class="btn-text text-uppercase text-white">search</span>
+                    </div>
+                    <div class="banner-wrapper d-flex align-items-center">
+                        <a href="#" class="btn banner-btn btn-outline-light">1</a>
+                        <span class="btn-text text-uppercase text-white">search</span>
+                    </div>
+                    <div class="banner-wrapper d-flex align-items-center">
+                        <a href="#" class="btn banner-btn btn-outline-light">1</a>
+                        <span class="btn-text text-uppercase text-white">search</span>
+                    </div>
+                    <div class="banner-wrapper d-flex align-items-center">
+                        <a href="#" class="btn banner-btn btn-outline-light">1</a>
+                        <span class="btn-text text-uppercase text-white">search</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-4">
+                    <div class="reservation">
+                        <div class="reservation__img">
+                        </div>
+                        <div class="reservation__wrapper">
+                            <h6 class="text-uppercase text-center my-spacing-sm">
+                                your reservation
+                            </h6>
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col" style="height: 160px;">1</div>
+                                <div class="col" style="height: 160px;">2</div>
+                                <div class="col" style="height: 90px;">3</div>
+                                <div class="col" style="height: 90px;">4</div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center py-spacing">
+                                <span>300</span>
+                                <span>total</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col col-12 col-md-8">
+                    <!-- extra-services -->
+                    <div class="extra-services pb-spacing border-bottom">
+                        <h3 class="extra-services__title">Add Extra Services</h3>
+                        <div class="row">
+                            <div class="col col-12 col-md-6">
+                                <div class="c-stars">
+                                    <input type="checkbox" id="animal" class="me-2">
+                                    <label for="animal">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
+                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="c-stars">
+                                    <input type="checkbox" id="animal" class="me-2">
+                                    <label for="animal">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
+                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="c-stars mb-0">
+                                    <input type="checkbox" id="animal" class="me-2">
+                                    <label for="animal">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
+                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6">
+                                <div class="c-stars">
+                                    <input type="checkbox" id="animal" class="me-2">
+                                    <label for="animal">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
+                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="c-stars">
+                                    <input type="checkbox" id="animal" class="me-2">
+                                    <label for="animal">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
+                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="c-stars mb-0">
+                                    <input type="checkbox" id="animal" class="me-2">
+                                    <label for="animal">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
+                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- information -->
+                    <form action="" class="information my-spacing-lg">
+                        <h3 class="information__title">Add Extra Services</h3>
+                        <div class="row">
+                            <div class="col col-12 col-md-6">
+                                <div class="field mb-spacing-sm">
+                                    <label for="name" class="form-label">Name :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name"
+                                            aria-describedby="basic-addon3 basic-addon4">
+                                    </div>
+                                </div>
+                                <div class="field mb-spacing-sm">
+                                    <label for="name" class="form-label">Name :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name"
+                                            aria-describedby="basic-addon3 basic-addon4">
+                                    </div>
+                                </div>
+                                <div class="field mb-spacing-sm">
+                                    <label for="name" class="form-label">Name :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name"
+                                            aria-describedby="basic-addon3 basic-addon4">
+                                    </div>
+                                </div>
+                                <div class="field mb-spacing-sm">
+                                    <label for="name" class="form-label">Name :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name"
+                                            aria-describedby="basic-addon3 basic-addon4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-6">
+                                <div class="field mb-spacing-sm">
+                                    <label for="name" class="form-label">Name :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name"
+                                            aria-describedby="basic-addon3 basic-addon4">
+                                    </div>
+                                </div>
+                                <div class="field mb-spacing-sm">
+                                    <label for="name" class="form-label">Name :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name"
+                                            aria-describedby="basic-addon3 basic-addon4">
+                                    </div>
+                                </div>
+                                <div class="field mb-spacing-sm">
+                                    <label for="name" class="form-label">Name :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name"
+                                            aria-describedby="basic-addon3 basic-addon4">
+                                    </div>
+                                </div>
+                                <div class="field mb-spacing-sm">
+                                    <label for="name" class="form-label">Name :</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name"
+                                            aria-describedby="basic-addon3 basic-addon4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field mb-spacing-sm">
+                                <label class="form-label" for="comment">Requests</label>
+                                <textarea class="form-control w-100" name="" id="comment" cols="" rows="6.5"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col col-12 col-md-6">
+                                    <div class="field mb-spacing-sm">
+                                        <label for="name" class="form-label">Name :</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="name"
+                                                aria-describedby="basic-addon3 basic-addon4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6">
+                                    <div class="field mb-spacing-sm">
+                                        <label for="name" class="form-label">Name :</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="name"
+                                                aria-describedby="basic-addon3 basic-addon4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <a href="#" class="btn btn-primary ms-2">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row mb-spacing">
+                <div class="col col-12 col-md-4 mb-3">
+                    <h4>Current Weather</h4>
+                    <span class="text-uppercase mb-3">new york...</span>
+                    <div class="mt-2">svg +16</div>
+                </div>
+                <div class="col col-12 col-md-4 mb-3">
+                    <h4>Connect With Us</h4>
+                    <span class="text-uppercase mb-3">social media...</span>
+                    <div class="mt-2">socials</div>
+                </div>
+                <div class="col col-12 col-md-4 mb-3 ">
+                    <h4>Newlisttener</h4>
+                    <span class="text-uppercase mb-3">sign up special...</span>
+                    <div class="mt-2">
+                        <div class="input-group field mb-3">
+                            <input type="text" class="form-control p-0" placeholder=""
+                                aria-label="Example text with two button addons">
+                            <button class="btn btn-primary py-0 px-4" type="search">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="footer-navigation d-md-flex justify-content-between px-0 py-3">
+                <ul class="navbar-nav d-flex align-items-center flex-md-row">
+                    <li class="nav-item px-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Booking</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center align-items-center mt-3 mt-md-0">
+                    <span class="px-3">sponsors</span>
+                    <span class="px-3">sponsors</span>
+                    <span class="px-3">sponsors</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h1 class="modal-title fs-5  text-primary" id="exampleModalLabel">My Account
+                    </h1>
+                </div>
+                <div class="modal-body">
+                    <ul class="d-flex flex-column list-unstyled text-center">
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">My Account</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">add review</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">message</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">Bookings</a>
+                        </li>
+                    </ul>
+
+                    <ul class="d-flex flex-column list-unstyled text-center">
+                        <li class="modal-item">
+                            <span class="modal-item">
+                                <a href="#" class="text-decoration-none">us</a>
+                            </span>
+                            <span class="modal-item">
+                                <a href="#" class="text-decoration-none">it</a>
+                            </span>
+                            <span class="modal-item">
+                                <a href="#" class="text-decoration-none">md</a>
+                            </span>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">payment</a>
+                        </li>
+                        <li class="modal-item">
+                            <a href="" class="text-decoration-none">terms conditions</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
