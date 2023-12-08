@@ -1,13 +1,22 @@
 .bayview {
     &__title {
         margin-bottom: 35px;
+        font-weight: 500;
+    }
+    &__subtitle{
+        color: $gray-600;
+    }
+    &__paragraph{
+        color: $gray-600;
     }
 
 
     &__block {
         height: 360px;
     }
-
+    &__card{
+        border: none;
+    }
     &__card--first {
         height: 270px;
         width: 240px;
@@ -68,7 +77,7 @@
         }
 
         &__card--first {
-            height: 540px;
+            height: 350px;
             width: 350px;
             transform: translateX(0);
             left: 50px;

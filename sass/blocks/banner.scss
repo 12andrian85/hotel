@@ -1,9 +1,14 @@
 .banner {
+    background-image: url("/public/img/dimitris-kiriakakis-G11WbaShKZ8-unsplash.jpg");
+
+   
+
     .c-title--center {
         padding-bottom: 25px;
 
         h6::after {
             bottom: -20px;
+            background-color: $white;
         }
     }
 
@@ -11,15 +16,30 @@
         width: max-content;
 
     }
+
     .block-items {
-        height: 70px;
-        width: 70px;
+        padding: 35px 35px;
     }
 
     .block-list {
         margin: 0;
         padding: 0;
     }
+
+    .banner-check {
+        color: $gray-600;
+        font-weight: 500;
+    }
+
+    .banner-number {
+        font-weight: 600;
+        margin-right: 10px;
+    }
+
+    .banner-icon {
+        color: $gray-600;
+    }
+
 }
 
 
@@ -29,6 +49,7 @@
         .block-items {
             height: 100px;
             width: 150px;
+            padding: 50px 75px;
         }
     }
 }
@@ -60,8 +81,8 @@
 
 
         .block-items {
-            height: 130px;
-            width: 180px;
+            padding: 65px 90px;
+
         }
     }
 }

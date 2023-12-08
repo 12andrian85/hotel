@@ -1,4 +1,10 @@
 .best-rooms {
+    background-color: #F9F9F9FF;
+
+    .c-title--center {
+        color: $gray-600;
+    }
+
     .card-item {
         overflow: hidden;
         margin: 10px 0;
@@ -9,8 +15,10 @@
 
         }
     }
+
     .c-card-search {
         margin-bottom: 30px;
+
     }
 }
 
@@ -23,6 +31,7 @@
 
         .c-card-search {
             margin-bottom: 0;
+
             .card {
                 .card-img-top {
                     height: 250px;

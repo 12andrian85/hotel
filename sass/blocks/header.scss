@@ -9,8 +9,24 @@
         align-items: center;
     }
 
+    .nav-link {
+        color: $gray-600;
+        .active{
+            color: white;
+        }
+    }
+    
+
+    .nav-link:hover {
+        color: $white;
+    }
+
+    .navbar {
+        background-color: $dark;
+    }
+
     .navbar-nav {
-        background-color: $white;
+        background-color: $dark;
     }
 
     .header-top {
@@ -27,7 +43,21 @@
 
         .top-link {
             text-decoration: none;
-            padding: 15px 15px;
+            padding: 15px 10px;
+            color: $gray-600;
+        }
+
+        .fa-envelope--note::after {
+            position: absolute;
+            content: "2";
+            height: 13px;
+            width: 10px;
+            background-color: $primary;
+            top: -4px;
+            right: -4px;
+            font-size: 9px;
+            color: white;
+            padding: 1px 0 0 2px;
         }
     }
 }

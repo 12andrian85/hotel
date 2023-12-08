@@ -66,7 +66,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Lora", serif;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11400,7 +11400,6 @@ article,
 section,
 nav,
 form {
-  outline-style: solid;
   outline-color: tomato;
   outline-width: 1px;
   list-style: none;
@@ -11447,8 +11446,20 @@ input:focus-visible {
   justify-content: center;
   align-items: center;
 }
+.header .nav-link {
+  color: #6c757d;
+}
+.header .nav-link .active {
+  color: white;
+}
+.header .nav-link:hover {
+  color: #fff;
+}
+.header .navbar {
+  background-color: #212529;
+}
 .header .navbar-nav {
-  background-color: #fff;
+  background-color: #212529;
 }
 .header .header-top .top-item {
   display: flex;
@@ -11459,31 +11470,59 @@ input:focus-visible {
 }
 .header .header-top .top-link {
   text-decoration: none;
-  padding: 15px 15px;
+  padding: 15px 10px;
+  color: #6c757d;
+}
+.header .header-top .fa-envelope--note::after {
+  position: absolute;
+  content: "2";
+  height: 13px;
+  width: 10px;
+  background-color: #be9a78;
+  top: -4px;
+  right: -4px;
+  font-size: 9px;
+  color: white;
+  padding: 1px 0 0 2px;
 }
 
+.banner {
+  background-image: url("/public/img/dimitris-kiriakakis-G11WbaShKZ8-unsplash.jpg");
+}
 .banner .c-title--center {
   padding-bottom: 25px;
 }
 .banner .c-title--center h6::after, .banner .c-title--center .h6::after {
   bottom: -20px;
+  background-color: #fff;
 }
 .banner .banner-block {
   width: max-content;
 }
 .banner .block-items {
-  height: 70px;
-  width: 70px;
+  padding: 35px 35px;
 }
 .banner .block-list {
   margin: 0;
   padding: 0;
+}
+.banner .banner-check {
+  color: #6c757d;
+  font-weight: 500;
+}
+.banner .banner-number {
+  font-weight: 600;
+  margin-right: 10px;
+}
+.banner .banner-icon {
+  color: #6c757d;
 }
 
 @media (min-width: 768px) {
   .banner .block-items {
     height: 100px;
     width: 150px;
+    padding: 50px 75px;
   }
 }
 @media (min-width: 992px) {
@@ -11506,15 +11545,24 @@ input:focus-visible {
     margin-bottom: 125px;
   }
   .banner .block-items {
-    height: 130px;
-    width: 180px;
+    padding: 65px 90px;
   }
 }
 .bayview__title {
   margin-bottom: 35px;
+  font-weight: 500;
+}
+.bayview__subtitle {
+  color: #6c757d;
+}
+.bayview__paragraph {
+  color: #6c757d;
 }
 .bayview__block {
   height: 360px;
+}
+.bayview__card {
+  border: none;
 }
 .bayview__card--first {
   height: 270px;
@@ -11564,7 +11612,7 @@ input:focus-visible {
     height: 540px;
   }
   .bayview__card--first {
-    height: 540px;
+    height: 350px;
     width: 350px;
     transform: translateX(0);
     left: 50px;
@@ -11580,6 +11628,12 @@ input:focus-visible {
   .bayview__wrapper {
     margin-top: 60px;
   }
+}
+.best-rooms {
+  background-color: #f9f9f9;
+}
+.best-rooms .c-title--center {
+  color: #6c757d;
 }
 .best-rooms .card-item {
   overflow: hidden;
@@ -11850,7 +11904,6 @@ input:focus-visible {
 }
 
 .c-card-search .card {
-  background-color: #000;
   border: none;
 }
 .c-card-search .card .card-img-top {

@@ -11,7 +11,7 @@
     <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
 </head>
 <!-- home-plane -->
-<svg width="0" height="0" class="hidden">
+<svg width="0" height="0" class="d-none">
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="home-plan">
         <rect x="0.5" y="0.5" width="19" height="19" stroke="#6C757D"></rect>
         <line y1="9.5" x2="6" y2="9.5" stroke="#6C757D"></line>
@@ -41,25 +41,38 @@
                         <a href="#" class="top-link">PS</a>
                     </li>
                     <li class="top-item">
-                        <a href="#" class="top-link">payment</a>
+                        <a href="#" class="top-link">
+                            <i class="fa-regular fa-credit-card me-1"></i>
+                            Payment Options
+                        </a>
                     </li>
                     <li class="top-item">
-                        <a href="#" class="top-link">terms Conditions</a>
+                        <a href="#" class="top-link">
+                            <i class="fa-regular fa-square-check me-1"></i>
+                            Terms COnditions</a>
                     </li>
-
                 </ul>
                 <ul class="header-top list-unstyled d-flex m-0">
                     <li class="top-item">
-                        <a href="theme-kit.html" class="top-link">Add review</a>
+                        <a href="theme-kit.html" class="top-link">Add Your Review</a>
                     </li>
                     <li class="top-item">
-                        <a href="#" class="top-link">sms</a>
+                        <a href="#" class="top-link">
+                            <i class="fa-regular fa-envelope fa-envelope--note position-relative"></i>
+                        </a>
                     </li>
                     <li class="top-item">
                         <a href="booking.html" class="top-link">My Bookings</a>
                     </li>
                     <li class="top-item">
-                        <a href="#" class="btn btn-primary">My Account</a>
+                        <a href="#" class="btn btn-primary h-100">
+                            <img src="/public/img/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg"
+                                style="height: 30px; width: 30px; border-radius: 50%;" alt="">
+                            <div class="lh-1 ms-2 text-start">
+                                <span class="" style="font-size: 15px;">My account</span> <br>
+                                <small>LOG OUT</small>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +81,12 @@
             <div class="container">
                 <div class="d-flex justify-content-between w-100 d-lg-none">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        My account
+                        <img src="/public/img/aaron-burden-cEukkv42O40-unsplash.jpg"
+                            style="height: 35px; width: 35px; border-radius: 50%   ;" alt="">
+                        <span>
+                            My account <br>
+                            LOG OUT
+                        </span>
                     </button>
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -81,7 +99,7 @@
                     <!-- <a class="navbar-brand" href="index.html"> -->
                     <!-- logo -->
                     <div class="header-logo text-uppercase d-none d-lg-flex">
-                        <a class="d-flex flex-column align-items-center text-decoration-none" href="index.html">
+                        <a class="d-flex flex-column align-items-center text-white text-decoration-none" href="index.html">
                             <span class="">logo hotel</span>
                             <span class="fs-sm">luxury hotel</span>
                         </a>
@@ -89,10 +107,11 @@
                     </a>
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active-" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://s3.envato.com/files/237383996/hotel-psd-previews/02-home.jpg">template</a>
+                            <a class="nav-link"
+                                href="https://s3.envato.com/files/237383996/hotel-psd-previews/02-home.jpg">template</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="components.html">components</a>
@@ -119,21 +138,63 @@
     </header>
     <main>
         <!-- banner -->
-        <div class="banner py-spacing-lg">
-            <div class="container text-center">
-                <div>
-                    <div class="c-title--center text-center">
-                        <h6 class="position-relative text-dark">title-center</h6>
+        <div class="banner py-spacing-lg position-relative">
+            <div class="banner-bg position-absolute w-100 h-100 bg-dark opacity-25 top-0"></div>
+            <div class="container text-center z-1 position-relative">
+                <div class="text-white">
+                    <div class="c-title--center text-center py-2">
+                        <h6 class="title position-relative text-uppercase">luxury hotel & best resort</h6>
                     </div>
-                    <h1 class="mb-3 mb-5 display-2">title <br> title</h1>
-                    <a href="#" class="btn banner-btn btn-outline-primary mx-auto">rooms e suites</a>
+                    <h1 class="mb-3 mb-5 display-2 text-uppercase">enjoy a luxury<br> experience</h1>
+                    <a href="#" class="btn banner-btn btn-outline-light border-light border-2 fs-5 pb-2 mx-auto">rooms e suites</a>
                 </div>
                 <div class="banner-block d-flex flex-column align-items-center mx-auto mt-5">
                     <ul class="block-list d-flex">
-                        <li class="block-items"></li>
-                        <li class="block-items"></li>
-                        <li class="block-items"></li>
-                        <li class="block-items bg-dark"></li>
+                        <li class="block-items d-flex align-items-center justify-content-center bg-white">
+                            <div>
+                                <span class="banner-check">CHECK-IN</span>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="display-5 banner-number">26</span>
+                                    <div class="d-flex flex-column ">
+                                        <span class="banner-month">jun</span>
+                                        <i class="banner-icon fa-solid fa-angle-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="block-items d-flex align-items-center justify-content-center bg-white">
+                            <div>
+                                <span class="banner-check">CHECK-IN</span>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="display-5 banner-number">26</span>
+                                    <div class="d-flex flex-column ">
+                                        <span class="banner-month">jun</span>
+                                        <i class="banner-icon fa-solid fa-angle-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="block-items d-flex align-items-center justify-content-center bg-white">
+                            <div>
+                                <span class="banner-check">CHECK-IN</span>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="display-5 banner-number">26</span>
+                                    <div class="d-flex flex-column ">
+                                        <span class="banner-month">jun</span>
+                                        <i class="banner-icon fa-solid fa-angle-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="block-items bg-dark text-white d-flex align-items-center justify-content-center">
+                            <div>
+                                <span class="text-uppercase d-flex justify-content-center align-items-center">
+                                    check <br>
+                                    availability
+                                </span>
+                            </div>
+                               
+                        </li>
                     </ul>
                     <!-- <label for="start">Start date:</label>
                     <input type="date" id="start" name="trip-start" value="2023-07-22" min="2022-01-01"
@@ -147,47 +208,27 @@
                 <div class="row">
                     <div class="col col-12 col-md-6 mb-4">
                         <div class="bayview__wrapper">
-                            <span>subtitle</span>
-                            <h2 class="bayview__title mt-3 display-2">title <br> title</h2>
-                            <p class="mt-3 mb-4 mb-lg-5 px-5">
+                            <span class="bayview__subtitle">HOTEL BAYVIEW</span>
+                            <h2 class="bayview__title mt-3 display-2">Relax in our <br>Resort</h2>
+                            <p class="bayview__paragraph mt-3 mb-4 mb-lg-5 px-5 mx-4">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, explicabo accusamus.
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, explicabo accusamus.
+                                Lorem ipsum dolor sit amet consectetur adipisicing
                             </p>
                             <a href="#" class="mx-auto btn btn-primary">ABOUT US</a>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 px-0">
                         <div class="bayview__block position-relative">
-                            <div class="card bayview__card bayview__card--first position-absolute bg-primary">
-                                <img src="..." class="card-img" alt="...">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural lead-in to additional content. This content is a little bit longer.
-                                    </p>
-                                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                </div>
+                            <div class="card bayview__card bayview__card--first position-absolute">
+                                <img src="/public/img/josh-mclove-85kUBzS2V3g-unsplash.jpg" class="card-img" alt="...">
                             </div>
-                            <div class="card bayview__card bayview__card--two position-absolute bg-secondary">
-                                <img src="..." class="card-img" alt="...">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural lead-in to additional content. This content is a little bit longer.
-                                    </p>
-                                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                </div>
+                            <div class="card bayview__card bayview__card--two position-absolute">
+                                <img src="/public/img/r-architecture-HQCW1gTMjek-unsplash.jpg" class="card-img" alt="...">
                             </div>
                             <div
-                                class="card bayview__card bayview__card--last position-absolute d-none d-md-block bg-yellow">
-                                <img src="..." class="card-img" alt="...">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural lead-in to additional content. This content is a little bit longer.
-                                    </p>
-                                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                                </div>
+                                class="card bayview__card bayview__card--last position-absolute d-none d-md-block">
+                                <img src="/public/img/spacejoy-uGWNcejbf2E-unsplash.jpg" class="card-img" alt="...">
                             </div>
 
                         </div>
@@ -196,17 +237,17 @@
             </div>
         </section>
         <!-- best-rooms -->
-        <section class="best-rooms text-center py-5">
-            <div class="c-title--center text-center py-2">
-                <h6 class="position-relative text-dark">subtitle-center</h6>
+        <section class="best-rooms text-center py-spacing-lg">
+            <div class="c-title--center text-center">
+                <h6 class="title position-relative text-uppercase">luxury hotel</h6>
             </div>
-            <h2 class="my-4">Best-Rooms</h2>
+            <h2 class="display-4 fw-normal my-4">Best-Rooms</h2>
             <div class="container">
                 <div class="row">
                     <div class="col col-12 col-md-6">
                         <div class="c-card-search">
                             <div class="card text-start">
-                                <img src="/pubslic/img/spacejoy-umAXneH4GhA-unsplash.jpg" class="card-img-top"
+                                <img src="/public/img/spacejoy-RUvW1KGD9a4-unsplash.jpg" class="card-img-top"
                                     alt="...">
                                 <div class="card-body bg-white border pt-0">
                                     <div class="card-inner position-relative d-flex justify-content-between">
