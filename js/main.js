@@ -20,7 +20,7 @@ if (slider) {
 
   output.innerHTML = slider.value;
   slider.oninput = function () {
-    
+
     output.innerHTML = this.value;
   }
 }
@@ -29,7 +29,7 @@ if (works) {
 
   ranges.innerHTML = works.value;
   works.oninput = function () {
-    
+
     ranges.innerHTML = this.value;
   }
 }
@@ -38,7 +38,7 @@ if (client) {
 
   clientValue.innerHTML = client.value;
   client.oninput = function () {
-    
+
     clientValue.innerHTML = this.value;
   }
 }
@@ -51,7 +51,7 @@ if (splideBanner) {
     // heightRatio: 0.99,
     // width: '95%',
     type: 'loop',
-    
+
     wheel: "true",
     // height: 400,
   }).mount();
@@ -100,7 +100,7 @@ if (splideWedding) {
       1200: {
         perPage: 1,
       },
-   
+
     }
   }).mount();
 }
@@ -202,6 +202,28 @@ if (splideProperties) {
     }
   }).mount();
 }
+
+
+
+// / Example starter JavaScript for disabling form submissions if there are invalid fields
+  (() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
 
 
 

@@ -11966,6 +11966,21 @@ input:focus-visible {
 .modal .modal-item a {
   color: #6c757d;
 }
+.modal .btn-close {
+  padding: 0 5px;
+}
+
+.modal .modal-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal-item a {
+  color: #6c757d;
+}
+.modal .btn-close {
+  padding: 0 5px;
+}
 
 .c-title .title::before {
   position: absolute;
