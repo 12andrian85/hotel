@@ -1,36 +1,112 @@
-.blog{
-    .card-dinner{
-        .card-img-top{
+.blog {
+    background-color: #F9F9F9FF;
+    .card{
+         border: none;
+    }
+    .c-title--center h6 {
+        color: $gray-600;
+        margin-bottom: 20px;
+    }
+
+    .card-dinner {
+        .card-img-top {
             height: 280px;
         }
-        .card-body{
+
+        .card-body {
             padding: 30px;
         }
-        .card-title{
+
+        .card-title {
             margin-bottom: 24px;
         }
-        .img-around{
+
+        .img-around {
             height: 230px;
         }
+
+        .card-text {
+            color: $gray-600;
+        }
     }
-    &__events{
+
+    &__events {
         height: 135px;
     }
-    &__follow{
+
+    &__follow {
+        background-color: $primary;
+        color: $white;
         height: 235px;
-        padding: 55px 90px;
+        padding: 55px 50px;
+
+        .c-title--center {
+            .title::after {
+                bottom: -20px;
+                background-color: $white;
+            }
+        }
     }
-    .card-around{
+
+    .card-around {
         height: 360px;
     }
-    .card-relax{
+
+    .card-relax {
         height: 420px;
         margin-bottom: 30px;
-    }
-    .card-zone{
-        height: 290px;
-    }
-}
-@media (min-width: $width-tablet) {
 
+        .btn-link {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+        }
+
+        .card-img {
+            background-position: bottom;
+        }
+
+        .c-title {
+            .title {
+                margin-bottom: 5px;
+
+            }
+
+            .title::before {
+                bottom: -10px;
+                background-color: $white;
+            }
+        }
+
+    }
+
+    .card-zone {
+        height: 290px;
+
+        .btn-link {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+        }
+
+        .card-img {
+            background-position: bottom;
+        }
+
+        .c-title {
+            .title {
+                margin-bottom: 5px;
+
+            }
+
+            .title::before {
+                bottom: -10px;
+                background-color: $white;
+            }
+        }
+    }
 }
+
+@media (min-width: $width-tablet) {}

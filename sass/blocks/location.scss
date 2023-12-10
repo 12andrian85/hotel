@@ -1,37 +1,54 @@
-.location{
+.location {
+    .card-img {
+        height: 100%;
+    }
 
-
-    .card-location{
+    .card-location {
         padding: 0;
         min-height: 330px;
         margin: 0 10px;
     }
-    .location-title{
-        margin-top: 30px;
+
+    .location-title {
         margin-bottom: 60px;
     }
-   
-    .location-paragraph{
+
+    .location-paragraph {
         margin-bottom: 45px;
     }
-    .location-btn{
+    .location-text{
+        color: $gray-600;
+    }
+
+    .location-btn {
+        background-color: $black;
         width: max-content;
         padding: 10px 30px;
         margin: 0 auto;
     }
+
+    .location-wrapper {}
 }
+
 @media (min-width: $width-tablet) {
-    .location{
-        .card-location{
+    .location {
+        .card-location {
             margin: 0px;
+
+            .card-img {
+                height: 330px;
+            }
         }
-        .location-wrapper{
-            padding: 0 80px;
+
+        .location-wrapper {
+            padding: 94px 80px;
         }
-        .location-footer{
+
+        .location-footer {
             padding: 0 170px;
-        }    
-        .location-btn{
+        }
+
+        .location-btn {
             margin-left: 0;
         }
     }

@@ -11434,6 +11434,10 @@ input:focus-visible {
   color: #fff;
 }
 
+.btn-outline-primary {
+  border: 2px solid #be9a78;
+}
+
 .btn-outline-primary:hover {
   color: #fff;
 }
@@ -11500,7 +11504,8 @@ input:focus-visible {
   width: max-content;
 }
 .banner .block-items {
-  padding: 35px 35px;
+  padding: 5px 10px;
+  font-size: 8px;
 }
 .banner .block-list {
   margin: 0;
@@ -11523,6 +11528,7 @@ input:focus-visible {
     height: 100px;
     width: 150px;
     padding: 50px 75px;
+    font-size: 16px;
   }
 }
 @media (min-width: 992px) {
@@ -11631,9 +11637,19 @@ input:focus-visible {
 }
 .best-rooms {
   background-color: #f9f9f9;
+  margin-bottom: 0;
 }
 .best-rooms .c-title--center {
   color: #6c757d;
+}
+.best-rooms .best-rooms--title {
+  margin-bottom: 60px;
+}
+.best-rooms .card-text {
+  margin-bottom: 30px;
+}
+.best-rooms .card-title {
+  margin-bottom: 20px;
 }
 .best-rooms .card-item {
   overflow: hidden;
@@ -11645,6 +11661,10 @@ input:focus-visible {
 }
 .best-rooms .c-card-search {
   margin-bottom: 30px;
+}
+.best-rooms .c-card-rooms {
+  height: 100%;
+  width: auto;
 }
 
 @media (min-width: 768px) {
@@ -11659,30 +11679,38 @@ input:focus-visible {
     height: 250px;
   }
 }
+.location .card-img {
+  height: 100%;
+}
 .location .card-location {
   padding: 0;
   min-height: 330px;
   margin: 0 10px;
 }
 .location .location-title {
-  margin-top: 30px;
   margin-bottom: 60px;
 }
 .location .location-paragraph {
   margin-bottom: 45px;
 }
+.location .location-text {
+  color: #6c757d;
+}
 .location .location-btn {
+  background-color: #000;
   width: max-content;
   padding: 10px 30px;
   margin: 0 auto;
 }
-
 @media (min-width: 768px) {
   .location .card-location {
     margin: 0px;
   }
+  .location .card-location .card-img {
+    height: 330px;
+  }
   .location .location-wrapper {
-    padding: 0 80px;
+    padding: 94px 80px;
   }
   .location .location-footer {
     padding: 0 170px;
@@ -11691,11 +11719,27 @@ input:focus-visible {
     margin-left: 0;
   }
 }
+.spa {
+  background-color: #f9f9f9;
+}
+.spa__img {
+  height: 525px;
+}
+.spa .splide {
+  background-color: #fff;
+}
 .spa .splide__track {
   padding: 40px 0;
 }
+.spa .splide__title {
+  margin-bottom: 35px;
+}
 .spa .splide__slide {
   padding: 0 40px;
+}
+.spa .splide__text {
+  color: #6c757d;
+  margin-bottom: 35px;
 }
 .spa .splide__pagination {
   bottom: 10px;
@@ -11709,7 +11753,7 @@ input:focus-visible {
     padding: 60px 0;
   }
   .spa .splide__pagination {
-    bottom: 30px;
+    bottom: 25px;
   }
 }
 @media (min-width: 992px) {
@@ -11721,7 +11765,9 @@ input:focus-visible {
   }
 }
 .relaxation {
-  background-color: rgb(216, 250, 253);
+  background-image: url("/public/img/lotte-meijer-S0moKcZyrJA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
   height: 330px;
 }
 .relaxation__btn {
@@ -11749,6 +11795,16 @@ input:focus-visible {
     padding: 0 350px;
   }
 }
+.blog {
+  background-color: #f9f9f9;
+}
+.blog .card {
+  border: none;
+}
+.blog .c-title--center h6, .blog .c-title--center .h6 {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
 .blog .card-dinner .card-img-top {
   height: 280px;
 }
@@ -11761,12 +11817,21 @@ input:focus-visible {
 .blog .card-dinner .img-around {
   height: 230px;
 }
+.blog .card-dinner .card-text {
+  color: #6c757d;
+}
 .blog__events {
   height: 135px;
 }
 .blog__follow {
+  background-color: #be9a78;
+  color: #fff;
   height: 235px;
-  padding: 55px 90px;
+  padding: 55px 50px;
+}
+.blog__follow .c-title--center .title::after {
+  bottom: -20px;
+  background-color: #fff;
 }
 .blog .card-around {
   height: 360px;
@@ -11775,8 +11840,38 @@ input:focus-visible {
   height: 420px;
   margin-bottom: 30px;
 }
+.blog .card-relax .btn-link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.blog .card-relax .card-img {
+  background-position: bottom;
+}
+.blog .card-relax .c-title .title {
+  margin-bottom: 5px;
+}
+.blog .card-relax .c-title .title::before {
+  bottom: -10px;
+  background-color: #fff;
+}
 .blog .card-zone {
   height: 290px;
+}
+.blog .card-zone .btn-link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.blog .card-zone .card-img {
+  background-position: bottom;
+}
+.blog .card-zone .c-title .title {
+  margin-bottom: 5px;
+}
+.blog .card-zone .c-title .title::before {
+  bottom: -10px;
+  background-color: #fff;
 }
 
 .contact__banner {
@@ -11820,11 +11915,47 @@ input:focus-visible {
 }
 
 .footer {
-  background-color: darkgrey;
+  background-color: #1c1c1c;
   padding-top: 65px;
+}
+.footer__subtitle {
+  color: #6c757d;
+}
+.footer__link {
+  padding: 0 5px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+}
+.footer__icon:hover {
+  color: #adb5bd;
+}
+.footer__subtitle {
+  margin-bottom: 30px;
+}
+.footer__weather {
+  color: #6c757d;
+  font-weight: 400;
+}
+.footer .form-control {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: #6c757d;
 }
 .footer .footer-navigation {
   min-height: 90px;
+}
+.footer .footer-navigation .navbar-nav .nav-item:hover {
+  color: #fff;
+}
+.footer .footer-navigation .navbar-nav .nav-item {
+  color: #ced4da;
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer__large {
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .modal .modal-item {

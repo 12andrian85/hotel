@@ -1,11 +1,28 @@
 .spa {
+    background-color: #F9F9F9FF;
+
+    &__img {
+        height: 525px;
+    }
+
     .splide {
+        background-color: $white;
+
         &__track {
             padding: 40px 0;
         }
 
+        &__title {
+            margin-bottom: 35px;
+        }
+
         &__slide {
             padding: 0 40px;
+        }
+
+        &__text {
+            color: $gray-600;
+            margin-bottom: 35px;
         }
 
         &__pagination {
@@ -22,28 +39,31 @@
 
 @media (min-width: $width-tablet) {
     .spa {
-    .splide {
-        &__track {
-            padding: 60px 0;
-        }
-        &__pagination {
-            bottom: 30px;
+        .splide {
+            &__track {
+                padding: 60px 0;
+            }
+
+            &__pagination {
+                bottom: 25px;
+
+            }
+
 
         }
-
-     
     }
-}}
+}
 
 @media (min-width: $width-desktop) {
     .spa {
-    .splide {
-        &__track {
-            padding: 100px 0;
-        }
+        .splide {
+            &__track {
+                padding: 100px 0;
+            }
 
-        &__slide {
-            padding: 0 110px;
+            &__slide {
+                padding: 0 110px;
+            }
         }
     }
-}}
+}
