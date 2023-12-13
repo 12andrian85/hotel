@@ -7,7 +7,7 @@
         margin-right: 15px;
         border: none;
     }
-    .btn:hover{
+    .btn:hover,:focus{
         background-color: $primary;
     }
 }

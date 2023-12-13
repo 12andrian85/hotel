@@ -1,8 +1,71 @@
 .reservation {
     height: max-content;
+    background-color: #1C1C1CFF;
+
+    &__title{
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
 
     &__img {
         height: 250px;
+    }
+    &__inner{
+        margin: 0 20px;
+        height: max-content;
+    }
+    &__wrapper{
+        padding: 20px;
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__check{
+        margin-bottom: 15px;
+        font-size: 12px;
+        font-weight: 400;
+        color: $primary;
+    }
+    &__number{
+        margin-bottom: 15px;
+        font-weight: 400;
+        color: $white;
+    }
+    &__month{
+        font-size: 12px;
+        color: $white;
+    }
+    &__day{
+        font-size: 12px;
+        color: $gray-600;
+    }
+    .c-input-number{
+        input{
+            font-size: 35px;
+            color: $white;
+        }
+    }
+    &__price{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $black;
+        color: $white;
+
+    }
+    &__number{
+        font-weight: 400;
+        margin-left: 5px;
+        margin-bottom: 0;
+    }
+    &__symbol{
+        font-size: 14px;
+    }
+    &__text{
+        align-self: flex-end;
+        padding-bottom: 5px;
     }
 
 }

@@ -1,5 +1,12 @@
 .beautiful-banner {
+    background-image: url("/public/img/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom;
     margin-bottom: 40px;
+
+    .beautiful-opacity {
+        opacity: 0.4;
+    }
 
     .container {
         height: 230px;
@@ -9,25 +16,57 @@
 
     .banner-wrapper {
         height: 45px;
-        background-color: aquamarine;
         width: 100%;
     }
 
     .banner-item {
         display: flex;
         align-items: center;
-        padding: 10px 10px;
+        padding: 10px 5px;
+    }
+
+    .banner-element {
+        border: none;
+        font-size: 12px;
+        width: max-content;
+        font-weight: 500;
+        flex-wrap: nowrap;
+    }
+
+    .banner-element:hover {
+        background-color: transparent;
+        color: $white;
+        border-bottom: 1px solid $white;
+    }
+
+    .banner-figure {
+        font-weight: 400;
+        margin-right: 5px;
+    }
+
+    .banner-money {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    .banner-text{
+        font-weight: 500;
     }
 }
 
 @media (min-width: $width-tablet) {
     .beautiful-banner {
+
         // height: 320px;
         .container {
             height: 320px;
         }
+
         .banner-item {
-            padding: 10px 30px;
+            padding: 10px 15px;
+        }
+
+        .banner-wrapper {
+            margin-bottom: 30px;
         }
     }
 }

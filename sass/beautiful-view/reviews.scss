@@ -1,4 +1,5 @@
 .reviews {
+    background-color: #F9F9F9FF;
     padding-top: 40px;
     padding-bottom: 60px;
 
@@ -35,7 +36,7 @@
     }
 
     .reviews-ratings {
-        background-color: $gray-400;
+        background-color: $black;
         height: 200px;
         display: flex;
         flex-direction: column;

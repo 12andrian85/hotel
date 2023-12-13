@@ -11930,12 +11930,18 @@ input:focus-visible {
 .footer__icon:hover {
   color: #adb5bd;
 }
+.footer__title {
+  font-weight: 400;
+}
 .footer__subtitle {
   margin-bottom: 30px;
 }
 .footer__weather {
   color: #6c757d;
   font-weight: 400;
+}
+.footer .btn {
+  width: 100px;
 }
 .footer .form-control {
   background-color: rgb(0, 0, 0);
@@ -11957,7 +11963,15 @@ input:focus-visible {
   font-size: 28px;
   font-weight: 500;
 }
+.footer input:focus {
+  border: none;
+}
 
+@media (min-width: 992px) {
+  .footer .btn {
+    width: 140px;
+  }
+}
 .modal .modal-item {
   display: flex;
   justify-content: center;
@@ -11980,6 +11994,34 @@ input:focus-visible {
 }
 .modal .btn-close {
   padding: 0 5px;
+}
+
+.c-input-number {
+  background-color: transparent;
+}
+.c-input-number input {
+  text-align: center;
+  width: 50px;
+  height: 60px;
+  font-size: 48px;
+  padding: 0;
+  color: #be9a78;
+  border: none;
+  background-color: transparent;
+}
+.c-input-number input::-webkit-outer-spin-button,
+.c-input-number input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.c-input-number button {
+  height: max-content;
+  background-color: transparent;
+  border: none;
+  color: #be9a78;
+  padding: 1px;
 }
 
 .c-title .title::before {
@@ -12052,15 +12094,18 @@ input:focus-visible {
 .c-card-search .card {
   border: none;
 }
+.c-card-search .card .card-title {
+  margin-bottom: 20px;
+}
 .c-card-search .card .card-img-top {
   height: 170px;
-  opacity: 0.8;
+  filter: brightness(75%);
 }
 .c-card-search .card .card-svg {
   font-size: 10px;
 }
 .c-card-search .card .card-inner {
-  bottom: 25px;
+  bottom: 30px;
   font-size: 12px;
   color: #fff;
 }
@@ -12070,17 +12115,19 @@ input:focus-visible {
 .c-card-search .card p {
   color: #6c757d;
 }
+.c-card-search .card .card-review {
+  font-size: 12px;
+}
 .c-card-search .card .card-review--rate {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 30px;
-  width: 30px;
+  width: 30px !important;
   background-color: #000;
   color: #fff;
-  transform: translateY(-50%);
-  top: 50%;
-  left: -25;
+  margin-right: 10px;
+  padding: 0;
 }
 .c-card-search .card .card-icon {
   height: 20px;
@@ -12092,6 +12139,7 @@ input:focus-visible {
 }
 .c-card-search .card .card-review {
   color: #6c757d;
+  font-weight: 500;
 }
 .c-card-search .card .card-footer {
   color: #6c757d;
@@ -12099,11 +12147,14 @@ input:focus-visible {
 }
 .c-card-search .card .footer-link {
   color: #6c757d;
+  font-size: 12px;
+  font-weight: 700;
 }
 .c-card-search .card .footer-icon {
-  font-size: 13px;
+  font-size: 16px;
+  margin-right: 10px;
 }
-.c-card-search .card .btn {
+.c-card-search .card .card-book {
   width: max-content;
   font-size: 12px;
   padding: 0 25px;
@@ -12124,7 +12175,7 @@ input:focus-visible {
   margin-right: 15px;
   border: none;
 }
-.c-reviews .btn:hover {
+.c-reviews .btn:hover, .c-reviews :focus {
   background-color: #be9a78;
 }
 
@@ -12221,18 +12272,19 @@ input:focus-visible {
 .c-progress-but .progress-text {
   bottom: 12px;
   color: #6c757d;
-  font-size: 10px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .c-progress-but .progress-label {
-  font-size: 14px;
+  font-size: 15px;
 }
 .c-progress-but .progress-bg {
   background-color: #ced4da;
-  width: 135px;
+  width: 100%;
   margin: 12px;
 }
 .c-progress-but .progress-bar {
-  height: 8px;
+  height: 10px;
 }
 
 .c-person {
@@ -12271,7 +12323,7 @@ input:focus-visible {
   position: relative;
   height: 380px;
   background-image: url("/public/img/david-emrich-odII8BzuWU8-unsplash.jpg");
-  background-position: center;
+  background-position: left;
 }
 .banner-search .banner-nav {
   position: absolute;
@@ -12283,12 +12335,26 @@ input:focus-visible {
 .banner-search .dropdown-toggle {
   color: #6c757d;
   font-size: 12px;
+  width: max-content;
+  margin: 0 20px;
+}
+.banner-search .dropdown-toggle:focus, .banner-search :active {
+  border: none;
+  color: #fff;
+}
+.banner-search .dropdown-toggle:hover {
+  border-bottom: 1px solid #fff;
 }
 .banner-search .dropdown-menu {
   background-color: #000;
 }
 .banner-search .dropdown-item {
   color: #6c757d;
+}
+.banner-search .dropdown-btn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -12297,6 +12363,7 @@ input:focus-visible {
   }
 }
 .reserve {
+  background-color: #1c1c1c;
   padding: 20px;
   margin: auto;
 }
@@ -12305,14 +12372,50 @@ input:focus-visible {
   margin: auto;
 }
 .reserve__element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 115px;
+  color: #be9a78;
+}
+.reserve__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #151515;
 }
 .reserve__long {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151515;
   height: 75px;
 }
 .reserve__branches {
   height: 50px;
   margin-bottom: 15px;
+}
+.reserve .dropdown .dropdown-button {
+  width: 100%;
+  height: 100%;
+  font-size: 19px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #151515;
+}
+.reserve .dropdown .dropdown-button::after {
+  background-image: url("/public/img/angle-down-solid.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: none;
+  color: #fff;
 }
 
 .services {
@@ -12320,6 +12423,8 @@ input:focus-visible {
 }
 .services .c-stars .stars-label {
   color: #6c757d;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .additional .dropdown-toggle {
@@ -12368,10 +12473,6 @@ input:focus-visible {
 .gallery .card .card-text {
   margin-bottom: 25px;
 }
-.gallery .card .card-footer {
-  border: none;
-}
-
 @media (min-width: 768px) {
   .gallery .card .card-body {
     padding: 20px;
@@ -12383,7 +12484,13 @@ input:focus-visible {
   }
 }
 .beautiful-banner {
+  background-image: url("/public/img/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
   margin-bottom: 40px;
+}
+.beautiful-banner .beautiful-opacity {
+  opacity: 0.4;
 }
 .beautiful-banner .container {
   height: 230px;
@@ -12392,13 +12499,35 @@ input:focus-visible {
 }
 .beautiful-banner .banner-wrapper {
   height: 45px;
-  background-color: aquamarine;
   width: 100%;
 }
 .beautiful-banner .banner-item {
   display: flex;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px 5px;
+}
+.beautiful-banner .banner-element {
+  border: none;
+  font-size: 12px;
+  width: max-content;
+  font-weight: 500;
+  flex-wrap: nowrap;
+}
+.beautiful-banner .banner-element:hover {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.beautiful-banner .banner-figure {
+  font-weight: 400;
+  margin-right: 5px;
+}
+.beautiful-banner .banner-money {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.beautiful-banner .banner-text {
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -12406,7 +12535,10 @@ input:focus-visible {
     height: 320px;
   }
   .beautiful-banner .banner-item {
-    padding: 10px 30px;
+    padding: 10px 15px;
+  }
+  .beautiful-banner .banner-wrapper {
+    margin-bottom: 30px;
   }
 }
 .title {
@@ -12414,6 +12546,10 @@ input:focus-visible {
 }
 .title h6, .title .h6 {
   margin-bottom: 40px;
+}
+.title .title-hotel {
+  color: #6c757d;
+  font-weight: 500;
 }
 
 .description .card .card-img-top {
@@ -12439,18 +12575,27 @@ input:focus-visible {
   width: 40px;
   margin-bottom: 15px;
 }
+.description .description-item .description-svg::before {
+  font-size: 40px;
+}
+.description .description-item .description-word {
+  font-weight: 500;
+}
 .description .description-list {
-  padding: 0 0 40px 0;
+  padding: 0 0 10px 0;
+}
+.description .description-text p {
+  line-height: 1.7;
 }
 .description .description-text {
-  height: 300px;
   padding: 45px 0;
+  color: #6c757d;
 }
 .description .description-service {
   padding: 30px 0;
 }
 .description .description-service h3, .description .description-service .h3 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .description .description-service .description-inner {
   color: #6c757d;
@@ -12470,7 +12615,6 @@ input:focus-visible {
 .reservation {
   margin-bottom: 40px;
   height: 370px;
-  background-color: rgb(185, 183, 183);
   padding: 20px;
 }
 .reservation__long {
@@ -12478,6 +12622,7 @@ input:focus-visible {
 }
 .reservation__inner {
   height: 160px;
+  background-color: #1c1c1c;
 }
 .reservation__btn a {
   width: auto;
@@ -12485,12 +12630,21 @@ input:focus-visible {
   font-size: 12px;
   font-weight: 600;
 }
+.reservation .reserve__inner {
+  height: 330px;
+}
+.reservation .reserve__element {
+  height: auto;
+}
 
 .best-rooms {
   margin-bottom: 40px;
 }
 .best-rooms__title {
   margin-bottom: 35px;
+}
+.best-rooms .card {
+  border: none;
 }
 
 .search {
@@ -12501,6 +12655,8 @@ input:focus-visible {
 }
 .search__input {
   height: 40px;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
 }
 
 .categories {
@@ -12530,6 +12686,7 @@ input:focus-visible {
 }
 
 .reviews {
+  background-color: #f9f9f9;
   padding-top: 40px;
   padding-bottom: 60px;
 }
@@ -12560,7 +12717,7 @@ input:focus-visible {
   height: max-content;
 }
 .reviews .reviews-ratings {
-  background-color: #ced4da;
+  background-color: #000;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -12593,9 +12750,9 @@ input:focus-visible {
 
 .banner-booking {
   position: relative;
-  height: 340px;
-  background-image: url("/public/img/aaron-burden-cEukkv42O40-unsplash.jpg");
-  background-position: center;
+  height: 380px;
+  background-image: url "/public/img/david-emrich-odII8BzuWU8-unsplash.jpg";
+  background-position: left;
 }
 .banner-booking .banner-nav {
   position: absolute;
@@ -12629,9 +12786,68 @@ input:focus-visible {
 }
 .reservation {
   height: max-content;
+  background-color: #1c1c1c;
+}
+.reservation__title {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 400;
 }
 .reservation__img {
   height: 250px;
+}
+.reservation__inner {
+  margin: 0 20px;
+  height: max-content;
+}
+.reservation__wrapper {
+  padding: 20px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reservation__check {
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #be9a78;
+}
+.reservation__number {
+  margin-bottom: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+.reservation__month {
+  font-size: 12px;
+  color: #fff;
+}
+.reservation__day {
+  font-size: 12px;
+  color: #6c757d;
+}
+.reservation .c-input-number input {
+  font-size: 35px;
+  color: #fff;
+}
+.reservation__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+.reservation__number {
+  font-weight: 400;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.reservation__symbol {
+  font-size: 14px;
+}
+.reservation__text {
+  align-self: flex-end;
+  padding-bottom: 5px;
 }
 
 .extra-services__title {

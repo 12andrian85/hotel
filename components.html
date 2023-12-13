@@ -42,6 +42,22 @@
 
         </header>
         <main class="main my-5">
+            <!-- input-number -->
+            <div class="c-input-number my-3 bg-dark text-center">
+                <span class="text-white text-center">GUESTS</span>
+                <div class="d-flex">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <input type="number" name="number" min="0" max="100" value="1">
+                        <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
+                            <i class="banner-icon fa-solid fa-angle-down"></i>
+                        </button>
+                        <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
+                            <i class="banner-icon fa-solid fa-angle-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <!-- title-left -->
             <h3>Title-left</h3>
             <div class="c-title text-center py-2">
@@ -84,8 +100,8 @@
                                 <i class="card-svg fa-solid fa-star ms-1"></i>
                             </di>
                             <div class="d-flex align-items-center">
-                                <i class="fa-regular fa-file-video me-2"></i>
-                                <i class="fa-solid fa-file-image"></i>
+                                <i class="fa-regular fa-file-video me-2 fs-5"></i>
+                                <i class="fa-solid fa-file-image fs-5"></i>
                             </div>
                         </div>
                         <h4 class="card-title">Family Room</h4>
@@ -117,9 +133,9 @@
             <!-- c-card-search -->
             <h3>c-card-search</h3>
             <div class="c-card-search">
-                <div class="card" style="width: 255px;">
+                <div class="card" style="width: 370px;">
                     <img src="/public/img/spacejoy-umAXneH4GhA-unsplash.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-white border pt-0">
+                    <div class="card-body bg-white border p-4 pt-0">
                         <div class="card-inner position-relative d-flex justify-content-between">
                             <di class="d-flex align-items-center">
                                 <span class="card-text m-0">HOTEL LONDON</span>
@@ -128,49 +144,53 @@
                                 <i class="card-svg fa-solid fa-star ms-1"></i>
                             </di>
                             <div class="d-flex align-items-center">
-                                <i class="fa-regular fa-file-video me-2"></i>
-                                <i class="fa-solid fa-file-image"></i>
+                                <i class="fa-regular fa-file-video me-2 fs-5"></i>
+                                <i class="fa-solid fa-file-image fs-5"></i>
                             </div>
                         </div>
                         <h4 class="card-title">Family Room</h4>
-                        <div class="card-items d-flex align-items-center justify-content-between mb-2">
+                        <div class="card-items d-flex align-items-center justify-content-between mb-3">
                             <div>
-                                <span class="card-review position-relative fs-sm text-uppercase ms-4">
-                                    5 reviews
-                                    <span class="card-review--rate position-absolute fs-sm">7.5</span>
-                                </span>
+                                <a class="card-review--rate btn btn-dark">5</a>
                             </div>
-                            <div>
-                                <span class="card-review fs-sm text-uppercase">
-                                    <i class="fa-regular fa-circle-user me-1"></i>
-                                    3 guests
-                                </span>
-                            </div>
-                            <div>
-                                <span class="card-review fs-sm text-uppercase d-flex align-items-center">
-                                    <svg class="icon card-icon me-1">
-                                        <use xlink:href="#home-plan"></use>
-                                    </svg>
-                                    25 M <sup><small>2</small></sup>
-                                </span>
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <div>
+                                    <span class="card-review position-relative text-uppercase">
+                                        5 reviews
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="card-review text-uppercase">
+                                        <i class="fa-regular fa-circle-user me-1"></i>
+                                        3 guests
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="card-review text-uppercase d-flex align-items-center">
+                                        <svg class="icon card-icon me-1">
+                                            <use xlink:href="#home-plan"></use>
+                                        </svg>
+                                        25 M <sup><small>2</small></sup>
+                                    </span>
+                                </div>
                             </div>
 
                         </div>
                         <p class="card-text">
                             Some quick example text to build on the card title and make
                         </p>
-                        <a href="#" class="btn btn-outline-primary fs-sm">BOOK NOW for 222 $
+                        <a href="#" class="card-book btn btn-outline-primary mb-3 fs-sm">BOOK NOW for 222 $
                             <i class="fa-solid fa-circle-info ms-2"></i>
                         </a>
-                        <div class="card-footer d-flex align-items-center justify-content-between mt-2 pt-2 border-top-">
+                        <div class="card-footer d-flex align-items-center justify-content-between ps-0 mt-4 pt-4">
                             <div>
-                                <i class="footer-icon fa-solid me-1 fa-umbrella-beach"></i>
-                                <i class="footer-icon fa-solid me-1 fa-blender-phone"></i>
-                                <i class="footer-icon fa-solid me-1 fa-martini-glass-citrus"></i>
-                                <i class="footer-icon fa-solid me-1 fa-utensils"></i>
-                                <i class="footer-icon fa-solid me-1 fa-person-walking-luggage"></i>
+                                <i class="footer-icon fa-solid ms-0 fa-umbrella-beach"></i>
+                                <i class="footer-icon fa-solid fa-blender-phone"></i>
+                                <i class="footer-icon fa-solid fa-martini-glass-citrus"></i>
+                                <i class="footer-icon fa-solid fa-utensils"></i>
+                                <i class="footer-icon fa-solid fa-person-walking-luggage"></i>
                             </div>
-                            <a href="#" class="footer-link text-decoration-none fs-sm">
+                            <a href="#" class="footer-link text-decoration-none">
                                 FULL INFO
                                 <i class="ms-1 fa-solid fa-angle-right"></i>
                             </a>

@@ -1,7 +1,7 @@
 .reservation {
     margin-bottom: 40px;
     height: 370px;
-    background-color:  rgb(185, 183, 183);
+    // background-color:  #1C1C1CFF;
     padding: 20px;
 
     &__long{
@@ -9,6 +9,8 @@
     }
     &__inner{
         height: 160px;
+    background-color:  #1C1C1CFF;
+
     }
    
     &__btn a{
@@ -16,5 +18,13 @@
         color: white;
         font-size: 12px;
         font-weight: 600;
+    }
+    .reserve{
+        &__inner{
+            height: 330px;
+        }
+        &__element{
+            height: auto;
+        }
     }
 }
