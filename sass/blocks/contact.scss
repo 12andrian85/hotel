@@ -6,17 +6,32 @@
         background-position: bottom;
     }
 
-    &__tilte {
-        margin-bottom: 35px;
+    &__title {
+        margin-bottom: 20px;
+
     }
 
     &__text {
-        height: 120px;
+        font-weight: 400;
+        color: $gray-600;
+        line-height: 1.6;
         margin-bottom: 45px;
+    }
+
+    .form {
+        .form-label{
+            font-weight: 500;
+            color: $gray-600;
+        }
+        .form-control{
+            background-color: $gray-100;
+            border: 1px solid $gray-200;
+        }
     }
 
     &__map {
         height: 250px;
+        filter: grayscale(1);
         display: inline-block;
         margin-bottom: 60px;
 
@@ -42,7 +57,8 @@
         .c-title {
             color: $gray-600;
         }
-        .c-title::before{
+
+        .c-title::before {
             bottom: -20px;
         }
 

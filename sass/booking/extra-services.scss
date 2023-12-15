@@ -4,5 +4,8 @@
     }
     .c-stars{
         margin-bottom: 20px;
+        .c-stars-text{
+            color: $gray-600;
+        }
     }
 }

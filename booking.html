@@ -67,7 +67,7 @@
                             <img src="/public/img/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg"
                                 style="height: 30px; width: 30px; border-radius: 50%;" alt="">
                             <div class="lh-1 ms-2 text-start">
-                                <span class="" style="font-size: 15px;">My account</span> <br>
+                                <span class="" style="font-size: 14px;">My account</span> <br>
                                 <small>LOG OUT</small>
                             </div>
                         </a>
@@ -94,7 +94,6 @@
                 </div>
                 <div class="collapse navbar-collapse justify-content-center z-1 justify-content-lg-between"
                     id="navbarTogglerDemo01">
-                    <!-- <a class="navbar-brand" href="index.html"> -->
                     <!-- logo -->
                     <div class="header-logo text-uppercase d-none d-lg-flex">
                         <a class="d-flex flex-column align-items-center text-white text-decoration-none"
@@ -106,7 +105,7 @@
                     </a>
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link active-" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active-" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
@@ -122,7 +121,7 @@
                             <a class="nav-link" href="beautiful-view.html">Sea view</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="booking.html">Booking</a>
+                            <a class="nav-link" href="#">Booking</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="single-post.html">Single post</a>
@@ -140,9 +139,9 @@
         <!-- banner -->
         <div class="banner-booking mb-5 d-flex justify-content-center align-items-center">
             <div class="position-absolute w-100 h-100 opacity-25 bg-dark"></div>
-            <h1 class="display-4 text-white z-1">BOOKING</h1>
+            <h1 class="display-4 text-white">BOOKING</h1>
             <!-- banner-nav -->
-            <div class="banner-nav d-flex align-items-center z-1">
+            <div class="banner-nav d-flex align-items-center overflow-auto">
                 <div class="container  d-flex justify-content-center align-items-center position-relative">
                     <div class="banner-wrapper d-flex align-items-center">
                         <a href="#" class="btn banner-btn btn-outline-light">1</a>
@@ -150,15 +149,15 @@
                     </div>
                     <div class="banner-wrapper d-flex align-items-center">
                         <a href="#" class="btn banner-btn btn-outline-light">1</a>
-                        <span class="btn-text text-uppercase text-white">search</span>
+                        <span class="btn-text text-uppercase text-white">booking</span>
                     </div>
                     <div class="banner-wrapper d-flex align-items-center">
                         <a href="#" class="btn banner-btn btn-outline-light">1</a>
-                        <span class="btn-text text-uppercase text-white">search</span>
+                        <span class="btn-text text-uppercase text-white">check-out</span>
                     </div>
                     <div class="banner-wrapper d-flex align-items-center">
                         <a href="#" class="btn banner-btn btn-outline-light">1</a>
-                        <span class="btn-text text-uppercase text-white">search</span>
+                        <span class="btn-text text-uppercase text-white">thank you</span>
                     </div>
                 </div>
             </div>
@@ -166,6 +165,7 @@
         <div class="container">
             <div class="row">
                 <div class="col col-12 col-md-4">
+                    <!-- reservation -->
                     <div class=" reservation p-0 border-bottom">
                         <div class="reservation__img overflow-hidden">
                             <img src="/public/img/spacejoy-RUvW1KGD9a4-unsplash.jpg" alt="">
@@ -219,72 +219,73 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col col-12 col-md-8">
-                    <!-- extra-services -->
-                    <div class="extra-services pb-spacing border-bottom">
-                        <h3 class="extra-services__title">Add Extra Services</h3>
-                        <div class="row">
-                            <div class="col col-12 col-md-6">
-                                <div class="c-stars">
-                                    <input type="checkbox" id="animal" class="me-2">
-                                    <label for="animal">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
-                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
-                                        </div>
-                                    </label>
+                <div class="col col-md-8">
+                    <form action="">
+                        <!-- extra-services -->
+                        <div class="extra-services pb-spacing border-bottom">
+                            <h3 class="extra-services__title">Add Extra Services</h3>
+                            <div class="row">
+                                <div class="col col-12 col-md-6">
+                                    <div class="c-stars">
+                                        <input type="checkbox" id="animal" class="me-2">
+                                        <label for="animal">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6 class="m-0 fw-semibold me-1">Animal Allowed :</h6>
+                                                <span class="c-stars-text">$ 37.00 / Group / Trip</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="c-stars">
+                                        <input type="checkbox" id="smook" class="me-2">
+                                        <label for="smook">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6 class="m-0 fw-semibold me-1">Smoking Room:</h6>
+                                                <span class="c-stars-text">$ 15.00 / Room / Night</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="c-stars mb-0">
+                                        <input type="checkbox" id="sea" class="me-2">
+                                        <label for="sea">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6 class="m-0 fw-semibold me-1">Sea View :</h6>
+                                                <span class="c-stars-text">$ 15.00 / Room / Night</span>
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="c-stars">
-                                    <input type="checkbox" id="animal" class="me-2">
-                                    <label for="animal">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
-                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="c-stars mb-0">
-                                    <input type="checkbox" id="animal" class="me-2">
-                                    <label for="animal">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
-                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-md-6">
-                                <div class="c-stars">
-                                    <input type="checkbox" id="animal" class="me-2">
-                                    <label for="animal">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
-                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="c-stars">
-                                    <input type="checkbox" id="animal" class="me-2">
-                                    <label for="animal">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
-                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="c-stars mb-0">
-                                    <input type="checkbox" id="animal" class="me-2">
-                                    <label for="animal">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <h6 class="m-0 fw-bold">Animal Allowed :</h6>
-                                            <span class="text-dark" style="color: grey;">$ 37.00 / Group / Trip</span>
-                                        </div>
-                                    </label>
+                                <div class="col col-12 col-md-6">
+                                    <div class="c-stars">
+                                        <input type="checkbox" id="pool" class="me-2">
+                                        <label for="pool">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6 class="m-0 fw-semibold me-1">Swimming Pool :</h6>
+                                                <span class="c-stars-text">$ 15.00 / Room / Night</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="c-stars">
+                                        <input type="checkbox" id="wifi" class="me-2">
+                                        <label for="wifi">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6 class="m-0 fw-semibold me-1">WIFI 24 H :</h6>
+                                                <span class="c-stars-text">$ 15.00 / Room / Night</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="c-stars mb-0">
+                                        <input type="checkbox" id="braeackfast" class="me-2">
+                                        <label for="braeackfast">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <h6 class="m-0 fw-semibold me-1">Breackfast Included:</h6>
+                                                <span class="c-stars-text">$ 15.00 / Room / Night</span>
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                     <!-- information -->
                     <form action="" class="information my-spacing-lg">
                         <h3 class="information__title">Add Extra Services</h3>
@@ -298,53 +299,53 @@
                                     </div>
                                 </div>
                                 <div class="field mb-spacing-sm">
-                                    <label for="name" class="form-label">Name :</label>
+                                    <label for="email" class="form-label">Email :</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="name"
+                                        <input type="text" class="form-control" id="email"
                                             aria-describedby="basic-addon3 basic-addon4">
                                     </div>
                                 </div>
                                 <div class="field mb-spacing-sm">
-                                    <label for="name" class="form-label">Name :</label>
+                                    <label for="address" class="form-label">Address :</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="name"
+                                        <input type="text" class="form-control" id="address"
                                             aria-describedby="basic-addon3 basic-addon4">
                                     </div>
                                 </div>
                                 <div class="field mb-spacing-sm">
-                                    <label for="name" class="form-label">Name :</label>
+                                    <label for="country" class="form-label">Country :</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="name"
+                                        <input type="text" class="form-control" id="country"
                                             aria-describedby="basic-addon3 basic-addon4">
                                     </div>
                                 </div>
                             </div>
                             <div class="col col-12 col-md-6">
                                 <div class="field mb-spacing-sm">
-                                    <label for="name" class="form-label">Name :</label>
+                                    <label for="surname" class="form-label">Surname :</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="name"
+                                        <input type="text" class="form-control" id="surname"
                                             aria-describedby="basic-addon3 basic-addon4">
                                     </div>
                                 </div>
                                 <div class="field mb-spacing-sm">
-                                    <label for="name" class="form-label">Name :</label>
+                                    <label for="phone" class="form-label">Phone :</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="name"
+                                        <input type="tel" class="form-control" id="phone"
                                             aria-describedby="basic-addon3 basic-addon4">
                                     </div>
                                 </div>
                                 <div class="field mb-spacing-sm">
-                                    <label for="name" class="form-label">Name :</label>
+                                    <label for="city" class="form-label">City :</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="name"
+                                        <input type="text" class="form-control" id="city"
                                             aria-describedby="basic-addon3 basic-addon4">
                                     </div>
                                 </div>
                                 <div class="field mb-spacing-sm">
-                                    <label for="name" class="form-label">Name :</label>
+                                    <label for="zip" class="form-label">Zip :</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="name"
+                                        <input type="text" class="form-control" id="zip"
                                             aria-describedby="basic-addon3 basic-addon4">
                                     </div>
                                 </div>
@@ -356,25 +357,25 @@
                             <div class="row">
                                 <div class="col col-12 col-md-6">
                                     <div class="field mb-spacing-sm">
-                                        <label for="name" class="form-label">Name :</label>
+                                        <label for="Arrival" class="form-label">Arrival :</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" id="name"
+                                            <input type="text" class="form-control" id="Arrival"
                                                 aria-describedby="basic-addon3 basic-addon4">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col col-12 col-md-6">
                                     <div class="field mb-spacing-sm">
-                                        <label for="name" class="form-label">Name :</label>
+                                        <label for="coupon" class="form-label">Coupon :</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" id="name"
+                                            <input type="text" class="form-control" id="coupon"
                                                 aria-describedby="basic-addon3 basic-addon4">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center justify-content-md-start">
-                                <a href="#" class="btn btn-primary ms-2">BOOK NOW</a>
+                                <a href="#" class="information__pay btn btn-primary ">BOOK NOW</a>
                             </div>
                         </div>
                     </form>

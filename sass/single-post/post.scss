@@ -1,16 +1,22 @@
 .post {
     &__text {
-        height: 175px;
+        color: $gray-600;
+        font-weight: 400;
+        line-height: 1.6;
+
     }
 
     .paragraph {
         &__title {
-            margin-bottom: 35px;
+            margin-bottom: 20px;
+            font-weight: 400;
         }
 
         &__text {
-            height: 175px;
-            margin-bottom: 30px;
+            color: $gray-600;
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         &__img {
@@ -19,14 +25,17 @@
     }
 
     .guests {
-        padding-bottom: 65px;
+        padding-bottom: 45px;
 
         &__title {
-            margin-bottom: 35px;
+            margin-bottom: 20px;
+            font-weight: 400;
         }
 
         &__text {
-            height: 175px;
+            color: $gray-600;
+            font-weight: 400;
+            line-height: 1.6;
         }
     }
 
@@ -36,11 +45,14 @@
 
         &__title {
             margin-right: 30px;
+            font-weight: 400
         }
 
         &__item {
-            padding: 10px 20px;
-            margin: 0 10px;
+            color: $gray-600;
+            border: 1px solid $gray-200;
+            padding: 5px;
+            margin: 10px;
         }
     }
 
@@ -57,6 +69,8 @@
 
         &__text {
             margin-bottom: 30px;
+            line-height: 1.6;
+            color: $gray-600;
         }
 
         &__btn {
@@ -72,6 +86,14 @@
         &__title {
             margin-bottom: 40px;
         }
+
+        .form-label {
+            color: $gray-600;
+        }
+
+        .form-control {
+            background-color: $gray-100;
+        }
     }
 
     .calendar {
@@ -84,13 +106,15 @@
         margin-bottom: 35px;
 
         &__title {
-            margin-bottom: 35px;
+            margin-bottom: 20px;
         }
 
         &__item {
-            padding: 10px 30px;
-            margin-right: 20px;
-            margin-bottom: 10px;
+            font-size: 14px;
+            color: $gray-600;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid $gray-200;
         }
 
     }
@@ -104,18 +128,23 @@
     }
 
     .search {
+        max-width: 220px;
         margin-bottom: 50px;
 
         &__title {
             margin-bottom: 30px;
         }
 
-        &__input {}
+        &__input {
+            background-color: $gray-100;
+            border: 1px solid $gray-200;
+        }
+
 
     }
 
     .categories {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
 
         &__title {
             margin-bottom: 35px;
@@ -128,13 +157,19 @@
         &__title {
             margin-bottom: 35px;
         }
+        .card{
+            border: none;
+        }
     }
 
     .our-offices {
+        color: $gray-500;
+
         &__title {
             margin-bottom: 35px;
         }
-        &__wrapper{
+
+        &__wrapper {
             margin-bottom: 30px;
         }
 

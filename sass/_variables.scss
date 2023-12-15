@@ -33,9 +33,20 @@ $custom-colors: (
 );
 $font-size-sm: 10px;
 
-// scss-docs-start font-variables
-// stylelint-disable value-keyword-case
-$font-family: 'Lora', serif;
+// / Add custom color class
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  // Custom color
+  "gray-600":    $gray-600,
+);
+$font-family-base: 'Lora', serif;
 
 
 // breackpoints

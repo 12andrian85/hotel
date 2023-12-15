@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="public/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <!-- star -->
 <svg width="0" height="0" class="d-none">
@@ -38,25 +43,39 @@
                         <a href="#" class="top-link">PS</a>
                     </li>
                     <li class="top-item">
-                        <a href="#" class="top-link">payment</a>
+                        <a href="#" class="top-link">
+                            <i class="fa-regular fa-credit-card me-1"></i>
+                            Payment Options
+                        </a>
                     </li>
                     <li class="top-item">
-                        <a href="#" class="top-link">terms Conditions</a>
+                        <a href="#" class="top-link">
+                            <i class="fa-regular fa-square-check me-1"></i>
+                            Terms COnditions</a>
                     </li>
-
                 </ul>
                 <ul class="header-top list-unstyled d-flex m-0">
                     <li class="top-item">
-                        <a href="#" class="top-link">Add review</a>
+                        <a href="theme-kit.html" class="top-link">Add Your Review</a>
                     </li>
                     <li class="top-item">
-                        <a href="#" class="top-link">sms</a>
+                        <a href="#" class="top-link">
+                            <i class="fa-regular fa-envelope fa-envelope--note position-relative"></i>
+                        </a>
                     </li>
                     <li class="top-item">
-                        <a href="#" class="top-link">my Bookings</a>
+                        <a href="booking.html" class="top-link">My Bookings</a>
                     </li>
                     <li class="top-item">
-                        <a href="#" class="btn btn-primary">My Account</a>
+                        <a href="#" class="btn btn-primary h-100" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            <img src="/public/img/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg"
+                                style="height: 30px; width: 30px; border-radius: 50%;" alt="">
+                            <div class="lh-1 ms-2 text-start">
+                                <span class="" style="font-size: 14px;">My account</span> <br>
+                                <small>LOG OUT</small>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -65,9 +84,14 @@
             <div class="container">
                 <div class="d-flex justify-content-between w-100 d-lg-none">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        My account
+                        <img src="/public/img/aaron-burden-cEukkv42O40-unsplash.jpg"
+                            style="height: 35px; width: 35px; border-radius: 50%   ;" alt="">
+                        <span>
+                            My account <br>
+                            LOG OUT
+                        </span>
                     </button>
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler ms-auto bg-white" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -75,22 +99,22 @@
                 </div>
                 <div class="collapse navbar-collapse justify-content-center z-1 justify-content-lg-between"
                     id="navbarTogglerDemo01">
-                    <!-- <a class="navbar-brand" href="index.html"> -->
                     <!-- logo -->
                     <div class="header-logo text-uppercase d-none d-lg-flex">
-                        <a class="d-flex flex-column align-items-center text-decoration-none" href="index.html">
-                            <span class="">logo hotel</span>
+                        <a class="d-flex flex-column align-items-center text-white text-decoration-none"
+                            href="index.html">
+                            <span class="fw-semibold" style="letter-spacing: 4px;">logo hotel</span>
                             <span class="fs-sm">luxury hotel</span>
                         </a>
                     </div>
                     </a>
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active-" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                                href="https://s3.envato.com/files/237383996/hotel-psd-previews/09-single.jpg">tempate</a>
+                                href="https://s3.envato.com/files/237383996/hotel-psd-previews/09-single.jpg">template</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="components.html">components</a>
@@ -105,7 +129,7 @@
                             <a class="nav-link" href="booking.html">Booking</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="single-post.html">Single post</a>
+                            <a class="nav-link" href="#">Single post</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
@@ -118,13 +142,34 @@
     <!-- main -->
     <main>
         <!-- banner -->
-        <div class="banner-post mb-spacing-lg d-flex justify-content-center align-items-center">
-            <div class="container  d-md-flex justify-content-center align-items-center  position-relative ">
+        <div class="banner-post mb-spacing-lg position-relative">
+            <div class="container  d-flex justify-content-center align-items-center">
                 <h1 class="text-white">SINGLE POST</h1>
                 <ul class="banner-post__list mb-0 p-0 d-flex justify-content-center align-items-center">
-                    <li class="banner-post__item">1</li>
-                    <li class="banner-post__item">1</li>
-                    <li class="banner-post__item">1</li>
+                    <li class="">
+                        <a href="#" class="banner-post__item">
+                            <div class="c-person">
+                                <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
+                                <span class="c-person-name ms-2">JESS DOE</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="banner-post__item">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span class="ms-2">21/12/2017</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="banner-post__item d-flex align-items-center">
+                            <span class="text-white fs-5 material-symbols-outlined">
+                                sms
+                            </span>
+                            <span class=" text-white ms-2">
+                                3 COMMENTS
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -136,12 +181,17 @@
                         <div class="row  mb-spacing">
                             <div class="col col-12 col-md-6">
                                 <p class="post__text">
-                                    text
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum fugit itaque
+                                    minima eius, assumenda corporis! Nostrum quam, fuga quis, aliquid nulla quisquam
+                                    quaerat dolor, ullam itaque officia vitae facere animi ratione voluptatum neque
+                                    vero! quaerat dolor, ullam itaque officia vitae facere
                                 </p>
                             </div>
                             <div class="col col-12 col-md-6">
                                 <p class="post__text">
-                                    text
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum fugit itaque
+                                    minima eius, assumenda corporis! Nostrum quam, fuga quis, aliquid nulla quisquam
+                                    quaerat dolor, ullam itaque officia vitae facere animi ratione
                                 </p>
                             </div>
                         </div>
@@ -149,64 +199,83 @@
                         <div class="paragraph mb-spacing">
                             <h3 class="paragraph__title">Our Latest Rooms</h3>
                             <p class="paragraph__text">
-                                text
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptatum sint
+                                laboriosam eveniet unde ipsa repellat deserunt ipsum. Dicta unde fugiat blanditiis,
+                                consectetur deserunt neque ratione, dolor, accusantium sint atque nostrum odit officia
+                                excepturi voluptas molestiae fuga voluptate provident? Tenetur, aliquam rem quod aut
+                                deleniti voluptate nihil esse, a cupiditate voluptates saepe? Voluptate voluptatibus
+                                ipsum praesentium ut ipsam, voluptatum fugiat excepturi! Ad saepe commodi, alias fuga
+                                nisi blanditiis autem itaque repudiandae accusamus delectus similique vitae,
+                                exercitationem quos illo dolorum modi.
                             </p>
                             <div class="row">
                                 <div class="paragraph__img col col-12 col-md-6">
-                                    FOTO
+                                    <img src="/public/img/eunice-c-QstAba7N2ZY-unsplash.jpg" alt="">
                                 </div>
                                 <div class="paragraph__img col col-12 col-md-6">
-                                    FOTO
+                                    <img src="/public/img/joe-ciciarelli-08AJKJf75kw-unsplash.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                         <!-- guests -->
-                        <div class="guests border-bottom">
-                            <p class="guests__text">text</p>
+                        <div class="guests">
+                            <h3 class="guests__title">Special Guests interview</h3>
+                            <p class="guests__text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, a alias, odit illum
+                                maiores veritatis sit ut delectus praesentium molestiae velit possimus fuga deserunt!
+                                Ratione, libero, harum earum animi accusamus minus commodi nulla aliquid, praesentium
+                                saepe eum est porro aut quo doloremque quasi enim ad similique ipsa obcaecati aliquam?
+                                Officiis expedita quisquam fuga distinctio ipsam. Corrupti amet doloremque eaque officia
+                                minima? Temporibus sequi nihil corrupti, perspiciatis quod numquam, ex tenetur quia
+                                iusto, veniam soluta! Ad eveniet aperiam veniam possimus suscipit tempore mollitia
+                                architecto optio, dolores eum atque iure sequi aliquid commodi! Odit dolor et eaque!
+                            </p>
                         </div>
                         <!-- tags -->
                         <div class="tags d-flex justify-content-start align-items-center border-bottom">
-                            <span class="tags__title">Tags:</span>
+                            <h5 class="tags__title">Tag:</h5>
                             <ul class="tags__list m-0 d-flex flex-wrap justify-content-start align-items-center">
-                                <li class="tags__item mb-3 mb-md-0">#</li>
-                                <li class="tags__item mb-3 mb-md-0">#</li>
-                                <li class="tags__item mb-3 mb-md-0">#</li>
-                                <li class="tags__item mb-3 mb-md-0">#</li>
-                                <li class="tags__item mb-3 mb-md-0">#</li>
-                                <li class="tags__item mb-3 mb-md-0">#</li>
-                                <li class="tags__item mb-3 mb-md-0">#</li>
+                                <li class="tags__item mb-3 mb-md-0">#Hotel</li>
+                                <li class="tags__item mb-3 mb-md-0">#Room</li>
+                                <li class="tags__item mb-3 mb-md-0">Spa</li>
+                                <li class="tags__item mb-3 mb-md-0">Drink & end Food</li>
+                                <li class="tags__item mb-3 mb-md-0">King Size</li>
+                                <li class="tags__item mb-3 mb-md-0">#No Smooking</li>
+                                <li class="tags__item mb-3 mb-md-0">Luxury</li>
                             </ul>
                         </div>
                         <!-- comments -->
                         <div class="comments">
-                            <h3 class="comments__title">2 Comments</h3>
+                            <h5 class="comments__title">2 Comments</h5>
                             <div>
                                 <div class="c-person">
                                     <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
-                                    <span class="mx-2">Jess Doe</span>
-                                    <h5 class="fw-bold mb-0 mx-2 ">Awesome Hotel</h5>
-                                    <button class="btn btn-dark">7.5</button>
+                                    <span class="mx-2 text-dark fw-semibold">John Doe</span>
+                                    <span class="">september 4,2015 at 1:24 <small>pm</small></span>
                                 </div>
                                 <p class="comments__text">
-                                    text
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam ratione
+                                    repudiandae nihil maxime? Ipsa tenetur laborum repellendus, quae earum, minima ullam
+                                    neque in maxime cupiditate totam necessitatibus iste quas!
                                 </p>
                                 <a href="#" class="comments__btn btn btn-dark">REPLY</a>
                             </div>
-                            <div class="botder-bottom">
+                            <div class="border-bottom">
                                 <div class="c-person">
                                     <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
-                                    <span class="mx-2">Jess Doe</span>
-                                    <h5 class="fw-bold mb-0 mx-2 ">Awesome Hotel</h5>
-                                    <button class="btn btn-dark">7.5</button>
+                                    <span class="mx-2 text-dark fw-semibold">John Doe</span>
+                                    <span class="">september 4,2015 at 1:24 <small>pm</small></span>
                                 </div>
                                 <p class="comments__text">
-                                    text
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam ratione
+                                    repudiandae nihil maxime? Ipsa tenetur laborum repellendus, quae earum, minima ullam
+                                    neque in maxime cupiditate totam necessitatibus iste quas!
                                 </p>
                                 <a href="#" class="comments__btn btn btn-dark">REPLY</a>
                             </div>
                             <!-- form -->
-                            <form action="" class="form">
-                                <h3 class="form__title">Leave a Comment</h3>
+                            <form action="" class="form py-spacing">
+                                <h5 class="form__title">Leave a Comment</h5>
                                 <div class="row">
                                     <div class="col col-12 col-md-6">
                                         <div class="field mb-spacing-sm">
@@ -217,25 +286,25 @@
                                             </div>
                                         </div>
                                         <div class="field mb-spacing-sm">
-                                            <label for="name" class="form-label">Name :</label>
+                                            <label for="email" class="form-label">Email :</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="name"
+                                                <input type="text" class="form-control" id="email"
                                                     aria-describedby="basic-addon3 basic-addon4">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col col-12 col-md-6">
                                         <div class="field mb-spacing-sm">
-                                            <label for="name" class="form-label">Name :</label>
+                                            <label for="surname" class="form-label">Surname :</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="name"
+                                                <input type="text" class="form-control" id="surname"
                                                     aria-describedby="basic-addon3 basic-addon4">
                                             </div>
                                         </div>
                                         <div class="field mb-spacing-sm">
-                                            <label for="name" class="form-label">Name :</label>
+                                            <label for="phone" class="form-label">Phone :</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="name"
+                                                <input type="tel" class="form-control" id="phone"
                                                     aria-describedby="basic-addon3 basic-addon4">
                                             </div>
                                         </div>
@@ -245,9 +314,9 @@
                                         <textarea class="form-control w-100" name="" id="comment" cols=""
                                             rows="6.5"></textarea>
                                     </div>
-                                   <div class="d-flex justify-content-center justify-content-md-start
-                                    <a href="#" class="btn btn-primary ms-2">SEND NOW</a>
-                                   </div>
+                                    <div class="d-flex justify-content-center justify-content-md-start">
+                                        <a href="#" class="btn btn-primary ms-2">SEND NOW</a>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -256,18 +325,57 @@
                         <!-- calendar -->
                         <div class="calendar">
                             calendar
+                            <form>
+                                <div class="nativeDatePicker">
+                                    <!-- <label for="bday">Enter your birthday:</label> -->
+                                    <input type="date" id="bday" name="bday" />
+                                    <!-- <span class="validity"></span> -->
+                                </div>
+                                <!-- <p class="fallbackLabel">Enter your birthday:</p> -->
+                                <!-- <div class="fallbackDatePicker"> -->
+                                <!-- <span> -->
+                                <!-- <label for="day">Day:</label>
+                                    <select id="day" name="day"></select> -->
+                                <!-- </span> -->
+                                <!-- <span>
+                                    <label for="month">Month:</label>
+                                    <select id="month" name="month">
+                                      <option selected>January</option>
+                                      <option>February</option>
+                                      <option>March</option>
+                                      <option>April</option>
+                                      <option>May</option>
+                                      <option>June</option>
+                                      <option>July</option>
+                                      <option>August</option>
+                                      <option>September</option>
+                                      <option>October</option>
+                                      <option>November</option>
+                                      <option>December</option>
+                                    </select>
+                                  </span> -->
+                                <!-- <span>
+                                    <label for="year">Year:</label>
+                                    <select id="year" name="year"></select>
+                                  </span> -->
+                                <!-- </div> -->
+                            </form>
                         </div>
                         <!-- tags-cloud -->
                         <div class="tags-cloud">
-                            <h4 class="tags-cloud__title">Tags:</h4>
+                            <h5 class="tags-cloud__title">Tags Cloud:</h5>
                             <ul class="tags-cloud__list m-0 d-flex flex-wrap justify-content-start align-items-center">
-                                <li class="tags-cloud__item">#</li>
-                                <li class="tags-cloud__item">#</li>
-                                <li class="tags-cloud__item">#</li>
-                                <li class="tags-cloud__item">#</li>
-                                <li class="tags-cloud__item">#</li>
-                                <li class="tags-cloud__item">#</li>
-                                <li class="tags-cloud__item">#</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">#Hotel</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">#Room</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">Spa</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">Drink & end Food</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">#Wellness</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">#Luxury</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">King Bed</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">#No Smooking</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">#Swimming</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">Gym</li>
+                                <li class="tags-cloud__item mb-3 mb-md-0">Breakfast</li>
                             </ul>
                         </div>
                         <!-- best-room -->
@@ -344,22 +452,28 @@
                                 <h4 class="categories__title">Categories</h4>
                             </div>
                             <div class="c-categories d-flex align-items-center">
-                                <i class="categories-icon fa-solid fa-angle-right"></i>
-                                <span class="ms-2">
-                                    Luxury Hotels ( 10 )
-                                </span>
+                                <a href="#" class="">
+                                    <i class="categories-icon fa-solid fa-angle-right"></i>
+                                    <span class=" ms-2">
+                                        Luxury Hotels ( 10 )
+                                    </span>
+                                </a>
                             </div>
                             <div class="c-categories d-flex align-items-center">
-                                <i class="categories-icon fa-solid fa-angle-right"></i>
-                                <span class="ms-2">
-                                    Luxury Hotels ( 10 )
-                                </span>
+                                <a href="#" class="">
+                                    <i class="categories-icon fa-solid fa-angle-right"></i>
+                                    <span class=" ms-2">
+                                        Luxury Hotels ( 10 )
+                                    </span>
+                                </a>
                             </div>
                             <div class="c-categories d-flex align-items-center">
-                                <i class="categories-icon fa-solid fa-angle-right"></i>
-                                <span class="ms-2">
-                                    Luxury Hotels ( 10 )
-                                </span>
+                                <a href="#" class="">
+                                    <i class="categories-icon fa-solid fa-angle-right"></i>
+                                    <span class=" ms-2">
+                                        Luxury Hotels ( 10 )
+                                    </span>
+                                </a>
                             </div>
                         </div>
                         <!-- our branches -->
@@ -498,25 +612,47 @@
         </div>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer pt-spacing">
         <div class="container">
             <div class="row mb-spacing">
-                <div class="col col-12 col-md-4 mb-3">
-                    <h4>Current Weather</h4>
-                    <span class="text-uppercase mb-3">new york...</span>
-                    <div class="mt-2">svg +16</div>
+                <div class="col col-12 col-md-4 mb-3 text-white">
+                    <div class="footer__block">
+                        <h4 class="footer__title">Current Weather</h4>
+                        <span class="footer__subtitle text-uppercase mb-3">new york united states</span>
+                        <div class="fs-3 mt-2 fw-semibold">
+                            <i class="mt-4 fa-solid fa-cloud-sun"></i>
+                            16 <sup><small class="footer__weather">°c</small></sup>
+                        </div>
+                    </div>
                 </div>
-                <div class="col col-12 col-md-4 mb-3">
-                    <h4>Connect With Us</h4>
-                    <span class="text-uppercase mb-3">social media...</span>
-                    <div class="mt-2">socials</div>
+                <div class="col col-12 col-md-4 mb-3 text-white">
+                    <h4 class="footer__title">Connect With Us</h4>
+                    <span class="footer__subtitle text-uppercase mb-3">social media...</span>
+                    <div class="mt-4 footer__solcials">
+                        <a href="#" class="footer__link">
+                            <i class="footer__icon fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <i class="footer__icon fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <i class="footer__icon fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <i class="footer__icon fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <i class="footer__icon fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
                 </div>
-                <div class="col col-12 col-md-4 mb-3 ">
-                    <h4>Newlisttener</h4>
-                    <span class="text-uppercase mb-3">sign up special...</span>
-                    <div class="mt-2">
+                <div class="col col-12 col-md-4 mb-3 text-white">
+                    <h4 class="footer__title">Newlisttener</h4>
+                    <span class="footer__subtitle text-uppercase mb-3">sign up special...</span>
+                    <div class="mt-4">
                         <div class="input-group field mb-3">
-                            <input type="text" class="form-control p-0" placeholder=""
+                            <input type="text bg-dark" class="form-control p-0" placeholder=""
                                 aria-label="Example text with two button addons">
                             <button class="btn btn-primary py-0 px-4" type="search">Search</button>
                         </div>
@@ -524,30 +660,38 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid" style=" background-color: rgb(0, 0, 0);">
+            <div class="container">
 
-            <div class="footer-navigation d-md-flex justify-content-between px-0 py-3">
-                <ul class="navbar-nav d-flex align-items-center flex-md-row">
-                    <li class="nav-item px-3">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Booking</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <div class="d-flex justify-content-center align-items-center mt-3 mt-md-0">
-                    <span class="px-3">sponsors</span>
-                    <span class="px-3">sponsors</span>
-                    <span class="px-3">sponsors</span>
+                <div class="footer-navigation d-md-flex justify-content-between px-0 py-3">
+                    <ul class="navbar-nav d-flex align-items-center flex-md-row">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Booking</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <span class="px-3">
+                            <span class="footer__logos"><span class="footer__large">E</span>ighty eight</span>
+                        </span>
+                        <span class="px-3">
+                            <span class="footer__logos"><span class="footer__large">A</span>lsona</span>
+                        </span>
+                        <span class="px-3">
+                            <span class="footer__logos"><span class="footer__large">W</span>illmont</span>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -602,6 +746,39 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal my acc -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-4">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close border-0" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <form class=" needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="validationCustom01" class="form-label">Nick</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationCustom02" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
