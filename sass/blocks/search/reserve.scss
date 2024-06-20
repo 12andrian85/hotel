@@ -1,0 +1,68 @@
+.reserve {
+    background-color: #1C1C1CFF;
+    // height: 415px;
+    padding: 20px;
+    margin: auto;
+
+    &__inner {
+        height: 415px;
+        margin: auto;
+    }
+
+    &__element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: black;
+        height: 115px;
+        color: $primary;
+    }
+    &__wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #151515FF;
+    }
+
+
+    &__long {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #151515FF;
+        height: 75px;
+    }
+
+    &__branches {
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .dropdown {
+        .dropdown-button {
+            width: 100%;
+            height: 100%;
+            font-size: 19px;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            background-color: #151515FF;
+        }
+
+        .dropdown-button::after {
+            background-image: url("public/img/angle-down-solid.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            margin: 0; 
+            border: none;
+            color: $white;
+
+        }
+
+    }
+}

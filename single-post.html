@@ -8,7 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <!-- <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -69,7 +72,7 @@
                     <li class="top-item">
                         <a href="#" class="btn btn-primary h-100" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
-                            <img src="/public/img/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg"
+                            <img src="public/img/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg"
                                 style="height: 30px; width: 30px; border-radius: 50%;" alt="">
                             <div class="lh-1 ms-2 text-start">
                                 <span class="" style="font-size: 14px;">My account</span> <br>
@@ -82,11 +85,11 @@
         </div>
         <nav class="navbar navbar-expand-lg py-0">
             <div class="container">
-                <div class="d-flex justify-content-between w-100 d-lg-none">
+                <div class="d-flex justify-content-between w-100 d-lg-none "   style="padding: 13px 0;">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="/public/img/aaron-burden-cEukkv42O40-unsplash.jpg"
+                        <img src="public/img/aaron-burden-cEukkv42O40-unsplash.jpg"
                             style="height: 35px; width: 35px; border-radius: 50%   ;" alt="">
-                        <span>
+                        <span style="font-size: 14px;">
                             My account <br>
                             LOG OUT
                         </span>
@@ -149,7 +152,7 @@
                     <li class="">
                         <a href="#" class="banner-post__item">
                             <div class="c-person">
-                                <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
+                                <img src="public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
                                 <span class="c-person-name ms-2">JESS DOE</span>
                             </div>
                         </a>
@@ -210,10 +213,10 @@
                             </p>
                             <div class="row">
                                 <div class="paragraph__img col col-12 col-md-6">
-                                    <img src="/public/img/eunice-c-QstAba7N2ZY-unsplash.jpg" alt="">
+                                    <img src="public/img/eunice-c-QstAba7N2ZY-unsplash.jpg" alt="">
                                 </div>
                                 <div class="paragraph__img col col-12 col-md-6">
-                                    <img src="/public/img/joe-ciciarelli-08AJKJf75kw-unsplash.jpg" alt="">
+                                    <img src="public/img/joe-ciciarelli-08AJKJf75kw-unsplash.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -249,7 +252,7 @@
                             <h5 class="comments__title">2 Comments</h5>
                             <div>
                                 <div class="c-person">
-                                    <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
+                                    <img src="public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
                                     <span class="mx-2 text-dark fw-semibold">John Doe</span>
                                     <span class="">september 4,2015 at 1:24 <small>pm</small></span>
                                 </div>
@@ -262,7 +265,7 @@
                             </div>
                             <div class="border-bottom">
                                 <div class="c-person">
-                                    <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
+                                    <img src="public/img/spacejoy-3z_61bnbFhM-unsplash.jpg" alt="" class="person-img">
                                     <span class="mx-2 text-dark fw-semibold">John Doe</span>
                                     <span class="">september 4,2015 at 1:24 <small>pm</small></span>
                                 </div>
@@ -323,44 +326,195 @@
                     </div>
                     <div class="col col-12 col-md-4">
                         <!-- calendar -->
-                        <div class="calendar">
-                            calendar
-                            <form>
-                                <div class="nativeDatePicker">
-                                    <!-- <label for="bday">Enter your birthday:</label> -->
-                                    <input type="date" id="bday" name="bday" />
-                                    <!-- <span class="validity"></span> -->
+                        <div class="calendar w-100">
+                            <div class="calendar-week">
+                                <h4 class="calendar__title text-center mb-0" colspan="2">December 17</h4>
+                            </div>
+                            <div class="calendar__body">
+                                <div class="calendar__week row rows-col-7 flex-nowrap">
+                                    <div class="col calendar__day">su</div>
+                                    <div class="col calendar__day">mo</div>
+                                    <div class="col calendar__day">tu</div>
+                                    <div class="col calendar__day">we</div>
+                                    <div class="col calendar__day">th</div>
+                                    <div class="col calendar__day">fr</div>
+                                    <div class="col calendar__day">sa</div>
                                 </div>
-                                <!-- <p class="fallbackLabel">Enter your birthday:</p> -->
-                                <!-- <div class="fallbackDatePicker"> -->
-                                <!-- <span> -->
-                                <!-- <label for="day">Day:</label>
-                                    <select id="day" name="day"></select> -->
-                                <!-- </span> -->
-                                <!-- <span>
-                                    <label for="month">Month:</label>
-                                    <select id="month" name="month">
-                                      <option selected>January</option>
-                                      <option>February</option>
-                                      <option>March</option>
-                                      <option>April</option>
-                                      <option>May</option>
-                                      <option>June</option>
-                                      <option>July</option>
-                                      <option>August</option>
-                                      <option>September</option>
-                                      <option>October</option>
-                                      <option>November</option>
-                                      <option>December</option>
-                                    </select>
-                                  </span> -->
-                                <!-- <span>
-                                    <label for="year">Year:</label>
-                                    <select id="year" name="year"></select>
-                                  </span> -->
-                                <!-- </div> -->
-                            </form>
+                                <div class="calendar__list row rows-col-7 pt-0">
+                                    <div class="col calendar__date"></div>
+                                    <div class="col calendar__date"></div>
+                                    <div class="col calendar__date"></div>
+                                    <div class="col calendar__date"></div>
+                                    <div class="col calendar__date">
+                                        <span class=" calendar__date-bg">1</span>
+                                    </div>
+                                    <div class="col calendar__date">
+                                        <span class=" calendar__date-bg">2</span>
+                                    </div>
+                                    <div class="col calendar__date">
+                                        <span class=" calendar__date-bg">3</span>
+                                    </div>
+
+                                </div>
+                                <div class="calendar__list row rows-col-7">
+                                    <div class="col">
+                                        <span class="calendar__date">4</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">5</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">6</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">7</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">8</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">9</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">10</span>
+                                    </div>
+                                </div>
+                                <div class="calendar__list row rows-col-7">
+                                    <div class="col">
+                                        <span class="calendar__date">11</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">12</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">13</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">14</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">15</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">16</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">17</span>
+                                    </div>
+                                </div>
+                                <div class="calendar__list row rows-col-7">
+                                     <div class="col">
+                                        <span class="calendar__date">18</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">19</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">20</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">21</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">22</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">23</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">24</span>
+                                    </div>
+                                </div>
+                                <div class="calendar__list row rows-col-7">
+                                   <div class="col">
+                                        <span class="calendar__date">25</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">26</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">27</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">28</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">29</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">30</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="calendar__date">31</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- <table class="calendar w-100">
+                            <thead>
+                               
+                                    <th class="calendar__title text-center" colspan="2">December 17</th>
+                                </tr>
+                            </thead>
+                            <tbody class="calendar__body">
+                                <tr class="calendar__week">
+                                    <td class="calendar__day">su</td>
+                                    <td class="calendar__day">mo</td>
+                                    <td class="calendar__day">tu</td>
+                                    <td class="calendar__day">we</td>
+                                    <td class="calendar__day">th</td>
+                                    <td class="calendar__day">fr</td>
+                                    <td class="calendar__day">sa</td>
+                                </tr>
+                                <tr class="calendar__list pt-0">
+                                    <td class="calendar__date"></td>
+                                    <td class="calendar__date"></td>
+                                    <td class="calendar__date"></td>
+                                    <td class="calendar__date"></td>
+                                    <td class="calendar__date calendar__date--bg">1</td>
+                                    <td class="calendar__date calendar__date--bg">2</td>
+                                    <td class="calendar__date calendar__date--bg">3</td>
+                                </tr>
+                                <tr class="calendar__list">
+                                    <td class="calendar__date">4</td>
+                                    <td class="calendar__date">5</td>
+                                    <td class="calendar__date">6</td>
+                                    <td class="calendar__date">7</td>
+                                    <td class="calendar__date">8</td>
+                                    <td class="calendar__date">9</td>
+                                    <td class="calendar__date">10</td>
+                                </tr>
+                                <tr class="calendar__list">
+                                    <td class="calendar__date">11</td>
+                                    <td class="calendar__date">12</td>
+                                    <td class="calendar__date">13</td>
+                                    <td class="calendar__date">14</td>
+                                    <td class="calendar__date">15</td>
+                                    <td class="calendar__date">16</td>
+                                    <td class="calendar__date">17</td>
+                                </tr>
+                                <tr class="calendar__list">
+                                    <td class="calendar__date">18</td>
+                                    <td class="calendar__date">19</td>
+                                    <td class="calendar__date">20</td>
+                                    <td class="calendar__date">21</td>
+                                    <td class="calendar__date">22</td>
+                                    <td class="calendar__date">23</td>
+                                    <td class="calendar__date">24</td>
+                                </tr>
+                                <tr class="calendar__list">
+                                    <td class="calendar__date pb-1">25</td>
+                                    <td class="calendar__date pb-1">26</td>
+                                    <td class="calendar__date pb-1">27</td>
+                                    <td class="calendar__date pb-1">28</td>
+                                    <td class="calendar__date pb-1">29</td>
+                                    <td class="calendar__date pb-1">30</td>
+                                    <td class="calendar__date pb-1">31</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+
+
                         <!-- tags-cloud -->
                         <div class="tags-cloud">
                             <h5 class="tags-cloud__title">Tags Cloud:</h5>
@@ -386,7 +540,7 @@
                                 <div class="card mb-3">
                                     <div class="row g-0">
                                         <div class="col-4 w-auto">
-                                            <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
+                                            <img src="public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
                                                 class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-8">
@@ -405,7 +559,7 @@
                                 <div class="card mb-3">
                                     <div class="row g-0">
                                         <div class="col-4 w-auto">
-                                            <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
+                                            <img src="public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
                                                 class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-8">
@@ -424,7 +578,7 @@
                                 <div class="card mb-3">
                                     <div class="row g-0">
                                         <div class="col-4 w-auto">
-                                            <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
+                                            <img src="public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
                                                 class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-8">
@@ -485,7 +639,7 @@
                                 <div class="card mb-3">
                                     <div class="row g-0">
                                         <div class="col-4 w-auto">
-                                            <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
+                                            <img src="public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
                                                 class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-8">
@@ -519,7 +673,7 @@
                                 <div class="card mb-3">
                                     <div class="row g-0">
                                         <div class="col-4 w-auto">
-                                            <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
+                                            <img src="public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
                                                 class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-8">
@@ -553,7 +707,7 @@
                                 <div class="card mb-3">
                                     <div class="row g-0">
                                         <div class="col-4 w-auto">
-                                            <img src="/public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
+                                            <img src="public/img/spacejoy-3z_61bnbFhM-unsplash.jpg"
                                                 class="img-fluid rounded-start" alt="...">
                                         </div>
                                         <div class="col-8">

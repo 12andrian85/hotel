@@ -1,0 +1,29 @@
+.banner-about {
+    display: flex;
+    align-items: flex-end;
+    min-height: 350px;
+    background-color: black;
+    background-image: url(public/img/vu-anh-TiVPTYCG_3E-unsplash.jpg);
+    background-size: cover;
+
+    .container {
+        margin-bottom: 60px;
+    }
+
+    .c-breadcrumb {
+        position: absolute;
+        bottom: 0;
+        transform: translateX(-50%);
+        left: 50%;
+
+    }
+
+}
+
+@media (min-width: $width-tablet) {
+    .banner-about {
+        .c-breadcrumb {
+            left: 160px;
+        }
+    }
+}

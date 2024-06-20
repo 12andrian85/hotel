@@ -1,0 +1,29 @@
+.consulting {
+    .title-start {
+        margin-left: 25px;
+    }
+
+    .consulting-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: $width-tablet) {
+    .consulting {
+        .consulting-block {
+            flex-direction: row;
+        }
+    }
+}
+
+@media (min-width: $width-desktop) {
+    .consulting {
+        .consulting-img {
+            height: 220px;
+        }
+    }
+
+}

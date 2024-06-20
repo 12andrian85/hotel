@@ -1,0 +1,24 @@
+.latest-articles {
+    .card-top {
+        margin-top: 85px;
+    }
+    .card-img--top{
+        height: 100%;
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .latest-articles {
+        .card-top--middle {
+            margin-top: 0;
+        }
+    }
+}
+@media (min-width: $width-desktop) {
+    .latest-articles {
+        .card-top {
+            margin-top: 0;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.partners{
+    .title-line{
+        height: 2px;
+        background-color: $gray-500;
+
+    }
+    .partners-title{
+        color: $gray-600;
+    }
+
+    .splide{
+        &__wrapper{
+            padding: 24px 0px;
+        }
+            &__arrows{
+                display: none;
+            }
+
+        &__img{
+            object-fit: contain;
+            height: 25px;
+            opacity: 25%;
+        }
+        &__slide{
+            padding: 0 30px;
+        }
+        &__slide:hover{
+            .splide__wrapper{
+                background-color: $gray-400;
+                padding: 24px 0px;
+            }
+            .splide__img{
+                width: 100%;
+                height: 25px;
+                opacity: 1;
+            }
+        }
+    }
+    
+}

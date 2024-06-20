@@ -16,7 +16,8 @@
     .location-paragraph {
         margin-bottom: 45px;
     }
-    .location-text{
+
+    .location-text {
         color: $gray-600;
     }
 
@@ -27,7 +28,12 @@
         margin: 0 auto;
     }
 
-    .location-wrapper {}
+    .location-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media (min-width: $width-tablet) {
@@ -41,7 +47,7 @@
         }
 
         .location-wrapper {
-            padding: 94px 80px;
+            // padding: 94px 80px;
         }
 
         .location-footer {

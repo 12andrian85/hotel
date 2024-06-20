@@ -1,0 +1,30 @@
+.c-card-feature {
+    min-height: 330px;
+    padding: 40px 30px;
+
+    .card-wrapper {
+        height: 70px;
+        width: 100px;
+        border: 1px dashed $gray-300;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin-bottom: 23px;
+    }
+
+    .card-img-top {
+        height: 45px;
+        overflow: hidden;
+        object-fit: contain;
+    }
+
+    .card-btn {
+        background-color: #F2F6F7FF;
+    }
+
+    .card-btn:hover {
+        background-color: $primary;
+        color: $white;
+        background-color: primary;
+    }
+}

@@ -6,7 +6,7 @@ article,
 section,
 nav,
 form {
-    @include outline;
+    // @include outline;
     list-style: none;
     padding: 0;
 }

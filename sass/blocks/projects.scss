@@ -1,0 +1,53 @@
+.projects {
+    .projects-img {
+        object-position: left;
+    }
+
+    .projects__highlight {}
+
+    .accordion {
+
+        .accordion-item {
+            background-color: #d0e6f0;
+            margin: 15px 0;
+            border-radius: 0;
+        }
+
+        .accordion-button {
+            background-color: #d0e6f0;
+        }
+
+        .accordion-button:focus {
+            background-color: #d0e6f0;
+            box-shadow: none;
+        }
+
+        .accordion-button-icon-transform:focus {
+            transform: rotate(90deg);
+            // background-color: $primary;
+        }
+
+        .accordion-button::after {
+            background-image: url("//public/icons/angles-right-solid.svg");
+            background-size: 14px;
+            background-color: $secondary;
+            padding: 14px;
+            background-position: center;
+            border-radius: 5px;
+        }
+
+
+        .accordion-body {
+            background-color: #d0e6f0;
+        }
+    }
+
+}
+
+@media (min-width: $width-desktop) {
+    .projects {
+        .projects__highlight {
+            height: 380px;
+        }
+    }
+}

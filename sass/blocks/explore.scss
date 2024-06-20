@@ -1,0 +1,15 @@
+.explore {
+    .explore-block {}
+}
+
+@media (min-width: $width-tablet) {
+    .explore {
+        .card {
+            width: calc(100%/4);
+        }
+        .card-top{
+            position: relative;
+            bottom: -20px;
+        }
+    }
+}

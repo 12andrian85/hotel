@@ -1,0 +1,34 @@
+.banner-search {
+    position: relative;
+    height: 270px;
+    background-image: url("https://12andrian85.github.io/hotel/public/img/dimitris-kiriakakis-G11WbaShKZ8-unsplash.jpg");
+    background-position: center;
+
+    .banner-nav {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-color: $black;
+    }
+
+    .dropdown-toggle {
+        color: $gray-600;
+    }
+
+    .dropdown-menu {
+        background-color: $black;
+    }
+
+    .dropdown-item {
+        color: $gray-600;
+    }
+}
+@media (min-width: $width-tablet) {
+    .banner-search{
+        
+    .banner-nav {
+        height: 55px;
+    }
+    }
+}

@@ -1,0 +1,22 @@
+.c-title-start {
+    font-size: 0.9rem;
+    
+
+    .title-start {
+        margin-left: 30px;
+        font-weight: 500;
+    }
+    .title-start::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url(//public/icons/fits.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: -30px;
+        top: 0;
+    }
+}
+

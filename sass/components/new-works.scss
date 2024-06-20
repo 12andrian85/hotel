@@ -1,0 +1,70 @@
+.new-works {
+
+    &__icon {
+        bottom: -10%;
+        fill: $white;
+    }
+
+    &__text {
+        font-size: 14px;
+    }
+
+    &__inner {
+        bottom: 10px;
+    }
+
+    &__text--text {
+        color: $primary;
+    }
+
+    &__text--title {
+        color: $secondary;
+    }
+
+    &__block img {
+        height: 40px;
+    }
+
+    &__wrapper:hover {
+        .new-works__icon {
+            fill: $primary
+        }
+
+        .new-works__text {
+            color: $white;
+        }
+    }
+
+}
+
+@media (min-width: $width-tablet) {
+    .new-works {
+        &__text {
+            font-size: 16px;
+        }
+
+        &__inner {
+            bottom: 8px;
+        }
+
+    }
+
+}
+
+@media (min-width: $width-desktop) {
+    .new-works {
+        &__text {
+            font-size: 15px;
+        }
+        .new-works__text--title{
+            font-weight: 700;
+        }
+    }
+}
+@media (min-width: $width-x-desktop) {
+    .new-works {
+        &__text {
+            font-size: 22px;
+        }
+    }
+}

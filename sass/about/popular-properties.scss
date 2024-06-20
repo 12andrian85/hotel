@@ -1,0 +1,32 @@
+.popular-properties{
+   background-color: #F2F6F7FF;
+   
+    .splide{
+        &__arrow{
+            display: none;
+        }
+    }
+
+}
+// @media (min-width: $width-tablet) {}
+
+@media (min-width: $width-desktop) {
+    .popular-properties{
+   
+        .splide{
+            &__arrow{
+                display: block;
+                background-color: transparent;
+                border-radius: 0;
+                border: 1px dashed $primary;
+            }
+
+            &__arrow--next{
+                margin-right: -60px;
+            }
+            &__arrow--prev{
+                margin-left: -60px;
+            }
+        }
+    }
+}

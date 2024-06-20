@@ -1,5 +1,5 @@
 .banner {
-    background-image: url("/public/img/dimitris-kiriakakis-G11WbaShKZ8-unsplash.jpg");
+    background-image: url("https://12andrian85.github.io/hotel/public/img/dimitris-kiriakakis-G11WbaShKZ8-unsplash.jpg");
 
    
 
@@ -59,9 +59,10 @@
 @media (min-width: $width-desktop) {
     .banner {
         height: 790px;
+        padding-top: 60px;
 
         .c-title--center {
-            margin-top: 55px;
+            
             padding-bottom: 35px;
 
             h6::after {

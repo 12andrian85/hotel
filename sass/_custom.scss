@@ -22,7 +22,39 @@
 @import "./blocks/modal";
 
 
+// search
+@import "./blocks/search/banner-search.scss";
+@import "./blocks/search/reserve.scss";
+@import "./blocks/search/services.scss";
+@import "./blocks/search/additional.scss";
+@import "./blocks/search/reviews.scss";
+@import "./blocks/search/branch-star.scss";
+@import "./blocks/search/gallery.scss";
 
+// beautiful-view
+@import "./blocks/beautiful-view/beautiful-banner.scss";
+@import "./blocks/beautiful-view/title.scss";
+@import "./blocks/beautiful-view/description.scss";
+@import "./blocks/beautiful-view/reservation.scss";
+@import "./blocks/beautiful-view/best-rooms.scss";
+@import "./blocks/beautiful-view/search.scss";
+@import "./blocks/beautiful-view/categories.scss";
+@import "./blocks/beautiful-view/our-branches.scss";
+@import "./blocks/beautiful-view/reviews.scss";
+@import "./blocks/beautiful-view/similar-rooms.scss";
+
+
+// booking
+@import "./blocks/booking/banner-booking.scss";
+@import "./blocks/booking/reservation.scss";
+@import "./blocks/booking/extra-services.scss";
+@import "./blocks/booking/information.scss";
+
+//single-post
+@import"./blocks/single-post/banner-post.scss";
+@import"./blocks/single-post/post.scss";
+@import"./blocks/single-post/post.scss";
+// contact
 
 
 // components
@@ -41,36 +73,3 @@
 @import "./components/c-person.scss";
 @import "./components/c-categories.scss";
 @import "./components/c-calendar.scss";
-
-
-// search
-@import "./search/banner-search.scss";
-@import "./search/reserve.scss";
-@import "./search/services.scss";
-@import "./search/additional.scss";
-@import "./search/reviews.scss";
-@import "./search/branch-star.scss";
-@import "./search/gallery.scss";
-
-// beautiful-view
-@import "./beautiful-view/beautiful-banner.scss";
-@import "./beautiful-view/title.scss";
-@import "./beautiful-view/description.scss";
-@import "./beautiful-view/reservation.scss";
-@import "./beautiful-view/best-rooms.scss";
-@import "./beautiful-view/search.scss";
-@import "./beautiful-view/categories.scss";
-@import "./beautiful-view/our-branches.scss";
-@import "./beautiful-view/reviews.scss";
-@import "./beautiful-view/similar-rooms.scss";
-
-
-// booking
-@import "./booking/banner-booking.scss";
-@import "./booking/reservation.scss";
-@import "./booking/extra-services.scss";
-@import "./booking/information.scss";
-
-//single-post
-@import"./single-post/banner-post.scss";
-@import"./single-post/post.scss";

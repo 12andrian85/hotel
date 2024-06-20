@@ -1,0 +1,11 @@
+.gallery{
+    .splide{
+        &__arrow{
+            background-color: transparent;
+            border: 1px dashed $primary;
+        }
+        i{
+            color: $white;
+        }
+    }
+}

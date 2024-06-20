@@ -1,0 +1,26 @@
+.c-latest-articles{
+    width: 300px;
+    &__body{
+        background-color: $white;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: -60px;
+    }
+ 
+    .card-img--top{
+        height: 300px;
+    }
+    &__btns{
+
+        background-color: #E7E8E3FF;
+    }
+    &__btn{
+        background-color: #F1F6F6FF;
+    }
+}
+
+@media (min-width: $width-tablet) {
+    .c-latest-articles{
+   
+    }
+}

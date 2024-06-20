@@ -1,0 +1,55 @@
+.plans {
+    .form-wrapper {
+        background-color: #F2F6F7FF;
+    }
+
+    .form {
+        &__inner {
+            position: relative;
+            border-bottom: 1px solid $gray-400;
+
+            i{
+                color: $gray-600
+            }
+
+        }
+
+        &__input:focus-visible {
+            outline: none;
+        }
+
+        &__input {
+            background-color: transparent;
+            border: none;
+            margin-left: 5px;
+        }
+
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            margin: 0;
+            border: 1px solid $gray-600;
+            width: 15px;
+            height: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="checkbox"]::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: $primary;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+        }
+        input[type="checkbox"]:checked::before {
+            margin: 1px;
+
+            transform: scale(1);
+          }
+
+    }
+}

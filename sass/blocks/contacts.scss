@@ -1,0 +1,25 @@
+.contacts{
+    .c-sub-title {
+        border-bottom: none;
+    }
+    .c-sub-title::before {
+        background-color: $gray-300;
+    }
+    .contacts-icon{
+            padding: 15px;
+            margin-right: 10px;
+            background-color: $secondary;
+            color: $white;
+    }
+
+    .form{
+        .form-control{
+            padding: 8px 10px;
+            border: none;
+            border-radius: 2px;
+            background-color: $gray-300;
+        }
+    }
+
+
+}

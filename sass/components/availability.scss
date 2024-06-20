@@ -1,0 +1,38 @@
+.c-availability {
+background-color: $white;
+
+    .availability-item {
+
+        .icon {
+            height: 40px;
+            width: 50px;
+            stroke: $primary;
+        }
+
+        .availability-text {
+            color: $secondary;
+        }
+    }
+
+    .availability-line {
+        display: inline-block;
+        height: 30px;
+        width: 1px;
+        background-color: gray;
+        margin: 0 10px;
+    }
+
+    .availability-item:hover {
+        .icon {
+            stroke: $white;
+        }
+
+        .availability-text {
+            color: $white;
+        }
+
+        .availability-line {
+            background-color: $white;
+        }
+    }
+}

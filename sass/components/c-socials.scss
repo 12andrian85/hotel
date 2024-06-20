@@ -1,0 +1,26 @@
+.c-socials {
+
+
+    &__element {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 30px;
+        width: 30px;
+        border: 1px dashed $primary;
+        background-color: $white;
+    }
+
+    &__brand {
+        color: $secondary;
+    }
+
+    &__element:hover {
+        background-color: $secondary;
+
+        .socials__brand {
+            color: $white;
+        }
+    }
+}

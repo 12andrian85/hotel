@@ -1,0 +1,25 @@
+.types{
+    &__body{
+        opacity: 0;
+        transition:  1s ease;
+    }
+    img{
+        height: 300px;
+        object-fit: cover;
+    }
+    &__wrapper:hover{
+        .types__body{
+            opacity: 1;
+            color: white;
+        }
+        
+    }
+}
+@media (min-width: $width-desktop) {
+    .types{
+        .types-down{
+            position: relative;
+            top: 50px
+        }
+    }
+}

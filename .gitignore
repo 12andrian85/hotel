@@ -1,5 +1,2 @@
-.DS_Store
-/node_modules/
-/css/
-/dist/
-/page-template/
+node_modules
+proects/*.psd

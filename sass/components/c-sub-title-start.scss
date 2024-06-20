@@ -1,0 +1,12 @@
+.c-sub-title {
+    border-bottom: 1px solid $gray-300;
+}
+
+.c-sub-title::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 55px;
+    bottom: -1px;
+    background-color: $primary;
+}
