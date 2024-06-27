@@ -1,17 +1,20 @@
 .c-card-family-rooms {
     .card {
-        background-color: $black;
+        // background-color: $black;
         border: none;
-        .card-img-top{
-            height: 170px;
-            opacity: 0.8;
+
+        .card-img-top {
+            height: 415px;
+            filter: brightness(0.6);
         }
-        .card-inner{
-            bottom: 25px;
+
+        .card-inner {
+            bottom: 60px;
             font-size: 9px;
             color: $white
         }
-        p{
+
+        p {
             color: $gray-600;
         }
     }
